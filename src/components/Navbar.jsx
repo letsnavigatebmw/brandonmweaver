@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { useState } from 'react'
 
-export default function Navbar({ isScrolled }) {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const links = [
@@ -11,29 +11,20 @@ export default function Navbar({ isScrolled }) {
   ]
 
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-slate-900/95 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
-      }`}
-    >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a
-          href="#"
-          className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
-        >
-          BW
+        <a href="#" className="text-xl font-serif font-bold text-gray-900">
+          bw
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-12">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-slate-300 hover:text-white transition-colors duration-300"
+              className="text-sm font-sans text-gray-700 hover:text-yellow-600 transition-colors"
             >
               {link.name}
             </a>
@@ -43,7 +34,7 @@ export default function Navbar({ isScrolled }) {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-slate-300 hover:text-white"
+          className="md:hidden text-gray-900"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -51,13 +42,13 @@ export default function Navbar({ isScrolled }) {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-slate-900/95 backdrop-blur-md">
+        <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-6 py-4 space-y-4">
             {links.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block text-slate-300 hover:text-white transition-colors"
+                className="block text-gray-700 hover:text-yellow-600"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

@@ -11,33 +11,62 @@ html {
 }
 
 body {
-  @apply bg-slate-900 text-slate-100;
+  @apply bg-white text-gray-900;
   overflow-x: hidden;
 }
 
-/* Custom scrollbar */
+/* Gradient background */
+.gradient-background {
+  background: linear-gradient(135deg, #fce7f3 0%, #ddd6fe 25%, #a7f3d0 50%, #fecaca 75%, #fed7aa 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Smooth scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-900;
+  @apply bg-gray-100;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-700 rounded;
+  @apply bg-yellow-400 rounded;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-600;
+  @apply bg-yellow-500;
 }
 
 /* Selection */
 ::selection {
-  @apply bg-blue-500 text-slate-900;
+  @apply bg-yellow-300 text-gray-900;
+}
+
+/* Gold border frames */
+.frame-border {
+  border: 3px solid #d97706;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px #fbbf24;
 }
 
 /* Smooth transitions */
 a, button {
-  @apply transition-colors duration-300;
+  @apply transition-all duration-300;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+p {
+  @apply font-sans leading-relaxed;
 }
