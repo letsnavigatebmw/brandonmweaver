@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="hero-content space-y-8">
         {/* Status badge */}
         <div className="inline-flex items-center gap-2 text-sm">
-          <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+          <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse" />
           <span className="text-gray-400">CEO @ Navigate</span>
         </div>
 
@@ -35,13 +35,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <a
             href="#contact"
-            className="px-8 py-4 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition-all transform hover:scale-105 text-lg inline-block text-center"
+            className="px-8 py-4 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-lg inline-block text-center"
           >
             Get in Touch
           </a>
           <a
             href="#projects"
-            className="px-8 py-4 border-2 border-emerald-600 text-emerald-500 font-bold rounded-lg hover:bg-emerald-600/10 transition-colors text-lg inline-block text-center"
+            className="px-8 py-4 border-2 border-yellow-500 text-yellow-400 font-bold rounded-lg hover:bg-yellow-500/10 transition-colors text-lg inline-block text-center"
           >
             See Experience
           </a>

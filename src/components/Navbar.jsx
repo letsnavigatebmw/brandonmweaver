@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="hidden md:flex">
           <a
             href="#contact"
-            className="px-6 py-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition-colors"
+            className="px-6 py-2 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition-colors"
           >
             Get Started
           </a>
@@ -67,7 +67,7 @@ export default function Navbar() {
             ))}
             <a
               href="#contact"
-              className="block px-6 py-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 text-center"
+              className="block px-6 py-2 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 text-center"
               onClick={() => setIsOpen(false)}
             >
               Get Started

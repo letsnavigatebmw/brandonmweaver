@@ -23,17 +23,17 @@ export default function Footer() {
               </h4>
               <ul className="space-y-2 text-gray-500 text-sm">
                 <li>
-                  <a href="#about" className="hover:text-emerald-500 transition-colors">
+                  <a href="#about" className="hover:text-yellow-500 transition-colors">
                     What I Do
                   </a>
                 </li>
                 <li>
-                  <a href="#projects" className="hover:text-emerald-500 transition-colors">
+                  <a href="#projects" className="hover:text-yellow-500 transition-colors">
                     Experience
                   </a>
                 </li>
                 <li>
-                  <a href="#differentiator" className="hover:text-emerald-500 transition-colors">
+                  <a href="#differentiator" className="hover:text-yellow-500 transition-colors">
                     How I Think
                   </a>
                 </li>
@@ -51,13 +51,13 @@ export default function Footer() {
                     href="https://linkedin.com/in/brandonweaver"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-emerald-500 transition-colors"
+                    className="hover:text-yellow-500 transition-colors"
                   >
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:brandon@navigatenow.com" className="hover:text-emerald-500 transition-colors">
+                  <a href="mailto:brandon@navigatenow.com" className="hover:text-yellow-500 transition-colors">
                     Email
                   </a>
                 </li>

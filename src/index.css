@@ -32,6 +32,7 @@ body {
   width: 50%;
   height: 100%;
   object-fit: cover;
+  object-position: center 25%;
   z-index: 10;
 }
 
@@ -64,16 +65,16 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-emerald-600 rounded;
+  @apply bg-yellow-500 rounded;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-emerald-500;
+  @apply bg-yellow-400;
 }
 
 /* Selection */
 ::selection {
-  @apply bg-emerald-600 text-white;
+  @apply bg-yellow-500 text-white;
 }
 
 /* Smooth transitions */
