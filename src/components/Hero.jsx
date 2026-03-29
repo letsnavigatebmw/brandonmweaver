@@ -38,14 +38,13 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right - Headshot placeholder */}
+        {/* Right - Headshot */}
         <div className="hidden md:flex items-center justify-center">
-          <div className="w-full aspect-square bg-gray-200 rounded flex items-center justify-center text-gray-400 font-sans">
-            <p className="text-center">
-              Headshot here<br />
-              <span className="text-sm">(Upload your image)</span>
-            </p>
-          </div>
+          <img 
+            src="/headshot.jpg" 
+            alt="Brandon Weaver" 
+            className="w-full aspect-square object-cover rounded-sm"
+          />
         </div>
       </div>
     </section>
