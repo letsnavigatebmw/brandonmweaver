@@ -27,7 +27,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12">
           {services.map((service, index) => (
-            <div key={index} className="space-y-2 border-l-2 border-yellow-400 pl-6">
+            <div key={index} className="space-y-2 border-l-2 border-emerald-600 pl-6">
               <h3 className="text-2xl font-bold text-white">
                 {service.title}
               </h3>

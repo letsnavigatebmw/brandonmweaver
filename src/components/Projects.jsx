@@ -47,7 +47,7 @@ export default function Projects() {
                 <h3 className="text-4xl font-bold text-white mb-2">
                   {exp.name}
                 </h3>
-                <p className="text-sm text-yellow-400 uppercase tracking-wide font-bold">
+                <p className="text-sm text-emerald-500 uppercase tracking-wide font-bold">
                   {exp.role}
                 </p>
               </div>
@@ -61,7 +61,7 @@ export default function Projects() {
               <ul className="space-y-2">
                 {exp.highlights.map((highlight, i) => (
                   <li key={i} className="text-base text-gray-400 flex items-start gap-3">
-                    <span className="text-yellow-400 font-bold mt-1">→</span>
+                    <span className="text-emerald-500 font-bold mt-1">→</span>
                     <span>{highlight}</span>
                   </li>
                 ))}

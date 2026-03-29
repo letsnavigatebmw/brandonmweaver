@@ -17,9 +17,9 @@ export default function Contact() {
           {/* Email */}
           <a
             href="mailto:brandon@navigatenow.com"
-            className="group p-8 border border-gray-800 rounded-lg hover:border-yellow-400 transition-all"
+            className="group p-8 border border-gray-800 rounded-lg hover:border-emerald-600 transition-all"
           >
-            <Mail className="w-8 h-8 text-yellow-400 mb-4 group-hover:scale-110 transition-transform" />
+            <Mail className="w-8 h-8 text-emerald-500 mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-lg font-bold text-white mb-2">Email</h3>
             <p className="text-gray-400 group-hover:text-gray-300 transition-colors flex items-center gap-2">
               brandon@navigatenow.com
@@ -32,9 +32,9 @@ export default function Contact() {
             href="https://linkedin.com/in/brandonweaver"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-8 border border-gray-800 rounded-lg hover:border-yellow-400 transition-all"
+            className="group p-8 border border-gray-800 rounded-lg hover:border-emerald-600 transition-all"
           >
-            <Linkedin className="w-8 h-8 text-yellow-400 mb-4 group-hover:scale-110 transition-transform" />
+            <Linkedin className="w-8 h-8 text-emerald-500 mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-lg font-bold text-white mb-2">LinkedIn</h3>
             <p className="text-gray-400 group-hover:text-gray-300 transition-colors flex items-center gap-2">
               Connect on LinkedIn
@@ -47,7 +47,7 @@ export default function Contact() {
         <div className="text-center">
           <a
             href="mailto:brandon@navigatenow.com"
-            className="inline-block px-8 py-4 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105 text-lg"
+            className="inline-block px-8 py-4 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition-all transform hover:scale-105 text-lg"
           >
             Send Email
           </a>

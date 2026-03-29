@@ -15,12 +15,43 @@ body {
   overflow-x: hidden;
 }
 
-/* Hero Background */
-.hero-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/headshot.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+/* Hero Section with gradient fade */
+.hero-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.hero-image-fade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%);
+  z-index: 20;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 30;
+  margin-left: 50%;
+  padding: 0 60px;
+  max-width: 600px;
 }
 
 /* Smooth scrollbar */
@@ -33,16 +64,16 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-yellow-400 rounded;
+  @apply bg-emerald-600 rounded;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-yellow-500;
+  @apply bg-emerald-500;
 }
 
 /* Selection */
 ::selection {
-  @apply bg-yellow-400 text-black;
+  @apply bg-emerald-600 text-white;
 }
 
 /* Smooth transitions */
