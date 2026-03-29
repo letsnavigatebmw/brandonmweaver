@@ -1,28 +1,29 @@
-import { Mail, Linkedin } from 'lucide-react'
+import { Mail, Linkedin, ArrowRight } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-white">
+    <section id="contact" className="py-24 px-6 bg-black">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-serif font-bold mb-12 text-black">
-          Get in Touch
+        <h2 className="text-5xl md:text-6xl font-bold mb-12 text-white">
+          Let's Connect
         </h2>
 
-        <p className="text-lg text-gray-800 font-sans mb-12 max-w-2xl">
-          Open to conversations about strategy, operations, growth, and startups. Interested in working together or just want to connect?
+        <p className="text-lg text-gray-400 mb-12 max-w-2xl">
+          Open to conversations about strategy, operations, growth, and building companies that matter. Ready to work together?
         </p>
 
         {/* Contact Options */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
           {/* Email */}
           <a
             href="mailto:brandon@navigatenow.com"
-            className="p-8 border border-gray-300 rounded hover:border-black transition-colors group"
+            className="group p-8 border border-gray-800 rounded-lg hover:border-yellow-400 transition-all"
           >
-            <Mail className="w-8 h-8 text-black mb-4" />
-            <h3 className="text-lg font-serif font-bold text-black mb-2">Email</h3>
-            <p className="text-gray-700 font-sans group-hover:text-black transition-colors">
+            <Mail className="w-8 h-8 text-yellow-400 mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="text-lg font-bold text-white mb-2">Email</h3>
+            <p className="text-gray-400 group-hover:text-gray-300 transition-colors flex items-center gap-2">
               brandon@navigatenow.com
+              <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </p>
           </a>
 
@@ -31,13 +32,24 @@ export default function Contact() {
             href="https://linkedin.com/in/brandonweaver"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-8 border border-gray-300 rounded hover:border-black transition-colors group"
+            className="group p-8 border border-gray-800 rounded-lg hover:border-yellow-400 transition-all"
           >
-            <Linkedin className="w-8 h-8 text-black mb-4" />
-            <h3 className="text-lg font-serif font-bold text-black mb-2">LinkedIn</h3>
-            <p className="text-gray-700 font-sans group-hover:text-black transition-colors">
+            <Linkedin className="w-8 h-8 text-yellow-400 mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="text-lg font-bold text-white mb-2">LinkedIn</h3>
+            <p className="text-gray-400 group-hover:text-gray-300 transition-colors flex items-center gap-2">
               Connect on LinkedIn
+              <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </p>
+          </a>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center">
+          <a
+            href="mailto:brandon@navigatenow.com"
+            className="inline-block px-8 py-4 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105 text-lg"
+          >
+            Send Email
           </a>
         </div>
       </div>

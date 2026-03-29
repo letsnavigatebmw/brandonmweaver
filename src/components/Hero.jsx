@@ -1,51 +1,57 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-6">
-      <div className="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center">
-        {/* Left - Text */}
-        <div className="space-y-8">
-          {/* Headline */}
-          <div>
-            <h1 className="text-6xl md:text-7xl font-serif font-bold text-black leading-tight mb-6">
-              Brandon Weaver
-            </h1>
-            <h2 className="text-2xl md:text-3xl font-serif font-normal text-gray-800">
-              Scaling Commercial Engines. Connecting What Others Miss.
-            </h2>
-          </div>
+    <section className="hero-background relative min-h-screen flex flex-col items-center justify-center pt-20 px-6">
+      {/* Trust badge */}
+      <div className="mb-12 inline-flex items-center gap-2 bg-gray-900/50 backdrop-blur px-4 py-2 rounded-full border border-gray-700">
+        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+        <p className="text-sm text-gray-300">CEO @ Navigate</p>
+      </div>
 
-          {/* Subheadline */}
-          <p className="text-lg text-gray-700 font-sans max-w-lg">
-            CEO @ Navigate | Former CCO / COO | Carlyle-backed operator
-          </p>
+      {/* Headline */}
+      <div className="max-w-4xl text-center space-y-8">
+        <h1 className="text-6xl md:text-8xl font-bold text-white leading-tight">
+          Scaling<br />
+          Commercial<br />
+          Engines
+        </h1>
 
-          {/* CTA Buttons */}
-          <div className="flex gap-4 pt-4">
-            <a
-              href="#contact"
-              className="px-6 py-3 bg-black text-white font-sans font-medium rounded hover:bg-gray-900 transition-colors"
-            >
-              Contact
-            </a>
-            <a
-              href="https://linkedin.com/in/brandonweaver"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border-2 border-black text-black font-sans font-medium rounded hover:bg-black hover:text-white transition-colors"
-            >
-              LinkedIn
-            </a>
-          </div>
+        {/* Subheadline */}
+        <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Strategic operator connecting revenue, operations, and growth. Former CCO/COO. Carlyle-backed founder.
+        </p>
+
+        {/* CTA Button */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+          <a
+            href="#contact"
+            className="px-8 py-4 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105 text-lg"
+          >
+            Get in Touch
+          </a>
+          <a
+            href="#projects"
+            className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-black transition-colors text-lg"
+          >
+            See Experience
+          </a>
         </div>
+      </div>
 
-        {/* Right - Headshot */}
-        <div className="hidden md:flex items-center justify-center">
-          <img 
-            src="/headshot.jpg" 
-            alt="Brandon Weaver" 
-            className="w-full aspect-square object-cover rounded-sm"
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
           />
-        </div>
+        </svg>
       </div>
     </section>
   )

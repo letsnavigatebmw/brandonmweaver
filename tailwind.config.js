@@ -7,21 +7,27 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Playfair Display', 'Georgia', 'serif'],
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       colors: {
+        black: '#000000',
         gray: {
           50: '#fafafa',
           100: '#f5f5f5',
-          200: '#eeeeee',
-          300: '#e0e0e0',
-          400: '#bdbdbd',
-          500: '#9e9e9e',
-          600: '#757575',
-          700: '#616161',
-          800: '#424242',
-          900: '#212121',
+          200: '#e5e5e5',
+          300: '#d4d4d4',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+          950: '#0a0a0a',
+        },
+        yellow: {
+          300: '#fcd34d',
+          400: '#facc15',
+          500: '#eab308',
         },
       },
     },
