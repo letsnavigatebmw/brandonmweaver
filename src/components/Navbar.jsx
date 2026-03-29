@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="text-2xl font-bold text-white">
-          BW
+          BMW
         </a>
 
         {/* Desktop Menu */}
