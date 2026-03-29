@@ -1,71 +1,43 @@
-import { Mail, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Linkedin } from 'lucide-react'
 
 export default function Contact() {
-  const contacts = [
-    {
-      name: 'Email',
-      icon: Mail,
-      label: 'brandon@navigatenow.com',
-      href: 'mailto:brandon@navigatenow.com',
-    },
-    {
-      name: 'LinkedIn',
-      icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com/in/brandonweaver',
-    },
-    {
-      name: 'Twitter',
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/brandonweaver',
-    },
-  ]
-
   return (
-    <section id="contact" className="py-20 px-6">
+    <section id="contact" className="py-24 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold mb-12 text-gray-900">
+        <h2 className="text-5xl md:text-6xl font-serif font-bold mb-12 text-black">
           Get in Touch
         </h2>
 
-        <p className="text-lg text-gray-700 font-sans mb-16">
-          Have a project in mind or want to discuss real estate technology? I'd love to hear from you.
+        <p className="text-lg text-gray-800 font-sans mb-12 max-w-2xl">
+          Open to conversations about strategy, operations, growth, and startups. Interested in working together or just want to connect?
         </p>
 
-        {/* Contact Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {contacts.map((item) => {
-            const Icon = item.icon
-            return (
-              <a
-                key={item.name}
-                href={item.href}
-                target={item.name !== 'Email' ? '_blank' : undefined}
-                rel={item.name !== 'Email' ? 'noopener noreferrer' : undefined}
-                className="p-6 border-2 border-gray-200 rounded-lg hover:border-yellow-400 transition-colors text-center group"
-              >
-                <Icon className="w-8 h-8 mx-auto mb-4 text-gray-700 group-hover:text-yellow-600 transition-colors" />
-                <h3 className="font-sans font-semibold text-gray-900 mb-2">{item.name}</h3>
-                <p className="text-sm text-gray-600 group-hover:text-gray-900">{item.label}</p>
-              </a>
-            )
-          })}
-        </div>
-
-        {/* Main CTA */}
-        <div className="text-center frame-border bg-white p-12">
-          <h3 className="text-3xl font-serif font-bold text-gray-900 mb-4">
-            Let's Create Something Great
-          </h3>
-          <p className="text-gray-700 font-sans mb-8">
-            Send me an email or connect on social media.
-          </p>
+        {/* Contact Options */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Email */}
           <a
             href="mailto:brandon@navigatenow.com"
-            className="inline-block px-8 py-4 bg-yellow-500 text-gray-900 font-sans font-bold rounded-lg hover:bg-yellow-600 transition-colors text-lg"
+            className="p-8 border border-gray-300 rounded hover:border-black transition-colors group"
           >
-            Send Email
+            <Mail className="w-8 h-8 text-black mb-4" />
+            <h3 className="text-lg font-serif font-bold text-black mb-2">Email</h3>
+            <p className="text-gray-700 font-sans group-hover:text-black transition-colors">
+              brandon@navigatenow.com
+            </p>
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://linkedin.com/in/brandonweaver"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-8 border border-gray-300 rounded hover:border-black transition-colors group"
+          >
+            <Linkedin className="w-8 h-8 text-black mb-4" />
+            <h3 className="text-lg font-serif font-bold text-black mb-2">LinkedIn</h3>
+            <p className="text-gray-700 font-sans group-hover:text-black transition-colors">
+              Connect on LinkedIn
+            </p>
           </a>
         </div>
       </div>
