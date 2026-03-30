@@ -39,34 +39,34 @@ export default function About() {
       {/* What I Do Section */}
       <div className="bg-black">
         <div className="max-w-7xl mx-auto py-24 px-6">
-          {/* What I Do Section */}
-        <div className="mb-20">
-          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
-            Core Capabilities
-          </p>
-          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-            What I <span style={{ fontStyle: 'italic' }}>Do</span>
-          </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
-            The core competencies that drive growth, operational excellence, and sustainable value creation.
-          </p>
-        </div>
+          <div className="mb-20">
+            <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
+              Core Capabilities
+            </p>
+            <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
+              What I <span style={{ fontStyle: 'italic' }}>Do</span>
+            </h2>
+            <p className="text-gray-400 text-lg max-w-2xl">
+              The core competencies that drive growth, operational excellence, and sustainable value creation.
+            </p>
+          </div>
 
-        {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-16" />
+          {/* Divider */}
+          <div className="w-full h-px bg-gray-800 mb-16" />
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-12">
-          {services.map((service, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="text-2xl font-bold text-white">
-                {service.title}
-              </h3>
-              <p className="text-base text-gray-400 leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          ))}
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 gap-12">
+            {services.map((service, index) => (
+              <div key={index} className="space-y-4">
+                <h3 className="text-2xl font-bold text-white">
+                  {service.title}
+                </h3>
+                <p className="text-base text-gray-400 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
