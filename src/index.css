@@ -65,16 +65,16 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-yellow-500 rounded;
+  @apply bg-gold-400 rounded;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-yellow-400;
+  @apply bg-gold-300;
 }
 
 /* Selection */
 ::selection {
-  @apply bg-yellow-500 text-white;
+  @apply bg-gold-400 text-black;
 }
 
 /* Smooth transitions */

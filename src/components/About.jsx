@@ -1,20 +1,20 @@
 export default function About() {
   const services = [
     {
-      title: 'Commercial Strategy',
-      description: 'Building unit economics that scale. Designing operating models that work.',
+      title: 'P&L Management',
+      description: 'Full P&L ownership across pricing strategy, unit economics, and financial modeling. Reduced data enrichment costs by 25% through vendor negotiation and demand-based optimization.',
     },
     {
-      title: 'Operating Model',
-      description: 'Getting the fundamentals right. Making the math work before everything else.',
+      title: 'Go-to-Market Strategy',
+      description: 'GTM execution, demand generation, and sales leadership. Built Compass partnership driving +75% trial participation and 90% trial-to-paid conversion.',
     },
     {
-      title: 'Growth & Expansion',
-      description: 'Taking what works and expanding it. Avoiding the trap of chasing growth.',
+      title: 'Operating Model Design',
+      description: 'Re-architected sales organizations, supply portfolios, and cross-functional workflows to align inventory with demand and improve execution.',
     },
     {
-      title: 'Optimization',
-      description: 'Finding inefficiency and fixing it. Restoring momentum to stalled operations.',
+      title: 'Team Building',
+      description: 'Led organizations from 20 to 65 people across Sales, Marketing, Operations, and Client Services. Recognized for sales leadership and performance management.',
     },
   ]
 
@@ -27,7 +27,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12">
           {services.map((service, index) => (
-            <div key={index} className="space-y-2 border-l-2 border-yellow-500 pl-6">
+            <div key={index} className="space-y-2 border-l-2 border-gold-400 pl-6">
               <h3 className="text-2xl font-bold text-white">
                 {service.title}
               </h3>

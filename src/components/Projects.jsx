@@ -2,32 +2,32 @@ export default function Projects() {
   const experiences = [
     {
       name: 'Navigate',
-      role: 'CEO & Founder',
-      description: 'Real estate prospecting platform. Built from 0 → product-market fit. Managing $2M+ raised, scaling team and operations.',
+      role: 'Co-Founder & Chief Executive Officer',
+      description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Built preferred partnership with Compass, serving 60k+ agents.',
       highlights: [
-        'Built from 0 → product-market fit',
-        'Raised $2M+ in funding',
-        'Managing team and operations',
+        'Strengthened data infrastructure and distribution',
+        'Established Compass partnership for 60k+ agent network',
+        'Improved unit economics and financial performance',
       ],
     },
     {
       name: 'Lacure',
-      role: 'COO & Co-founder',
-      description: 'Luxury skincare commerce. Scaled operations, built supply chain, optimized unit economics from pre-launch to $5M+ ARR.',
+      role: 'Chief Commercial Officer',
+      description: 'Luxury villa portfolio management platform. Led 65-person global organization across sales, marketing, contracting, and client services managing 1,500+ luxury villas worldwide.',
       highlights: [
-        'Grew from pre-launch to $5M+ ARR',
-        'Built operations and fulfillment',
-        'Optimized margins and efficiency',
+        'Led 65-person global commercial organization',
+        'Oversaw commercial strategy for 1,500+ villas',
+        'Managed sales, marketing, and client services',
       ],
     },
     {
-      name: 'Bonotel',
-      role: 'Chief Commercial Officer',
-      description: 'Carlyle-backed travel tech startup. Led go-to-market, revenue operations, and strategic partnerships across enterprise segment.',
+      name: 'Bonotel & Sonder Hospitality',
+      role: 'Executive Leadership (CCO)',
+      description: 'Carlyle-backed $300M hospitality platform. Drove revenue growth, operating model redesign, and strategic acquisitions. Selected for Diageo Future Leaders Program with international assignment in Cape Town.',
       highlights: [
-        'Grew enterprise segment 3x',
-        'Built sales and partnership strategy',
-        'Optimized customer acquisition',
+        'Drove revenue growth and acquisition strategy',
+        'Redesigned operating models',
+        'Led commercial initiatives across portfolio',
       ],
     },
   ]
@@ -47,7 +47,7 @@ export default function Projects() {
                 <h3 className="text-4xl font-bold text-white mb-2">
                   {exp.name}
                 </h3>
-                <p className="text-sm text-yellow-500 uppercase tracking-wide font-bold">
+                <p className="text-sm text-gold-400 uppercase tracking-wide font-bold">
                   {exp.role}
                 </p>
               </div>
@@ -61,7 +61,7 @@ export default function Projects() {
               <ul className="space-y-2">
                 {exp.highlights.map((highlight, i) => (
                   <li key={i} className="text-base text-gray-400 flex items-start gap-3">
-                    <span className="text-yellow-500 font-bold mt-1">→</span>
+                    <span className="text-gold-400 font-bold mt-1">→</span>
                     <span>{highlight}</span>
                   </li>
                 ))}
