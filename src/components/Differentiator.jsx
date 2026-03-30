@@ -12,8 +12,8 @@ export default function Differentiator() {
     },
     {
       number: '03',
-      title: 'Real beats polished',
-      keyPoints: ['I optimise for what actually works, not what looks good in a deck. ', 'Data over narrative. Efficiency over elegance. Results over storytelling.'],
+      title: 'Results Over Storytelling',
+      keyPoints: ['I optimise for what actually works, not what looks good in a deck. ', 'Data over narrative. Efficiency over elegance. ', 'Results beat rhetoric every time.'],
     },
   ]
 
@@ -69,7 +69,7 @@ export default function Differentiator() {
             href="#contact"
             className="text-gold-400 font-bold uppercase tracking-wide text-sm hover:text-gold-300 transition-colors"
           >
-            Work with me →
+            Let's talk →
           </a>
         </div>
       </div>

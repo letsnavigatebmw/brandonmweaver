@@ -8,17 +8,17 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        serif: ['DM Serif Display', 'Georgia', 'serif'],
       },
     },
     colors: {
       black: '#000000',
       white: '#ffffff',
       gold: {
-        300: '#d4a76a',
-        400: '#c4975a',
-        500: '#b8965a',
-        600: '#a8864a',
+        300: '#dab896',
+        400: '#c8b99a',
+        500: '#b8a485',
+        600: '#a89470',
       },
       yellow: {
         300: '#fcd34d',
