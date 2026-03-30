@@ -48,6 +48,11 @@ export default function ThoughtLeadership() {
       platform: 'LinkedIn',
       link: 'https://www.linkedin.com/posts/brandonmweaver_in-sales-speed-gets-a-lot-of-love-but-here-activity-7376308717270544384-te9v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
     },
+    {
+      title: 'Sales Enablement: Do More With Less',
+      platform: 'LinkedIn',
+      link: 'https://www.linkedin.com/posts/brandonmweaver_salesenablement-domorewithless-activity-7362520578898984961-f9As?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
+    },
   ]
 
   return (
