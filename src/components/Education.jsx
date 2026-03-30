@@ -22,26 +22,41 @@ export default function Education() {
 
   return (
     <section id="education" className="py-24 px-6 bg-black">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-16" style={{ color: '#c8b99a' }}>
-          Education
-        </h2>
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-20">
+          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
+            Academic Background
+          </p>
+          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+            Education
+          </h2>
+        </div>
 
-        <div className="space-y-12">
+        {/* Divider */}
+        <div className="w-full h-px bg-gray-800 mb-20" />
+
+        {/* Education Cards */}
+        <div className="space-y-16">
           {education.map((edu, index) => (
-            <div key={index} className="border-b border-gray-800 pb-8 last:border-b-0">
-              {/* School & Degree */}
-              <div className="mb-4">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  {edu.school}
-                </h3>
-                <p className="text-lg text-gold-400 font-bold">
-                  {edu.degree}
-                </p>
-              </div>
+            <div key={index} className="pb-16 border-b border-gray-800 last:border-b-0">
+              {/* Number */}
+              <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
+                {String(index + 1).padStart(2, '0')}
+              </p>
+
+              {/* School */}
+              <h3 className="text-3xl md:text-4xl font-serif text-white mb-3">
+                {edu.school}
+              </h3>
+
+              {/* Degree */}
+              <p className="text-lg mb-6" style={{ color: '#c8b99a' }}>
+                {edu.degree}
+              </p>
 
               {/* Major & Year */}
-              <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-2">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-4">
                 <p className="text-base text-gray-400">
                   {edu.major}
                 </p>
