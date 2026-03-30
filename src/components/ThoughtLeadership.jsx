@@ -63,6 +63,26 @@ export default function ThoughtLeadership() {
       platform: 'YouTube',
       link: 'https://youtube.com/shorts/Jb2sVbMGJZE?feature=share',
     },
+    {
+      title: 'Podcast Clip - Episode 1',
+      platform: 'Riverside',
+      link: 'https://riverside.com/shared/exported-clip/4eedc59f0b6e09b561de',
+    },
+    {
+      title: 'Podcast Clip - Episode 2',
+      platform: 'Riverside',
+      link: 'https://riverside.com/shared/exported-clip/9ae7af7d1a12e3fc722e',
+    },
+    {
+      title: 'Podcast Clip - Episode 3',
+      platform: 'Riverside',
+      link: 'https://riverside.com/shared/exported-clip/2daf167a2ff9673b3c65',
+    },
+    {
+      title: 'Podcast Clip - Episode 4',
+      platform: 'Riverside',
+      link: 'https://riverside.com/shared/exported-clip/79e517cc7bd07cce116d',
+    },
   ]
 
   return (
