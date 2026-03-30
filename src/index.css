@@ -65,16 +65,18 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gold-400 rounded;
+  background-color: #c4975a;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gold-300;
+  background-color: #d4a76a;
 }
 
 /* Selection */
 ::selection {
-  @apply bg-gold-400 text-black;
+  background-color: #c4975a;
+  color: #000000;
 }
 
 /* Smooth transitions */

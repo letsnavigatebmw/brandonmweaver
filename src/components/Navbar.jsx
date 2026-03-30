@@ -15,8 +15,8 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold text-white">
-          BMW
+        <a href="#" className="text-lg font-bold text-white">
+          Brandon M. Weaver
         </a>
 
         {/* Desktop Menu */}
