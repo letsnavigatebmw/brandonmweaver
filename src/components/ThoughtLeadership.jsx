@@ -58,6 +58,11 @@ export default function ThoughtLeadership() {
       platform: 'LinkedIn',
       link: 'https://www.linkedin.com/posts/brandonmweaver_prospecting-letsnavigate-realestate-activity-7348773865440894977-yJ3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
     },
+    {
+      title: 'Podcast Short',
+      platform: 'YouTube',
+      link: 'https://youtube.com/shorts/Jb2sVbMGJZE?feature=share',
+    },
   ]
 
   return (
