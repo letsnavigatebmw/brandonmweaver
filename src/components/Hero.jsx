@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero-container pt-20">
       {/* Image on left with fade */}
       <img 
-        src="/brandon-headshot.jpg?v=2" 
+        src="/brandon-headshot.jpg?v=3" 
         alt="Brandon Weaver" 
         className="hero-image"
         width={1600}
