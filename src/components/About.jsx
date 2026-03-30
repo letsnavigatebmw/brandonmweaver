@@ -21,7 +21,7 @@ export default function About() {
   return (
     <section id="about" className="bg-black">
       {/* Full-width Bio Section */}
-      <div className="border-b border-gray-800 py-24 px-6">
+      <div className="border-b border-gray-800 py-24 px-8 md:px-16">
         <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
         <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
           I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
@@ -31,7 +31,7 @@ export default function About() {
             Currently, I'm Co-Founder and CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="font-bold text-gold-400 hover:text-gold-300 transition-colors">Navigate</a>, a prospecting intelligence platform modernizing residential real estate. I've restructured ownership, stabilized operations, redesigned pricing, and renegotiated core partnerships to materially improve unit economics.
           </p>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-            Navigate now serves 60k+ agents through a strategic partnership with Compass. Prior roles include Chief Commercial Officer at Lacure, executive leadership at Sonder Hospitality and Bonotel (Carlyle-backed $300M platform), and commercial leadership at Diageo managing luxury brands like Johnnie Walker and Cîroc. I hold an MBA from Northwestern's Kellogg School, an MPA from Harvard Kennedy School, and a BA from USC.
+            Navigate now serves 60k+ agents through a strategic partnership with Compass. Prior roles include Chief Commercial Officer at Lacure, executive leadership at Sonder Hospitality and Bonotel (Carlyle-backed $300M platform), and commercial leadership at Diageo managing luxury brands like Johnnie Walker, Don Julio, and Tanqueray. I hold an MBA from Northwestern's Kellogg School of Management, a Masters in Public Administration (MPA) from Harvard's Kennedy School of Government, and a BA from USC's Annenberg School of Communication.
           </p>
         </div>
       </div>
