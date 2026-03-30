@@ -53,6 +53,11 @@ export default function ThoughtLeadership() {
       platform: 'LinkedIn',
       link: 'https://www.linkedin.com/posts/brandonmweaver_salesenablement-domorewithless-activity-7362520578898984961-f9As?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
     },
+    {
+      title: 'Prospecting with Navigate',
+      platform: 'LinkedIn',
+      link: 'https://www.linkedin.com/posts/brandonmweaver_prospecting-letsnavigate-realestate-activity-7348773865440894977-yJ3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
+    },
   ]
 
   return (
