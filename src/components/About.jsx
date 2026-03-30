@@ -23,13 +23,13 @@ export default function About() {
       {/* Full-width Bio Section */}
       <div className="border-b border-gray-800 py-24 px-8 md:px-16">
         <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
-        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
           I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
         </p>
-        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
           Currently, I'm Co-Founder and CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="font-bold text-gold-400 hover:text-gold-300 transition-colors">Navigate</a>, a prospecting intelligence platform modernizing residential real estate. I've restructured ownership, stabilized operations, redesigned pricing, and renegotiated core partnerships to materially improve unit economics. Navigate serves residential real estate agents across the US partnering with recognized brokerages like Compass, The Agency and Douglas Elliman.
         </p>
-        <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+        <p className="text-gray-400 text-lg leading-relaxed">
           Prior roles include Chief Commercial Officer at Lacure, executive leadership at Sonder Hospitality and Bonotel (Carlyle-backed $300M platform), and commercial leadership at Diageo managing luxury brands like Johnnie Walker, Don Julio, and Tanqueray. I hold an MBA from Northwestern's Kellogg School of Management, a Masters in Public Administration (MPA) from Harvard's Kennedy School of Government, and a BA from USC's Annenberg School of Communication.
         </p>
       </div>
