@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <a href="#" className="text-2xl font-bold text-white">
-              BMW
+              Brandon M. Weaver
             </a>
             <p className="text-gray-500 mt-2 text-sm">
               CEO @ Navigate
