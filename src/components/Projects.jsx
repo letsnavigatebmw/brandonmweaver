@@ -5,9 +5,9 @@ export default function Projects() {
       role: 'Co-Founder & Chief Executive Officer',
       description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Built preferred partnership with Compass, serving 60k+ agents.',
       highlights: [
-        'Strengthened data infrastructure and distribution',
-        'Established Compass partnership for 60k+ agent network',
-        'Improved unit economics and financial performance',
+        'Reduced data enrichment unit costs by 25% (from ~$2.50 → $1.90 per record) through vendor renegotiation and demand-based pricing optimization',
+        'Established strategic partnership with Compass; increased trial participation by +75% and improved trial-to-paid conversion to 90% within three months',
+        'Scaled workflows to support 150+ users, 300+ executed campaigns, and 300K+ owner/property records retrieved per month',
       ],
     },
     {
@@ -15,9 +15,9 @@ export default function Projects() {
       role: 'Chief Commercial Officer',
       description: 'Luxury villa portfolio management platform. Led 65-person global organization across sales, marketing, contracting, and client services managing 1,500+ luxury villas worldwide.',
       highlights: [
-        'Led 65-person global commercial organization',
-        'Oversaw commercial strategy for 1,500+ villas',
-        'Managed sales, marketing, and client services',
+        'Drove Field Sales strategy and executed "value-add" programs with key accounts to expand reach and capture incremental share amid accelerating demand',
+        'Re-architected supply portfolio and operating workflows to reduce high-impact service failures and improve quality control across secondary and tertiary markets',
+        'Led 65-person cross-functional organization across Sales, Contracting, Marketing, and Client Service responsible for building demand and operating global portfolio',
       ],
     },
     {
@@ -25,9 +25,9 @@ export default function Projects() {
       role: 'Area General Manager',
       description: 'Technology-enabled provider of alternative accommodations. Led 40-person team across real estate, marketing, revenue, operations and sales managing portfolio of 5 hotels with 700+ apartment-style and hotel rooms across California markets.',
       highlights: [
-        'Led 40-person real estate, marketing, and operations team',
-        'Successfully negotiated multi-million dollar lease agreements',
-        'Managed 700+ rooms across Los Angeles, Orange County, Palm Springs and San Francisco',
+        'Built and managed external stakeholder network (consultants, attorneys, lenders, city officials, developers) to execute growth initiatives in highly regulated markets',
+        'Negotiated and executed complex multi-million-dollar lease structures (revenue share, master lease, mixed lease) with local, regional, and national development firms',
+        'Led 40-person cross-functional team (Real Estate, Marketing, Revenue, Operations, Sales) managing 700+ rooms across multiple California markets',
       ],
     },
     {
@@ -35,20 +35,20 @@ export default function Projects() {
       role: 'Chief Marketing Officer & Chief Operations Officer',
       description: 'Carlyle-backed $300M luxury hospitality platform. Drove revenue growth from $224M to $285M, operating model redesign, and strategic acquisitions including luxury concierge services business.',
       highlights: [
-        'Grew revenue from $224M to $285M leading to acquisition by Travel Leaders Group (2017)',
-        'Re-architected sales organization, increasing net revenue growth ~14% over 3 years',
-        'Completed acquisition of luxury concierge services, increasing revenue +33% and margin +17%',
+        'Revamped B2B marketing strategy improving collateral, channel mix, and data-driven alignment; drove +7% YoY room nights and +12% revenue growth (2015-2016)',
+        'Re-architected sales organization and rationalized product strategy across new markets, contributing to ~+14% net revenue growth over 3 years',
+        'Led acquisition and launch of luxury concierge division ("Beyond by Bonotel"), increasing revenue +33% and gross margin +17% vs. prior year',
       ],
     },
     {
       name: 'Diageo',
       role: 'Regional Marketing Manager & Futures Leaders Program',
-      description: 'Global spirits leader managing P&L for luxury portfolio including Johnnie Walker, Cîroc, Don Julio, and Tanqueray. Selected for Diageo\'s inaugural Futures Leaders Program and deployed to South Africa to lead strategic sales and marketing initiatives. Drove award-winning campaigns and launched groundbreaking mobile application that won Cannes Golden Lion.',
+      description: 'Global spirits leader managing P&L for luxury portfolio including Johnnie Walker, Don Julio, Tanqueray, and Bulleit. Selected for Diageo\'s inaugural Futures Leaders Program and deployed to South Africa to lead strategic sales and marketing initiatives. Drove award-winning campaigns and launched groundbreaking mobile application that won Cannes Golden Lion.',
       highlights: [
-        'Delivered +7% NSV increase and +2% vodka category share growth across portfolio',
-        'Led 2 award-winning 360° campaigns: "Keep Walking South Africa" & "King of Flavour"',
-        'Launched Captain Morgan\'s Captains Conquest mobile app (Cannes Golden Lion 2012, The Economist feature 2013)',
-        'Drove Captain Morgan Black Spiced Rum innovation delivering +250k incremental cases',
+        'Managed P&L for luxury spirits portfolio, delivering +7% NSV growth and +2% category share gain in Vodka category',
+        'Led two award-winning 360° campaigns ("Keep Walking South Africa," "King of Flavor"), driving +4% share growth',
+        'Developed and launched Diageo\'s first mobile platform ("Captain\'s Conquest") winning Cannes Golden Lion (2012) and The Economist feature (2013)',
+        'Led innovation of Captain Morgan Black Spiced Rum, delivering +250K incremental cases to the trademark',
       ],
     },
   ]
