@@ -33,17 +33,26 @@ export default function About() {
         </div>
 
         {/* What I Do Section */}
-        <h2 className="text-5xl md:text-6xl font-bold mb-16" style={{ color: '#c8b99a' }}>
-          What I <span style={{ fontStyle: 'italic' }}>Do</span>
-        </h2>
+        <div className="mb-20">
+          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
+            Core Capabilities
+          </p>
+          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+            What I <span style={{ fontStyle: 'italic' }}>Do</span>
+          </h2>
+        </div>
 
+        {/* Divider */}
+        <div className="w-full h-px bg-gray-800 mb-16" />
+
+        {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-12">
           {services.map((service, index) => (
-            <div key={index} className="space-y-2 border-l-2 border-gold-400 pl-6">
+            <div key={index} className="space-y-4">
               <h3 className="text-2xl font-bold text-white">
                 {service.title}
               </h3>
-              <p className="text-base text-gray-400">
+              <p className="text-base text-gray-400 leading-relaxed">
                 {service.description}
               </p>
             </div>
