@@ -19,7 +19,7 @@ export default function Hero() {
         {/* Status badge */}
         <div className="inline-flex items-center gap-2 text-sm">
           <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
-          <span className="text-gray-400">Co-Founder & CEO @ <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a></span>
+          <span className="text-gray-400">Founder, Strategist & Builder</span>
         </div>
 
         {/* Headline */}
