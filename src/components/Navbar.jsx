@@ -7,9 +7,9 @@ export default function Navbar() {
   const links = [
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#projects' },
-    { name: 'Education', href: '#education' },
     { name: 'Operating Philosophy', href: '#differentiator' },
     { name: 'Thought Leadership', href: '#thought-leadership' },
+    { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' },
   ]
 
