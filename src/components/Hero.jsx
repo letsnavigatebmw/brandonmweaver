@@ -19,7 +19,7 @@ export default function Hero() {
         {/* Status badge */}
         <div className="inline-flex items-center gap-2 text-sm">
           <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
-          <span className="text-gray-400">Brandon M. Weaver</span>
+          <span className="text-gray-400 italic">Brandon M. Weaver</span>
         </div>
 
         {/* Headline */}
