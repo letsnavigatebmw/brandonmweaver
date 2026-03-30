@@ -21,13 +21,13 @@ export default function Hero() {
         <div className="space-y-6">
           <h1 className="text-6xl md:text-7xl font-bold text-white leading-tight">
             Founder, Executive,<br />
-            and Growth<br />
+            & Growth<br />
             Architect
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
-            20+ years driving growth, transformation, and disciplined financial performance across consumer, hospitality, and technology. Co-Founder and CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>, a prospecting intelligence platform modernizing residential real estate.
+            20+ years driving growth, transformation, & disciplined financial performance across consumer, hospitality, & technology. Co-Founder & CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>, a prospecting intelligence platform modernizing residential real estate.
           </p>
         </div>
 
