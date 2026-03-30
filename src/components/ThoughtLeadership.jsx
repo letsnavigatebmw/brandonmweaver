@@ -1,6 +1,24 @@
 export default function ThoughtLeadership() {
   const publications = [
     {
+      title: 'How to Unlock New Growth Verticals in Mature Companies',
+      publication: 'Brandon M. Weaver',
+      link: '#',
+      type: 'Article',
+    },
+    {
+      title: 'Why Most GTM Strategies Fail Post-Series C',
+      publication: 'Brandon M. Weaver',
+      link: '#',
+      type: 'Article',
+    },
+    {
+      title: 'The Gap Between Marketing and Revenue—And How to Fix It',
+      publication: 'Brandon M. Weaver',
+      link: '#',
+      type: 'Article',
+    },
+    {
       title: 'State of Direct Mail Prospecting',
       publication: 'Navigate Resources',
       link: 'https://drive.google.com/file/d/16txU_pi9ye4EMDwKhkJTrTksAeaBSkGZ/view?usp=drive_link',
