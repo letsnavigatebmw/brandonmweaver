@@ -1,9 +1,11 @@
+import headshotImage from '../assets/brandon-headshot.jpg'
+
 export default function Hero() {
   return (
     <section className="hero-container pt-20">
       {/* Image on left with fade */}
       <img 
-        src="/brandon-headshot.jpg" 
+        src={headshotImage} 
         alt="Brandon Weaver" 
         className="hero-image"
         width={1600}
