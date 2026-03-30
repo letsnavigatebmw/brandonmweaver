@@ -32,7 +32,15 @@ export default function ThoughtLeadership() {
     },
   ]
 
-  const videos = [
+  const navigateVideos = [
+    {
+      title: 'Navigate Sizzle Reel',
+      platform: 'YouTube',
+      link: 'https://youtube.com/shorts/T6EDwewS1dA',
+    },
+  ]
+
+  const salesStrategyVideos = [
     {
       title: 'Thinking About the Sales Stack',
       platform: 'LinkedIn',
@@ -62,11 +70,6 @@ export default function ThoughtLeadership() {
       title: 'AI, Data, and the Human Touch with Brandon Weaver',
       platform: 'YouTube',
       link: 'https://youtu.be/PGFuyGQKRbA?si=e8jwuVdzKYm73VEv',
-    },
-    {
-      title: 'Navigate Sizzle Reel',
-      platform: 'YouTube',
-      link: 'https://youtube.com/shorts/T6EDwewS1dA',
     },
     {
       title: 'Are You Drowning in Software',
@@ -141,11 +144,39 @@ export default function ThoughtLeadership() {
           </div>
         </div>
 
-        {/* Videos */}
-        <div>
-          <h3 className="text-2xl font-bold text-white mb-8">Videos</h3>
+        {/* Navigate Videos */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-bold text-white mb-8">Navigate</h3>
           <div className="grid md:grid-cols-2 gap-6">
-            {videos.map((video, index) => (
+            {navigateVideos.map((video, index) => (
+              <a
+                key={index}
+                href={video.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-6 bg-gray-900 border border-gray-800 rounded-lg hover:border-yellow-500 transition-all hover:bg-gray-800"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <span className="text-xs font-semibold text-yellow-400 uppercase tracking-wider">
+                      Video
+                    </span>
+                    <h4 className="text-xl font-bold text-white mt-2 group-hover:text-yellow-400 transition-colors">
+                      {video.title}
+                    </h4>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-400">{video.platform}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Sales Strategy Videos */}
+        <div>
+          <h3 className="text-2xl font-bold text-white mb-8">Sales Strategy</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {salesStrategyVideos.map((video, index) => (
               <a
                 key={index}
                 href={video.link}
