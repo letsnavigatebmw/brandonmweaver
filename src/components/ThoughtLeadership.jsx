@@ -38,6 +38,11 @@ export default function ThoughtLeadership() {
       platform: 'LinkedIn',
       link: 'https://www.linkedin.com/posts/brandonmweaver_thinking-about-the-sales-stack-every-move-activity-7395134916574961665-3c0C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
     },
+    {
+      title: 'In Sales, Some Things Are In Your Control',
+      platform: 'LinkedIn',
+      link: 'https://www.linkedin.com/posts/brandonmweaver_in-sales-some-things-are-in-your-control-activity-7378455073959571456-cbUT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
+    },
   ]
 
   return (
