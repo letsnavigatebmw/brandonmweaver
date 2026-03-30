@@ -69,6 +69,11 @@ export default function ThoughtLeadership() {
       link: 'https://youtube.com/shorts/T6EDwewS1dA',
     },
     {
+      title: 'Are You Drowning in Software',
+      platform: 'YouTube',
+      link: 'https://youtube.com/shorts/r1_194HZ-aI',
+    },
+    {
       title: 'Podcast Short',
       platform: 'YouTube',
       link: 'https://youtube.com/shorts/Jb2sVbMGJZE?feature=share',
