@@ -16,12 +16,6 @@ export default function Hero() {
 
       {/* Content on right */}
       <div className="hero-content space-y-8">
-        {/* Status badge */}
-        <div className="inline-flex items-center gap-2 text-sm">
-          <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
-          <span className="text-gray-400 italic">Brandon M. Weaver</span>
-        </div>
-
         {/* Headline */}
         <div className="space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
