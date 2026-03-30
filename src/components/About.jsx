@@ -53,7 +53,7 @@ export default function About() {
           <div className="w-full h-px bg-gray-800 mb-16" />
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
             {services.map((service, index) => (
               <div key={index} className="space-y-4">
                 <h3 className="text-2xl font-bold text-white">
@@ -65,6 +65,11 @@ export default function About() {
               </div>
             ))}
           </div>
+
+          {/* Takeaway Statement */}
+          <p className="text-gray-400 text-lg leading-relaxed italic">
+            I operate at the intersection of revenue, marketing, and product—ensuring strategy translates into execution and measurable growth.
+          </p>
         </div>
       </div>
     </section>
