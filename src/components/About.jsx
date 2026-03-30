@@ -21,6 +21,14 @@ export default function About() {
   return (
     <section id="about" className="py-24 px-6 bg-black">
       <div className="max-w-5xl mx-auto">
+        {/* Bio Section */}
+        <div className="mb-20 pb-20 border-b border-gray-800">
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
+            I'm a <span className="text-gold-400 font-bold">growth architect</span> and <span className="text-gold-400 font-bold">strategic operator</span> with 15+ years building and scaling commercial organizations across hospitality, spirits, and real estate technology. Currently building <span className="font-bold">Navigate</span>, a prospecting intelligence platform modernizing residential real estate. Previously led commercial teams at Lacure, Sonder, Bonotel, and Diageo—where I spearheaded award-winning campaigns (Cannes Golden Lion) and delivered measurable revenue growth. I combine analytical rigor with creative problem-solving to drive unit economics, operating model design, and high-performing teams.
+          </p>
+        </div>
+
+        {/* What I Do Section */}
         <h2 className="text-5xl md:text-6xl font-bold mb-16 text-white">
           What I Do
         </h2>
