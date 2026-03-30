@@ -55,34 +55,47 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 px-6 bg-black">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-16" style={{ color: '#c8b99a' }}>
-          Selected Experience
-        </h2>
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-20">
+          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
+            Professional Journey
+          </p>
+          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+            Selected Experience
+          </h2>
+        </div>
 
-        <div className="space-y-16">
+        {/* Divider */}
+        <div className="w-full h-px bg-gray-800 mb-20" />
+
+        {/* Experience Cards */}
+        <div className="space-y-20">
           {experiences.map((exp, index) => (
-            <div key={index} className="border-b border-gray-800 pb-12 last:border-b-0">
+            <div key={index} className="pb-16 border-b border-gray-800 last:border-b-0">
               {/* Company & Role */}
               <div className="mb-6">
-                <h3 className="text-4xl font-bold text-white mb-2">
+                <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
+                  {String(index + 1).padStart(2, '0')}
+                </p>
+                <h3 className="text-4xl md:text-5xl font-serif text-white mb-3">
                   {exp.name}
                 </h3>
-                <p className="text-sm text-gold-400 uppercase tracking-wide font-bold">
+                <p className="text-lg" style={{ color: '#c8b99a' }}>
                   {exp.role}
                 </p>
               </div>
 
               {/* Description */}
-              <p className="text-lg text-gray-300 mb-6 max-w-3xl leading-relaxed">
+              <p className="text-lg text-gray-300 mb-8 max-w-3xl leading-relaxed">
                 {exp.description}
               </p>
 
-              {/* Bullets */}
-              <ul className="space-y-2">
+              {/* Highlights */}
+              <ul className="space-y-3">
                 {exp.highlights.map((highlight, i) => (
                   <li key={i} className="text-base text-gray-400 flex items-start gap-3">
-                    <span className="text-gold-400 font-bold mt-1">→</span>
+                    <span className="text-gold-400 font-bold mt-1 flex-shrink-0">→</span>
                     <span>{highlight}</span>
                   </li>
                 ))}
