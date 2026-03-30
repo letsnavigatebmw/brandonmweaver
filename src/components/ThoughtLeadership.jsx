@@ -90,9 +90,9 @@ export default function ThoughtLeadership() {
       link: 'https://youtu.be/PGFuyGQKRbA?si=e8jwuVdzKYm73VEv',
     },
     {
-      title: 'Podcast Short',
+      title: 'AI, Data, and the Human Touch with Brandon Weaver',
       platform: 'YouTube',
-      link: 'https://youtube.com/shorts/Jb2sVbMGJZE?feature=share',
+      link: 'https://www.youtube.com/shorts/Jb2sVbMGJZE',
     },
     {
       title: 'AI, Data, and the Human Touch with Brandon Weaver - Podcast Short',
