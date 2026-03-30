@@ -67,11 +67,6 @@ export default function ThoughtLeadership() {
       link: 'https://www.linkedin.com/posts/brandonmweaver_prospecting-letsnavigate-realestate-activity-7348773865440894977-yJ3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
     },
     {
-      title: 'AI, Data, and the Human Touch with Brandon Weaver',
-      platform: 'YouTube',
-      link: 'https://youtu.be/PGFuyGQKRbA?si=e8jwuVdzKYm73VEv',
-    },
-    {
       title: 'Are You Drowning in Software',
       platform: 'YouTube',
       link: 'https://youtube.com/shorts/r1_194HZ-aI',
@@ -80,6 +75,14 @@ export default function ThoughtLeadership() {
       title: 'The Art of Building Relationship Capital',
       platform: 'YouTube',
       link: 'https://youtube.com/shorts/51i3fVwJhJ8',
+    },
+  ]
+
+  const podcastVideos = [
+    {
+      title: 'AI, Data, and the Human Touch with Brandon Weaver',
+      platform: 'YouTube',
+      link: 'https://youtu.be/PGFuyGQKRbA?si=e8jwuVdzKYm73VEv',
     },
     {
       title: 'Podcast Short',
@@ -173,7 +176,7 @@ export default function ThoughtLeadership() {
         </div>
 
         {/* Sales Strategy Videos */}
-        <div>
+        <div className="mb-20">
           <h3 className="text-2xl font-bold text-white mb-8">Sales Strategy</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {salesStrategyVideos.map((video, index) => (
@@ -188,6 +191,34 @@ export default function ThoughtLeadership() {
                   <div className="flex-1">
                     <span className="text-xs font-semibold text-yellow-400 uppercase tracking-wider">
                       Video
+                    </span>
+                    <h4 className="text-xl font-bold text-white mt-2 group-hover:text-yellow-400 transition-colors">
+                      {video.title}
+                    </h4>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-400">{video.platform}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Podcast */}
+        <div>
+          <h3 className="text-2xl font-bold text-white mb-8">Podcast</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {podcastVideos.map((video, index) => (
+              <a
+                key={index}
+                href={video.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-6 bg-gray-900 border border-gray-800 rounded-lg hover:border-yellow-500 transition-all hover:bg-gray-800"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <span className="text-xs font-semibold text-yellow-400 uppercase tracking-wider">
+                      Podcast
                     </span>
                     <h4 className="text-xl font-bold text-white mt-2 group-hover:text-yellow-400 transition-colors">
                       {video.title}
