@@ -64,6 +64,11 @@ export default function ThoughtLeadership() {
       link: 'https://youtu.be/PGFuyGQKRbA?si=e8jwuVdzKYm73VEv',
     },
     {
+      title: 'Navigate Sizzle Reel',
+      platform: 'YouTube',
+      link: 'https://youtube.com/shorts/T6EDwewS1dA',
+    },
+    {
       title: 'Podcast Short',
       platform: 'YouTube',
       link: 'https://youtube.com/shorts/Jb2sVbMGJZE?feature=share',
