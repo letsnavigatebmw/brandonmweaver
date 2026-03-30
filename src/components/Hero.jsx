@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Status badge */}
         <div className="inline-flex items-center gap-2 text-sm">
           <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
-          <span className="text-gray-400">Co-Founder & CEO @ Navigate</span>
+          <span className="text-gray-400">Co-Founder & CEO @ <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a></span>
         </div>
 
         {/* Headline */}
@@ -27,7 +27,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="text-xl text-gray-400 leading-relaxed max-w-lg">
-            20+ years driving growth, transformation, and disciplined financial performance across consumer, hospitality, and technology. Co-Founder and CEO of Navigate, a prospecting intelligence platform modernizing residential real estate.
+            20+ years driving growth, transformation, and disciplined financial performance across consumer, hospitality, and technology. Co-Founder and CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>, a prospecting intelligence platform modernizing residential real estate.
           </p>
         </div>
 
