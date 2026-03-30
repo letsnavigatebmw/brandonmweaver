@@ -11,6 +11,17 @@ export default function Projects() {
       ],
     },
     {
+      name: 'Diageo',
+      role: 'Regional Marketing Manager & Futures Leaders Program',
+      description: 'Global spirits leader managing P&L for luxury portfolio including Johnnie Walker, Cîroc, Don Julio, and Tanqueray. Selected for Diageo\'s inaugural Futures Leaders Program and deployed to South Africa to lead strategic sales and marketing initiatives. Drove award-winning campaigns and launched groundbreaking mobile application that won Cannes Golden Lion.',
+      highlights: [
+        'Delivered +7% NSV increase and +2% vodka category share growth across portfolio',
+        'Led 2 award-winning 360° campaigns: "Keep Walking South Africa" & "King of Flavour"',
+        'Launched Captain Morgan\'s Captains Conquest mobile app (Cannes Golden Lion 2012, The Economist feature 2013)',
+        'Drove Captain Morgan Black Spiced Rum innovation delivering +250k incremental cases',
+      ],
+    },
+    {
       name: 'Lacure',
       role: 'Chief Commercial Officer',
       description: 'Luxury villa portfolio management platform. Led 65-person global organization across sales, marketing, contracting, and client services managing 1,500+ luxury villas worldwide.',
