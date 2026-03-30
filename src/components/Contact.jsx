@@ -3,10 +3,18 @@ import { Mail, Linkedin, Phone, ArrowRight } from 'lucide-react'
 export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 bg-black">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-12" style={{ color: '#c8b99a' }}>
-          Let's Connect
-        </h2>
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-20">
+          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
+            Get In Touch
+          </p>
+          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
+            Let's Connect
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl">
+            Reach out to discuss partnerships, strategy, or opportunities.
+          </p>
+        </div>
 
         <p className="text-lg text-gray-400 mb-12 max-w-2xl">
           Open to conversations about strategy, operations, growth, and building companies that matter. Ready to work together?
