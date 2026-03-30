@@ -33,7 +33,7 @@ export default function About() {
         </div>
 
         {/* What I Do Section */}
-        <h2 className="text-5xl md:text-6xl font-bold mb-16 text-white">
+        <h2 className="text-5xl md:text-6xl font-bold mb-16" style={{ color: '#c8b99a' }}>
           What I Do
         </h2>
 

@@ -56,7 +56,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 bg-black">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-16 text-white">
+        <h2 className="text-5xl md:text-6xl font-bold mb-16" style={{ color: '#c8b99a' }}>
           Selected Experience
         </h2>
 

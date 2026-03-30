@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 bg-black">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-12 text-white">
+        <h2 className="text-5xl md:text-6xl font-bold mb-12" style={{ color: '#c8b99a' }}>
           Let's Connect
         </h2>
 

@@ -120,7 +120,7 @@ export default function ThoughtLeadership() {
     <section id="thought-leadership" className="py-24 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Thought Leadership</h2>
+          <h2 className="text-4xl font-bold mb-4" style={{ color: '#c8b99a' }}>Thought Leadership</h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Insights, articles, and podcast appearances on startups, real estate technology, and building at scale.
           </p>
@@ -128,7 +128,7 @@ export default function ThoughtLeadership() {
 
         {/* Resources & Guides */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-white mb-8">Resources & Guides</h3>
+          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Resources & Guides</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {publications.map((pub, index) => (
               <a
@@ -154,7 +154,7 @@ export default function ThoughtLeadership() {
 
         {/* Navigate Videos */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-white mb-8">Navigate</h3>
+          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Navigate</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {navigateVideos.map((video, index) => (
               <a
@@ -182,7 +182,7 @@ export default function ThoughtLeadership() {
 
         {/* Sales Strategy Videos */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-white mb-8">Sales Strategy</h3>
+          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Sales Strategy</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {salesStrategyVideos.map((video, index) => (
               <a
@@ -210,7 +210,7 @@ export default function ThoughtLeadership() {
 
         {/* Podcast */}
         <div>
-          <h3 className="text-2xl font-bold text-white mb-8">Podcast</h3>
+          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Podcast</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {podcastVideos.map((video, index) => (
               <a
