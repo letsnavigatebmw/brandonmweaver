@@ -74,6 +74,11 @@ export default function ThoughtLeadership() {
       link: 'https://youtube.com/shorts/r1_194HZ-aI',
     },
     {
+      title: 'The Art of Building Relationship Capital',
+      platform: 'YouTube',
+      link: 'https://youtube.com/shorts/51i3fVwJhJ8',
+    },
+    {
       title: 'Podcast Short',
       platform: 'YouTube',
       link: 'https://youtube.com/shorts/Jb2sVbMGJZE?feature=share',
