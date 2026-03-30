@@ -23,8 +23,12 @@ export default function About() {
       <div className="max-w-5xl mx-auto">
         {/* Bio Section */}
         <div className="mb-20 pb-20 border-b border-gray-800">
+          <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mb-6">
+            I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
+          </p>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
-            I'm a <span className="text-gold-400 font-bold">growth architect</span> and <span className="text-gold-400 font-bold">strategic operator</span> with 15+ years building and scaling commercial organizations across hospitality, spirits, and real estate technology. Currently building <span className="font-bold">Navigate</span>, a prospecting intelligence platform modernizing residential real estate. Previously led commercial teams at Lacure, Sonder, Bonotel, and Diageo—where I spearheaded award-winning campaigns (Cannes Golden Lion) and delivered measurable revenue growth. I combine analytical rigor with creative problem-solving to drive unit economics, operating model design, and high-performing teams.
+            Currently, I'm Co-Founder and CEO of <span className="font-bold">Navigate</span>, a prospecting intelligence platform modernizing residential real estate. I've restructured ownership, stabilized operations, redesigned pricing, and renegotiated core partnerships to materially improve unit economics. Navigate now serves 60k+ agents through a strategic partnership with Compass. Prior roles include Chief Commercial Officer at Lacure, executive leadership at Sonder Hospitality and Bonotel (Carlyle-backed $300M platform), and commercial leadership at Diageo managing luxury brands like Johnnie Walker and Cîroc. I hold an MBA from Northwestern's Kellogg School, an MPA from Harvard Kennedy School, and a BA from USC.
           </p>
         </div>
 
