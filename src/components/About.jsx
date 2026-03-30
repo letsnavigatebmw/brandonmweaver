@@ -21,8 +21,8 @@ export default function About() {
   return (
     <section id="about" className="bg-black">
       {/* Full-width Bio Section */}
-      <div className="py-24 px-6 border-b border-gray-800">
-        <div className="max-w-7xl mx-auto">
+      <div className="border-b border-gray-800">
+        <div className="max-w-7xl mx-auto py-24 px-6">
           <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
             I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
@@ -34,8 +34,8 @@ export default function About() {
       </div>
 
       {/* What I Do Section */}
-      <div className="py-24 px-6 bg-black">
-        <div className="max-w-7xl mx-auto">
+      <div className="bg-black">
+        <div className="max-w-7xl mx-auto py-24 px-6">
           {/* What I Do Section */}
         <div className="mb-20">
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
