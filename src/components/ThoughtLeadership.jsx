@@ -124,7 +124,7 @@ export default function ThoughtLeadership() {
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Insights & Expertise
           </p>
-          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Thought Leadership
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">

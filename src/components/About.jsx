@@ -37,9 +37,12 @@ export default function About() {
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Core Capabilities
           </p>
-          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             What I <span style={{ fontStyle: 'italic' }}>Do</span>
           </h2>
+          <p className="text-gray-400 text-lg max-w-2xl">
+            The core competencies that drive growth, operational excellence, and sustainable value creation.
+          </p>
         </div>
 
         {/* Divider */}

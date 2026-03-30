@@ -25,9 +25,12 @@ export default function Differentiator() {
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Operating Philosophy
           </p>
-          <h2 className="text-6xl md:text-7xl font-serif" style={{ color: '#c8b99a' }}>
+          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             How I <span className="italic">think</span>.
           </h2>
+          <p className="text-gray-400 text-lg max-w-2xl">
+            Three principles that guide how I approach business, leadership, and creating lasting impact.
+          </p>
         </div>
 
         {/* Divider */}

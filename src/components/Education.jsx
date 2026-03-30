@@ -28,9 +28,12 @@ export default function Education() {
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Academic Background
           </p>
-          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Education
           </h2>
+          <p className="text-gray-400 text-lg max-w-2xl">
+            Advanced degrees in business, public administration, and communications from world-class institutions.
+          </p>
         </div>
 
         {/* Divider */}

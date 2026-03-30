@@ -61,9 +61,12 @@ export default function Projects() {
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Professional Journey
           </p>
-          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Selected Experience
           </h2>
+          <p className="text-gray-400 text-lg max-w-2xl">
+            A career built on scaling operations, driving revenue growth, and building teams that deliver results.
+          </p>
         </div>
 
         {/* Divider */}
