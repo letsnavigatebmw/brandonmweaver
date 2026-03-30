@@ -34,7 +34,7 @@ export default function About() {
 
         {/* What I Do Section */}
         <h2 className="text-5xl md:text-6xl font-bold mb-16" style={{ color: '#c8b99a' }}>
-          What I Do
+          What I <span className="italic">Do</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
