@@ -6,6 +6,7 @@ export default function Navbar() {
 
   const links = [
     { name: 'Experience', href: '#projects' },
+    { name: 'Education', href: '#education' },
     { name: 'Approach', href: '#differentiator' },
     { name: 'Thought Leadership', href: '#thought-leadership' },
     { name: 'Contact', href: '#contact' },
