@@ -6,6 +6,8 @@ export default function Hero() {
         src="/brandon-headshot.jpg?v=2" 
         alt="Brandon Weaver" 
         className="hero-image"
+        width={1600}
+        height={870}
       />
       <div className="hero-image-fade" />
 
