@@ -119,12 +119,21 @@ export default function ThoughtLeadership() {
   return (
     <section id="thought-leadership" className="py-24 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4" style={{ color: '#c8b99a' }}>Thought Leadership</h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        {/* Header */}
+        <div className="mb-20">
+          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
+            Insights & Expertise
+          </p>
+          <h2 className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
+            Thought Leadership
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl">
             Insights, articles, and podcast appearances on startups, real estate technology, and building at scale.
           </p>
         </div>
+
+        {/* Divider */}
+        <div className="w-full h-px bg-gray-800 mb-16" />
 
         {/* Resources & Guides */}
         <div className="mb-20">
