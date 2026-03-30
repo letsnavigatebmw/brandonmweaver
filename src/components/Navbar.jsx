@@ -5,9 +5,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const links = [
-    { name: 'Company', href: '#about' },
     { name: 'Experience', href: '#projects' },
     { name: 'Approach', href: '#differentiator' },
+    { name: 'Thought Leadership', href: '#thought-leadership' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -38,7 +38,7 @@ export default function Navbar() {
             href="#contact"
             className="px-6 py-2 bg-gold-400 text-black font-bold rounded-lg hover:bg-gold-300 transition-colors"
           >
-            Get Started
+            Connect With Brandon
           </a>
         </div>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
               className="block px-6 py-2 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 text-center"
               onClick={() => setIsOpen(false)}
             >
-              Get Started
+              Connect With Brandon
             </a>
           </div>
         </div>

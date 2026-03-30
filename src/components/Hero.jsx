@@ -20,9 +20,9 @@ export default function Hero() {
         {/* Headline */}
         <div className="space-y-6">
           <h1 className="text-6xl md:text-7xl font-bold text-white leading-tight">
-            Global Executive<br />
-            Real Estate<br />
-            Innovation
+            Founder, Executive,<br />
+            and Growth<br />
+            Architect
           </h1>
 
           {/* Subheadline */}
