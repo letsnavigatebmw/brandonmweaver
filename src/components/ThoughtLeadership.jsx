@@ -38,6 +38,11 @@ export default function ThoughtLeadership() {
       platform: 'YouTube',
       link: 'https://youtube.com/shorts/T6EDwewS1dA',
     },
+    {
+      title: 'Prospecting with Navigate',
+      platform: 'LinkedIn',
+      link: 'https://www.linkedin.com/posts/brandonmweaver_prospecting-letsnavigate-realestate-activity-7348773865440894977-yJ3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
+    },
   ]
 
   const salesStrategyVideos = [
@@ -60,11 +65,6 @@ export default function ThoughtLeadership() {
       title: 'Sales Enablement: Do More With Less',
       platform: 'LinkedIn',
       link: 'https://www.linkedin.com/posts/brandonmweaver_salesenablement-domorewithless-activity-7362520578898984961-f9As?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
-    },
-    {
-      title: 'Prospecting with Navigate',
-      platform: 'LinkedIn',
-      link: 'https://www.linkedin.com/posts/brandonmweaver_prospecting-letsnavigate-realestate-activity-7348773865440894977-yJ3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
     },
     {
       title: 'Are You Drowning in Software',
