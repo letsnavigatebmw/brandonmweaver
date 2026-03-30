@@ -32,7 +32,13 @@ export default function ThoughtLeadership() {
     },
   ]
 
-  const podcasts = []
+  const videos = [
+    {
+      title: 'Thinking About the Sales Stack',
+      platform: 'LinkedIn',
+      link: 'https://www.linkedin.com/posts/brandonmweaver_thinking-about-the-sales-stack-every-move-activity-7395134916574961665-3c0C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
+    },
+  ]
 
   return (
     <section id="thought-leadership" className="py-24 px-6 bg-black">
@@ -65,6 +71,34 @@ export default function ThoughtLeadership() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-400">{pub.publication}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Videos */}
+        <div>
+          <h3 className="text-2xl font-bold text-white mb-8">Videos</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {videos.map((video, index) => (
+              <a
+                key={index}
+                href={video.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-6 bg-gray-900 border border-gray-800 rounded-lg hover:border-yellow-500 transition-all hover:bg-gray-800"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <span className="text-xs font-semibold text-yellow-400 uppercase tracking-wider">
+                      Video
+                    </span>
+                    <h4 className="text-xl font-bold text-white mt-2 group-hover:text-yellow-400 transition-colors">
+                      {video.title}
+                    </h4>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-400">{video.platform}</p>
               </a>
             ))}
           </div>
