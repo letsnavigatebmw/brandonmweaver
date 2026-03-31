@@ -21,8 +21,9 @@ export default function About() {
   return (
     <section id="about" className="bg-black">
       {/* Full-width Bio Section */}
-      <div className="border-b border-gray-800 py-24 px-8 md:px-16">
-        <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
+      <div className="border-b border-gray-800 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
         <p className="text-gray-400 text-lg leading-relaxed mb-8">
           I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
         </p>
@@ -32,11 +33,12 @@ export default function About() {
         <p className="text-gray-400 text-lg leading-relaxed">
           Prior roles include Chief Commercial Officer at Lacure, executive leadership at Sonder Hospitality and Bonotel (Carlyle-backed $300M platform), and commercial leadership at Diageo managing luxury brands like Johnnie Walker, Don Julio, and Tanqueray. I hold an MBA from Northwestern's Kellogg School of Management, a Masters in Public Administration (MPA) from Harvard's Kennedy School of Government, and a BA from USC's Annenberg School of Communication.
         </p>
+        </div>
       </div>
 
       {/* What I Do Section */}
-      <div className="bg-black">
-        <div className="max-w-7xl mx-auto py-24 px-6">
+      <div className="pt-24 pb-12 px-6 bg-black">
+        <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
               Core Capabilities

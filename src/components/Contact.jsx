@@ -2,14 +2,14 @@ import { Mail, Linkedin, Phone, ArrowRight } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-black">
+    <section id="contact" className="pt-12 pb-24 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20">
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Get In Touch
           </p>
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-            Let's Connect
+            Let's <span className="italic">Connect</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">
             Reach out to discuss partnerships, strategy, or opportunities.

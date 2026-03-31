@@ -54,7 +54,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-24 px-6 bg-black">
+    <section id="projects" className="pt-12 pb-24 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-20">
@@ -62,7 +62,7 @@ export default function Projects() {
             Professional Journey
           </p>
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-            Selected Experience
+            Selected <span className="italic">Experience</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">
             A career built on scaling operations, driving revenue growth, and building teams that deliver results.

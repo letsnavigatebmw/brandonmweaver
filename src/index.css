@@ -64,33 +64,38 @@ body {
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 0 20px 40px 20px;
     min-height: auto;
-    gap: 40px;
+    gap: 0;
+    position: relative;
   }
 
   .hero-image {
-    position: static;
-    width: 100%;
+    position: relative;
+    width: calc(100% + 40px);
+    margin: 0 -20px 20px -20px;
     height: 300px;
-    margin-bottom: 20px;
-    z-index: auto;
+    z-index: 10;
+    display: block;
   }
 
   .hero-image-fade {
-    position: static;
-    width: 100%;
+    position: absolute;
+    width: calc(100% + 40px);
     height: 300px;
+    top: 0;
+    left: -20px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    z-index: auto;
+    z-index: 15;
+    pointer-events: none;
   }
 
   .hero-content {
-    position: static;
+    position: relative;
     margin-left: 0;
-    padding: 0;
+    padding: 0 0 0 0;
     max-width: 100%;
-    z-index: auto;
+    z-index: 25;
   }
 }
 

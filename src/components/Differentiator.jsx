@@ -2,12 +2,12 @@ export default function Differentiator() {
   const principles = [
     {
       number: '01',
-      title: 'Connectivity is the advantage',
+      title: 'Connectivity Is The Advantage',
       keyPoints: ['Most operators see their domain in isolation. I connect the dots across ', 'revenue, operations, and strategy', '. The advantage is never in one thing. It\'s in seeing how everything fits.'],
     },
     {
       number: '02',
-      title: 'Alignment creates scale',
+      title: 'Alignment Creates Scale',
       keyPoints: ['You can\'t scale misalignment. Every function needs to understand the same mission. ', 'Unit economics, go-to-market, operations', ' — they only compound when they pull in the same direction.'],
     },
     {
@@ -26,7 +26,7 @@ export default function Differentiator() {
             Operating Philosophy
           </p>
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-            How I <span className="italic">think</span>.
+            How I <span className="italic">Think</span>.
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">
             Three principles that guide how I approach business, leadership, and creating lasting impact.

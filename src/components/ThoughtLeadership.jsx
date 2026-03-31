@@ -105,11 +105,6 @@ export default function ThoughtLeadership() {
       link: 'https://youtube.com/shorts/T6EDwewS1dA',
     },
     {
-      title: 'Prospecting with Navigate',
-      platform: 'LinkedIn',
-      link: 'https://www.linkedin.com/posts/brandonmweaver_prospecting-letsnavigate-realestate-activity-7348773865440894977-yJ3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
-    },
-    {
       title: 'Product Demo',
       platform: 'YouTube',
       link: 'https://youtu.be/Mj621cjrLSs',
@@ -117,6 +112,11 @@ export default function ThoughtLeadership() {
   ]
 
   const salesStrategyVideos = [
+    {
+      title: 'Hope Is Not A Strategy',
+      platform: 'LinkedIn',
+      link: 'https://www.linkedin.com/posts/brandonmweaver_prospecting-letsnavigate-realestate-activity-7348773865440894977-yJ3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzk-UB0a6J9zTOszUt5Rx8iSd6tF0vs9g',
+    },
     {
       title: 'Thinking About the Sales Stack',
       platform: 'LinkedIn',
@@ -191,7 +191,7 @@ export default function ThoughtLeadership() {
             Insights & Expertise
           </p>
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-            Thought Leadership
+            Thought <span className="italic">Leadership</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">
             Insights, articles, and podcast appearances on startups, real estate technology, and building at scale.
