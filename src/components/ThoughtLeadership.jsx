@@ -15,7 +15,7 @@ export default function ThoughtLeadership() {
     {
       title: 'The Gap Between Marketing and Revenue—And How to Fix It',
       publication: 'Brandon M. Weaver',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1rZHQaXVEpHxITLhQoI2gcFLmu6g_vZ2W/view?usp=drive_link',
       type: 'Article',
     },
     {
