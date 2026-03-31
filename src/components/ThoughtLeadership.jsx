@@ -50,6 +50,33 @@ export default function ThoughtLeadership() {
     },
   ]
 
+  const marketingGuides = [
+    {
+      title: 'Brand-to-Demand: How Luxury Brand Thinking Makes Performance Marketing Better',
+      publication: 'Brandon M. Weaver',
+      link: '#',
+      type: 'Guide',
+    },
+    {
+      title: 'The Death of the Funnel: Why Modern B2C Marketing Needs a New Model',
+      publication: 'Brandon M. Weaver',
+      link: '#',
+      type: 'Guide',
+    },
+    {
+      title: 'What Spirits & Hospitality Taught Me About Emotional Brand Building at Scale',
+      publication: 'Brandon M. Weaver',
+      link: '#',
+      type: 'Guide',
+    },
+    {
+      title: 'Multi-Channel Campaign Architecture — Lessons from Diageo to Startups',
+      publication: 'Brandon M. Weaver',
+      link: '#',
+      type: 'Guide',
+    },
+  ]
+
   const navigateVideos = [
     {
       title: 'Navigate Sizzle Reel',
@@ -174,6 +201,32 @@ export default function ThoughtLeadership() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-400">{pub.publication}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Marketing Guides */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Marketing Guides</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {marketingGuides.map((guide, index) => (
+              <a
+                key={index}
+                href={guide.link}
+                className="group p-6 bg-gray-900 border border-gray-800 rounded-lg hover:border-yellow-500 transition-all hover:bg-gray-800"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <span className="text-xs font-semibold text-yellow-400 uppercase tracking-wider">
+                      {guide.type}
+                    </span>
+                    <h4 className="text-xl font-bold text-white mt-2 group-hover:text-yellow-400 transition-colors">
+                      {guide.title}
+                    </h4>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-400">{guide.publication}</p>
               </a>
             ))}
           </div>
