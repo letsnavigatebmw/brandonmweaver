@@ -155,6 +155,15 @@ export default function ThoughtLeadership() {
     },
   ]
 
+  const luxuryLearnings = [
+    {
+      title: 'Feeling is the New Luxury',
+      publication: 'Brandon M. Weaver',
+      link: 'https://drive.google.com/file/d/1eyd0vxq3D8xr8phIw2-w71P0EX7m5eVQ/view?usp=drive_link',
+      type: 'Article',
+    },
+  ]
+
   const podcastVideos = [
     {
       title: 'AI, Data, and the Human Touch with Brandon Weaver',
@@ -280,6 +289,32 @@ export default function ThoughtLeadership() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-400">{guide.publication}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Luxury Learnings & Best Practices */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Luxury Learnings & Best Practices</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {luxuryLearnings.map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                className="group p-6 bg-gray-900 border border-gray-800 rounded-lg hover:border-yellow-500 transition-all hover:bg-gray-800"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <span className="text-xs font-semibold text-yellow-400 uppercase tracking-wider">
+                      {item.type}
+                    </span>
+                    <h4 className="text-xl font-bold text-white mt-2 group-hover:text-yellow-400 transition-colors">
+                      {item.title}
+                    </h4>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-400">{item.publication}</p>
               </a>
             ))}
           </div>
