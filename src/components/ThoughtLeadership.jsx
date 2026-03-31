@@ -54,25 +54,25 @@ export default function ThoughtLeadership() {
     {
       title: 'Brand-to-Demand: How Luxury Brand Thinking Makes Performance Marketing Better',
       publication: 'Brandon M. Weaver',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1pLur9KDw4xYY239aYOrxdXjsAd6iYjma/view?usp=drive_link',
       type: 'Guide',
     },
     {
       title: 'The Death of the Funnel: Why Modern B2C Marketing Needs a New Model',
       publication: 'Brandon M. Weaver',
-      link: '#',
+      link: 'https://drive.google.com/file/d/17OE9Ocp4-1WkogBV9cgbODbDJh3cg75E/view?usp=drive_link',
       type: 'Guide',
     },
     {
       title: 'What Spirits & Hospitality Taught Me About Emotional Brand Building at Scale',
       publication: 'Brandon M. Weaver',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1YfnbifrFnvxLNGymwz_0AYF-VUF65cME/view?usp=drive_link',
       type: 'Guide',
     },
     {
       title: 'Multi-Channel Campaign Architecture — Lessons from Diageo to Startups',
       publication: 'Brandon M. Weaver',
-      link: '#',
+      link: 'https://drive.google.com/file/d/19Gnygvl0Dc6rOQlN3W6VZko2NuwnLLa4/view?usp=drive_link',
       type: 'Guide',
     },
   ]
