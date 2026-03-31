@@ -3,13 +3,13 @@ export default function ThoughtLeadership() {
     {
       title: 'How to Unlock New Growth Verticals in Mature Companies',
       publication: 'Brandon M. Weaver',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1W2U8ZM8r7UYThKlk7oyIx-T8yOHyGCpE/view?usp=drive_link',
       type: 'Article',
     },
     {
       title: 'Why Most GTM Strategies Fail Post-Series C',
       publication: 'Brandon M. Weaver',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1UW0HlnfRpW3Lim32Cl1F4AhQv3QjHHcj/view?usp=drive_link',
       type: 'Article',
     },
     {
