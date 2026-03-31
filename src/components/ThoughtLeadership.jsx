@@ -96,6 +96,12 @@ export default function ThoughtLeadership() {
       link: 'https://drive.google.com/file/d/1PC-FKhF8O684POd64LPEMKVkMUjP-H1B/view?usp=drive_link',
       type: 'E-Book',
     },
+    {
+      title: 'How Business Owners Can Hire AI that Actually Works',
+      publication: 'Brandon M. Weaver',
+      link: 'https://drive.google.com/file/d/1cWYFp0SNl31v31qKWCrwhq4Takw_aF4M/view?usp=drive_link',
+      type: 'E-Book',
+    },
   ]
 
   const navigateVideos = [
