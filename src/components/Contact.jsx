@@ -11,8 +11,18 @@ export default function Contact() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Let's <span className="italic">Connect</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
+          <p className="text-gray-400 text-lg max-w-2xl mb-6">
             Available for partnership development, brand strategy, and go-to-market execution. If your brand has stalled, let's talk about what it takes to move it forward.
+          </p>
+          <p className="text-gray-400 text-sm">
+            <a
+              href="https://aperturehospitality.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-400 hover:text-gold-300 transition-colors underline"
+            >
+              Learn More About How Aperture Hospitality Can Help Your Business
+            </a>
           </p>
         </div>
 
@@ -74,16 +84,6 @@ export default function Contact() {
           >
             Send Email
           </a>
-          <p className="mt-6 text-gray-400 text-sm">
-            <a
-              href="https://aperturehospitality.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold-400 hover:text-gold-300 transition-colors underline"
-            >
-              Learn More About How Aperture Hospitality Can Help Your Business
-            </a>
-          </p>
         </div>
       </div>
     </section>
