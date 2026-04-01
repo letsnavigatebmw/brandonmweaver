@@ -16,9 +16,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <p className="text-lg text-gray-400 mb-12 max-w-2xl">
-          Open to conversations about strategy, operations, growth, and building companies that matter. Ready to work together?
-        </p>
+
 
         {/* Contact Options */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12">
