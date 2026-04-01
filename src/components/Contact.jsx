@@ -12,7 +12,7 @@ export default function Contact() {
             Let's <span className="italic">Connect</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">
-            Reach out to discuss partnerships, strategy, or opportunities.
+            Reach out to explore Partnership Opportunities, Brand Strategy, GTM Execution or other if you have questions about how to get your brand back into growth mode.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12">
           {/* Email (Work) */}
           <a
-            href="mailto:brandon@navigatenow.com"
+            href="mailto:brandon@aperturehospitality.com"
             className="group p-6 sm:p-8 border border-gray-800 rounded-lg hover:border-gold-400 transition-all min-h-[140px] flex flex-col justify-between"
           >
             <div>
@@ -32,7 +32,7 @@ export default function Contact() {
               <h3 className="text-base sm:text-lg font-bold text-white mb-2">Work Email</h3>
             </div>
             <p className="text-gray-400 group-hover:text-gray-300 transition-colors flex items-center gap-2 text-xs sm:text-sm">
-              brandon@navigatenow.com
+              brandon@aperturehospitality.com
               <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </p>
           </a>
@@ -71,7 +71,7 @@ export default function Contact() {
         {/* CTA */}
         <div className="text-center">
           <a
-            href="mailto:brandon@navigatenow.com"
+            href="mailto:brandon@aperturehospitality.com"
             className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gold-400 text-black font-bold rounded-lg hover:bg-gold-300 transition-all transform hover:scale-105 text-base sm:text-lg min-h-[44px]"
           >
             Send Email
