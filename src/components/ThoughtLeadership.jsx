@@ -111,6 +111,12 @@ export default function ThoughtLeadership() {
       link: 'https://drive.google.com/file/d/1YkFlaFdyYXXr9nyXIlxC9iiQop1ljF19/view?usp=drive_link',
       type: 'Article',
     },
+    {
+      title: 'AI is the New Edge',
+      publication: 'Brandon M. Weaver',
+      link: 'https://drive.google.com/file/d/1laCqPlyPNNp3eOKVY6U94ukJro2rnafO/view?usp=drive_link',
+      type: 'Article',
+    },
   ]
 
   const navigateVideos = [
