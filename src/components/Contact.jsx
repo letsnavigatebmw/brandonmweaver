@@ -76,6 +76,16 @@ export default function Contact() {
           >
             Send Email
           </a>
+          <p className="mt-6 text-gray-400 text-sm">
+            <a
+              href="https://aperturehospitality.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-400 hover:text-gold-300 transition-colors underline"
+            >
+              Learn More About How Aperture Hospitality Can Help Your Business
+            </a>
+          </p>
         </div>
       </div>
     </section>
