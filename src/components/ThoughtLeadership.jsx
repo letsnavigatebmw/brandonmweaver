@@ -177,6 +177,12 @@ export default function ThoughtLeadership() {
       link: 'https://drive.google.com/file/d/1eyd0vxq3D8xr8phIw2-w71P0EX7m5eVQ/view?usp=drive_link',
       type: 'Article',
     },
+    {
+      title: "Don'T Chase Them, Make Them Earn It!",
+      publication: 'Brandon M. Weaver',
+      link: 'https://drive.google.com/file/d/1Dmr3uYRw38DMwO8oWA7j3FhN1AUU_AWn/view?usp=drive_link',
+      type: 'E-Book',
+    },
   ]
 
   const podcastVideos = [
