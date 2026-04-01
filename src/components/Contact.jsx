@@ -12,7 +12,7 @@ export default function Contact() {
             Let's <span className="italic">Connect</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">
-            Reach out to explore Partnership Opportunities, Brand Strategy, GTM Execution or other if you have questions about how to get your brand back into growth mode.
+            Available for partnership development, brand strategy, and go-to-market execution. If your brand has stalled, let's talk about what it takes to move it forward.
           </p>
         </div>
 
