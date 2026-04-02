@@ -298,9 +298,9 @@ export default function ThoughtLeadership() {
           </div>
         </div>
 
-        {/* Strategy & Leadership Guides */}
+        {/* Leadership Guides */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Strategy & Leadership</h3>
+          <h3 className="text-2xl font-bold mb-8" style={{ color: '#c8b99a' }}>Leadership</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {strategyGuides.map((guide, index) => (
               <a
