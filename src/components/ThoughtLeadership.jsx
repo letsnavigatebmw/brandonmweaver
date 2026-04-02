@@ -99,6 +99,12 @@ export default function ThoughtLeadership() {
       link: 'https://drive.google.com/file/d/16wQUbSQRUA81W3KyG4rMyXbVN7nzIMEd/view?usp=drive_link',
       type: 'E-Book',
     },
+    {
+      title: "Travel's Overlooked and Undervalued Channel Delivers Outsized Value",
+      publication: 'Brandon M. Weaver',
+      link: 'https://drive.google.com/file/d/1j7EYQoBot5Ul7AOYQK5WNCx54OqMkiJC/view?usp=drive_link',
+      type: 'E-Book',
+    },
   ]
 
   const aiContent = [
