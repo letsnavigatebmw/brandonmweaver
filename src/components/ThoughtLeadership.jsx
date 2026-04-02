@@ -79,6 +79,12 @@ export default function ThoughtLeadership() {
 
   const strategyGuides = [
     {
+      title: 'The Noise is Real',
+      publication: 'Brandon M. Weaver',
+      link: 'https://drive.google.com/file/d/1JCuKrMAria-dvPeLp_Urc47NuAj8MK8Q/view?usp=drive_link',
+      type: 'E-Book',
+    },
+    {
       title: 'Cross-Functional Leadership: Why the Best Operators Are Translators',
       publication: 'Brandon M. Weaver',
       link: 'https://drive.google.com/file/d/1PC-FKhF8O684POd64LPEMKVkMUjP-H1B/view?usp=drive_link',
