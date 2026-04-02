@@ -64,7 +64,7 @@ body {
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
-    padding: 0 20px 40px 20px;
+    padding: 80px 20px 40px 20px;
     min-height: auto;
     gap: 0;
     position: relative;
