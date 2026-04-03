@@ -45,6 +45,7 @@ export default function ContactIntake() {
         'https://script.google.com/macros/s/AKfycbztIrP7llVYCQADvcLbHIw0c32EwJXTPMsgIBgUO3_3HOI0q_jvdTofPU8nvVzV8QcWIQ/exec',
         {
           method: 'POST',
+          mode: 'no-cors',
           body: JSON.stringify({
             firstName: formData.firstName,
             lastName: formData.lastName,
@@ -56,19 +57,16 @@ export default function ContactIntake() {
         }
       )
 
-      if (response.ok || response.status === 302) {
-        setSubmitted(true)
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          industry: '',
-          message: '',
-        })
-        setTimeout(() => setSubmitted(false), 5000)
-      } else {
-        setError('Something went wrong. Please try again.')
-      }
+      // With no-cors mode, we assume success if no exception was thrown
+      setSubmitted(true)
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        industry: '',
+        message: '',
+      })
+      setTimeout(() => setSubmitted(false), 5000)
     } catch (err) {
       setError('Failed to submit. Please email directly: brandon@navigatenow.com')
     } finally {
