@@ -25,12 +25,12 @@ export default function Hero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-lg">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed">
             Co-Founder & CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>, modernizing real estate prospecting with AI-powered intelligence.
           </p>
 
           {/* Supporting line */}
-          <p className="text-sm md:text-base text-gray-500 leading-relaxed max-w-lg">
+          <p className="text-sm md:text-base text-gray-500 leading-relaxed">
             20+ years driving growth, transformation, and disciplined financial performance across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder (Carlyle-backed), and Lacure. Interested in partnerships, advisory roles, and building the future of real estate tech.
           </p>
         </div>
