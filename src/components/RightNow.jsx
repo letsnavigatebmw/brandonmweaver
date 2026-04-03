@@ -49,7 +49,7 @@ export default function RightNow() {
 
         {/* Bottom CTA */}
         <div className="mt-20 pt-16 border-t border-gray-800 flex flex-col md:flex-row md:justify-between md:items-center gap-8">
-          <p className="text-gray-600 italic text-base max-w-lg">
+          <p className="text-gray-600 italic text-base">
             If any of this resonates—or if you're working on something similar—let's talk.
           </p>
           <a
