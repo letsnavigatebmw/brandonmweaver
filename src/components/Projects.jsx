@@ -3,7 +3,7 @@ export default function Projects() {
     {
       name: 'Navigate',
       role: 'Co-Founder & Chief Executive Officer',
-      description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Built preferred partnership with Compass, serving 60k+ agents.',
+      description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Navigate has partnered with recognized brokerages like Compass, The Agency, Engel & Volkers and Keller Williams.',
       highlights: [
         'Reduced data enrichment unit costs by 25% (from ~$2.50 → $1.90 per record) through vendor renegotiation and demand-based pricing optimization',
         'Established strategic partnership with Compass; increased trial participation by +75% and improved trial-to-paid conversion to 90% within three months',
@@ -90,7 +90,7 @@ export default function Projects() {
               </div>
 
               {/* Description */}
-              <p className="text-lg text-gray-300 mb-8 max-w-3xl leading-relaxed">
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                 {exp.description}
               </p>
 
