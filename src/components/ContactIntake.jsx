@@ -42,7 +42,7 @@ export default function ContactIntake() {
     try {
       // Submit to Google Sheets via Apps Script webhook
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbztIrP7llVYCQADvcLbHIw0c32EwJXTPMsgIBgUO3_3HOI0q_jvdTofPU8nvVzV8QcWIQ/exec',
+        'https://script.google.com/macros/s/AKfycbyauXsSAlK-9x5thIfNOG9bKIBW2Rqz_ie9oiPGq3sXr7_4rrciKxB1zMTYb6DRaxXdZQ/exec',
         {
           method: 'POST',
           mode: 'no-cors',
