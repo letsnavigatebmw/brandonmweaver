@@ -40,21 +40,20 @@ export default function ContactIntake() {
     setError(null)
 
     try {
-      // Submit to Formspree
+      // Submit to Formspree with form-encoded data
+      const formBody = new URLSearchParams({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        industry: formData.industry,
+        message: formData.message,
+      })
+
       const response = await fetch(
         'https://formspree.io/f/xbdpzzgg',
         {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            firstName: formData.firstName,
-            lastName: formData.lastName,
-            email: formData.email,
-            industry: formData.industry,
-            message: formData.message,
-          }),
+          body: formBody,
         }
       )
 
