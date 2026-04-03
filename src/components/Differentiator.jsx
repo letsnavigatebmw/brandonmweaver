@@ -65,7 +65,7 @@ export default function Differentiator() {
 
         {/* Quote & CTA */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-8">
-          <p className="text-gray-600 italic text-base max-w-lg">
+          <p className="text-gray-600 italic text-base">
             "My experience has largely been about taking complex, multi-functional platforms and aligning product, marketing, and monetization into a cohesive growth engine."
           </p>
           <a
