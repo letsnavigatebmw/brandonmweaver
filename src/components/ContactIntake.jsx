@@ -86,7 +86,7 @@ export default function ContactIntake() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Let's <span className="italic">Talk</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mb-6">
+          <p className="text-gray-400 text-lg mb-6">
             I'm interested in partnerships, advisory roles, and building the future of real estate technology. Tell me what you're thinking, and let's explore if there's a fit.
           </p>
         </div>
