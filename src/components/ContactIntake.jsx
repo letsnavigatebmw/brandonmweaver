@@ -87,7 +87,7 @@ export default function ContactIntake() {
             Let's <span className="italic">Talk</span>
           </h2>
           <p className="text-gray-400 text-lg">
-            I'm interested in partnerships, advisory roles, and building the future of real estate technology. Tell me what you're thinking, and let's explore if there's a fit.
+            I'm interested in building what's next—partnering with ambitious teams, contributing where I can add real value, and helping turn ideas into something tangible. If that resonates, let's connect.
           </p>
         </div>
 
