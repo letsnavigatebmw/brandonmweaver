@@ -70,7 +70,7 @@ export default function About() {
 
           {/* Takeaway Statement */}
           <p className="text-gray-400 text-lg leading-relaxed italic">
-            I operate at the intersection of revenue, marketing, and product—ensuring strategy translates into execution and measurable growth.
+            I operate at the intersection of revenue, marketing, and product—ensuring strategy translates into execution and measurable growth. My focus: aligning product, go-to-market, and unit economics to build defensible revenue growth.
           </p>
         </div>
       </div>

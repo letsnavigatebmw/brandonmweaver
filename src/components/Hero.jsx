@@ -26,7 +26,12 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-lg">
-            20+ years driving growth, transformation, & disciplined financial performance across consumer, hospitality, & technology. Co-Founder & CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>, a prospecting intelligence platform modernizing residential real estate.
+            Co-Founder & CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>, modernizing real estate prospecting with AI-powered intelligence.
+          </p>
+
+          {/* Supporting line */}
+          <p className="text-sm md:text-base text-gray-500 leading-relaxed max-w-lg">
+            20+ years driving growth, transformation, and disciplined financial performance across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder (Carlyle-backed), and Lacure. Interested in partnerships, advisory roles, and building the future of real estate tech.
           </p>
         </div>
 
@@ -36,13 +41,13 @@ export default function Hero() {
             href="#contact"
             className="px-6 py-3 sm:px-8 sm:py-4 bg-gold-400 text-black font-bold rounded-lg hover:bg-gold-300 transition-all transform hover:scale-105 text-base sm:text-lg inline-block text-center min-h-[44px] flex items-center justify-center"
           >
-            Get in Touch
+            Let's Talk
           </a>
           <a
             href="#projects"
             className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-gold-400 text-gold-400 font-bold rounded-lg hover:bg-gold-400/10 transition-colors text-base sm:text-lg inline-block text-center min-h-[44px] flex items-center justify-center"
           >
-            See Experience
+            See What I've Built
           </a>
         </div>
       </div>
