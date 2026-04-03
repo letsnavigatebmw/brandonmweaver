@@ -111,6 +111,12 @@ export default function ThoughtLeadership() {
       link: 'https://drive.google.com/file/d/1j7EYQoBot5Ul7AOYQK5WNCx54OqMkiJC/view?usp=drive_link',
       type: 'E-Book',
     },
+    {
+      title: 'Revenue Management for Hotel Operators',
+      publication: 'Brandon M. Weaver',
+      link: 'https://drive.google.com/file/d/1_RULaBkpiAy9TaxeFc_kM8z1ULpxUcyR/view?usp=drive_link',
+      type: 'Guide',
+    },
   ]
 
   const aiContent = [
