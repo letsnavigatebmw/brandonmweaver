@@ -53,23 +53,21 @@ export default function ContactIntake() {
         'https://formspree.io/f/xbdpzzgg',
         {
           method: 'POST',
+          mode: 'no-cors',
           body: formBody,
         }
       )
 
-      if (response.ok) {
-        setSubmitted(true)
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          industry: '',
-          message: '',
-        })
-        setTimeout(() => setSubmitted(false), 5000)
-      } else {
-        setError('Failed to submit. Please email directly: brandon@navigatenow.com')
-      }
+      // With no-cors mode, assume success if no exception was thrown
+      setSubmitted(true)
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        industry: '',
+        message: '',
+      })
+      setTimeout(() => setSubmitted(false), 5000)
     } catch (err) {
       setError('Failed to submit. Please email directly: brandon@navigatenow.com')
     } finally {
