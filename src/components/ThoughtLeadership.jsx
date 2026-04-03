@@ -250,10 +250,10 @@ export default function ThoughtLeadership() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Thought <span className="italic">Leadership</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mb-4">
+          <p className="text-gray-400 text-lg mb-4">
             I write on building businesses at scale, commercial strategy, and leadership. Here's what I've learned.
           </p>
-          <p className="text-gray-500 text-base max-w-2xl">
+          <p className="text-gray-500 text-base">
             Insights, articles, and podcast appearances on startups, real estate technology, and building defensible competitive advantage across consumer, hospitality, and technology platforms.
           </p>
         </div>

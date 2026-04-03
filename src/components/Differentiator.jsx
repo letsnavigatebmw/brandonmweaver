@@ -28,7 +28,7 @@ export default function Differentiator() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             How I <span className="italic">Think</span>.
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
+          <p className="text-gray-400 text-lg">
             Three principles that guide how I approach business, leadership, and creating lasting impact.
           </p>
         </div>

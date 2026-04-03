@@ -25,7 +25,7 @@ export default function RightNow() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Right <span className="italic">Now</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
+          <p className="text-gray-400 text-lg">
             What I'm actively working on and learning. Not resting on past successes—building what's next.
           </p>
         </div>

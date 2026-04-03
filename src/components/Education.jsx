@@ -31,7 +31,7 @@ export default function Education() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Education, Interests & <span className="italic">Achievements</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
+          <p className="text-gray-400 text-lg">
             Advanced degrees in business, public administration, and communications from world-class institutions.
           </p>
         </div>
