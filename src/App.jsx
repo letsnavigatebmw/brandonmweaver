@@ -5,7 +5,7 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Differentiator from './components/Differentiator'
 import ThoughtLeadership from './components/ThoughtLeadership'
-import Contact from './components/Contact'
+import ContactIntake from './components/ContactIntake'
 import Footer from './components/Footer'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Differentiator />
       <ThoughtLeadership />
       <Education />
-      <Contact />
+      <ContactIntake />
       <Footer />
     </div>
   )
