@@ -45,7 +45,9 @@ export default function ContactIntake() {
         'https://script.google.com/a/macros/navigatenow.com/s/AKfycbx0S9Wc8Qs6-M8xUjZVnFVc-p0P_Ha-RW5wXd4bH3n0o2kW1GYAqPDZh6Y9yMzDhx1N/exec',
         {
           method: 'POST',
-          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
           body: JSON.stringify({
             firstName: formData.firstName,
             lastName: formData.lastName,
