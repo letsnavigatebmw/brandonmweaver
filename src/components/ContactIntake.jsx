@@ -50,7 +50,7 @@ export default function ContactIntake() {
       })
 
       const response = await fetch(
-        'https://formspree.io/f/xjgpaank',
+        'https://formspree.io/f/mzdkjkpa',
         {
           method: 'POST',
           mode: 'no-cors',
