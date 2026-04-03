@@ -40,35 +40,37 @@ export default function ContactIntake() {
     setError(null)
 
     try {
-      // Submit to Google Sheets via Apps Script webhook
-      const formBody = new URLSearchParams({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        industry: formData.industry,
-        message: formData.message,
-        timestamp: new Date().toISOString(),
-      })
-
+      // Submit to Formspree
       const response = await fetch(
-        'https://script.google.com/a/macros/navigatenow.com/s/AKfycbx0S9Wc8Qs6-M8xUjZVnFVc-p0P_Ha-RW5wXd4bH3n0o2kW1GYAqPDZh6Y9yMzDhx1N/exec',
+        'https://formspree.io/f/xbdpzzgg',
         {
           method: 'POST',
-          mode: 'no-cors',
-          body: formBody,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            industry: formData.industry,
+            message: formData.message,
+          }),
         }
       )
 
-      // With no-cors mode, we assume success if no exception was thrown
-      setSubmitted(true)
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        industry: '',
-        message: '',
-      })
-      setTimeout(() => setSubmitted(false), 5000)
+      if (response.ok) {
+        setSubmitted(true)
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          industry: '',
+          message: '',
+        })
+        setTimeout(() => setSubmitted(false), 5000)
+      } else {
+        setError('Failed to submit. Please email directly: brandon@navigatenow.com')
+      }
     } catch (err) {
       setError('Failed to submit. Please email directly: brandon@navigatenow.com')
     } finally {
