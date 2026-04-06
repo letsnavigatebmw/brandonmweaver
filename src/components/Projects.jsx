@@ -3,6 +3,7 @@ export default function Projects() {
     {
       name: 'Navigate',
       url: 'https://navigatenow.com',
+      dates: 'January 2024 – Present',
       role: 'Co-Founder & Chief Executive Officer',
       description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Navigate has partnered with recognized brokerages like Compass, The Agency, Engel & Volkers and Keller Williams.',
       highlights: [
@@ -14,6 +15,7 @@ export default function Projects() {
     {
       name: 'Lacure',
       url: 'https://www.lacurevillas.com/',
+      dates: 'October 2021 – November 2023',
       role: 'Chief Commercial Officer',
       description: 'Luxury villa portfolio management platform. Led 65-person global organization across sales, marketing, contracting, and client services managing 1,500+ luxury villas worldwide.',
       highlights: [
@@ -25,6 +27,7 @@ export default function Projects() {
     {
       name: 'Sonder Hospitality',
       url: 'https://www.sonder.com/',
+      dates: 'June 2019 – September 2021',
       role: 'Area General Manager',
       description: 'Technology-enabled provider of alternative accommodations. Led 40-person team across real estate, marketing, revenue, operations and sales managing portfolio of 5 hotels with 700+ apartment-style and hotel rooms across California markets.',
       highlights: [
@@ -36,6 +39,7 @@ export default function Projects() {
     {
       name: 'Bonotel Exclusive Travel',
       url: 'https://www.bonotel.com/',
+      dates: '2014 – 2017',
       role: 'Chief Marketing Officer & Chief Operations Officer',
       description: 'Carlyle-backed $300M luxury hospitality platform. Drove revenue growth from $224M to $285M, operating model redesign, and strategic acquisitions including luxury concierge services business.',
       highlights: [
@@ -47,6 +51,7 @@ export default function Projects() {
     {
       name: 'Diageo',
       url: 'https://www.diageo.com/en',
+      dates: '2011 – 2014',
       role: 'Regional Marketing Manager & Futures Leaders Program',
       description: 'Global spirits leader managing P&L for luxury portfolio including Johnnie Walker, Don Julio, Tanqueray, and Bulleit. Selected for Diageo\'s inaugural Futures Leaders Program and deployed to South Africa to lead strategic sales and marketing initiatives. Drove award-winning campaigns and launched groundbreaking mobile application that won Cannes Golden Lion.',
       highlights: [
@@ -89,7 +94,7 @@ export default function Projects() {
                 <h3 className="text-4xl md:text-5xl font-serif text-white mb-3">
                   {exp.name}
                 </h3>
-                <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2">
+                <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-2">
                   <p className="text-lg" style={{ color: '#c8b99a' }}>
                     {exp.role}
                   </p>
@@ -107,6 +112,11 @@ export default function Projects() {
                     </div>
                   )}
                 </div>
+                {exp.dates && (
+                  <p className="text-sm text-gray-500 mb-4">
+                    {exp.dates}
+                  </p>
+                )}
               </div>
 
               {/* Description */}
