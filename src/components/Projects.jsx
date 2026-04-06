@@ -52,7 +52,7 @@ export default function Projects() {
       name: 'Diageo',
       url: 'https://www.diageo.com/en',
       dates: '2011 – 2014',
-      role: 'Regional Marketing Manager & Futures Leaders Program',
+      role: 'Futures Leaders Program Participant',
       description: 'Global spirits leader managing P&L for luxury portfolio including Johnnie Walker, Don Julio, Tanqueray, and Bulleit. Selected for Diageo\'s inaugural Futures Leaders Program and deployed to South Africa to lead strategic sales and marketing initiatives. Drove award-winning campaigns and launched groundbreaking mobile application that won Cannes Golden Lion.',
       highlights: [
         'Managed P&L for luxury spirits portfolio, delivering +7% NSV growth and +2% category share gain in Vodka category',
