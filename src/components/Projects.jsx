@@ -84,7 +84,92 @@ export default function Projects() {
 
         {/* Experience Cards */}
         <div className="space-y-20">
+          {/* Navigate Employment Card */}
+          {experiences[0] && (
+            <>
+              {/* First Experience (Navigate) */}
+              <div key={0} className="pb-16 border-b border-gray-800">
+                {/* Company & Role */}
+                <div className="mb-6">
+                  <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
+                    01
+                  </p>
+                  <h3 className="text-4xl md:text-5xl font-serif text-white mb-3">
+                    {experiences[0].name}
+                  </h3>
+                  <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-2">
+                    <p className="text-lg" style={{ color: '#c8b99a' }}>
+                      {experiences[0].role}
+                    </p>
+                    {experiences[0].url && (
+                      <div className="flex items-center gap-2">
+                        <span className="text-gray-600 hidden md:inline">|</span>
+                        <a
+                          href={experiences[0].url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
+                        >
+                          {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                  {experiences[0].dates && (
+                    <p className="text-sm text-gray-500 mb-4">
+                      {experiences[0].dates}
+                    </p>
+                  )}
+                </div>
+
+                {/* Description */}
+                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                  {experiences[0].description}
+                </p>
+
+                {/* Highlights */}
+                <ul className="space-y-3">
+                  {experiences[0].highlights.map((highlight, i) => (
+                    <li key={i} className="text-base text-gray-400 flex items-start gap-3">
+                      <span className="text-gold-400 font-bold mt-1 flex-shrink-0">→</span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Navigate Platform Card */}
+              <div className="pb-16 border-b border-gray-800">
+                <div className="max-w-2xl bg-gray-900/50 border border-purple-500/30 rounded-2xl p-8 space-y-6">
+                  {/* Heading */}
+                  <h3 className="text-4xl font-serif" style={{ color: '#a78bfa' }}>
+                    Discover Navigate
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-lg text-gray-300 leading-relaxed">
+                    Navigate is a property intelligence platform designed to create opportunity at the intersection of people, property, and possibility. The platform combines owner, property, and marketing intelligence to help you find qualified prospects and reach them at scale.
+                  </p>
+
+                  {/* CTA */}
+                  <div className="pt-4">
+                    <a
+                      href="https://navigate.mysites.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-500 transition-colors"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+          {/* Remaining Experience Cards */}
           {experiences.map((exp, index) => (
+            index === 0 ? null : (
             <div key={index} className="pb-16 border-b border-gray-800 last:border-b-0">
               {/* Company & Role */}
               <div className="mb-6">
@@ -134,6 +219,7 @@ export default function Projects() {
                 ))}
               </ul>
             </div>
+            )
           ))}
         </div>
       </div>

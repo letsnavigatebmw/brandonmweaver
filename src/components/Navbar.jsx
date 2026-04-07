@@ -9,7 +9,6 @@ export default function Navbar() {
     { name: 'Experience', href: '#projects' },
     { name: 'Operating Philosophy', href: '#differentiator' },
     { name: 'Thought Leadership', href: '#thought-leadership' },
-    { name: 'Discover Navigate', href: '#navigate' },
     { name: 'Education', href: '#education' },
   ]
 
