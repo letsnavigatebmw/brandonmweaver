@@ -158,7 +158,8 @@ export default function Projects() {
                       href="https://navigate.mysites.io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-8 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-500 transition-colors"
+                      className="text-lg font-bold transition-colors"
+                      style={{ color: '#a78bfa' }}
                     >
                       Learn More
                     </a>
