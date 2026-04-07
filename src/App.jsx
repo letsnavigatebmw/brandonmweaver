@@ -17,10 +17,10 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Navigate />
       <Differentiator />
       <RightNow />
       <ThoughtLeadership />
-      <Navigate />
       <Education />
       <ContactIntake />
       <Footer />
