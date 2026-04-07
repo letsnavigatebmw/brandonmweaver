@@ -6,6 +6,7 @@ import Education from './components/Education'
 import Differentiator from './components/Differentiator'
 import RightNow from './components/RightNow'
 import ThoughtLeadership from './components/ThoughtLeadership'
+import Navigate from './components/Navigate'
 import ContactIntake from './components/ContactIntake'
 import Footer from './components/Footer'
 
@@ -19,6 +20,7 @@ function App() {
       <Differentiator />
       <RightNow />
       <ThoughtLeadership />
+      <Navigate />
       <Education />
       <ContactIntake />
       <Footer />
