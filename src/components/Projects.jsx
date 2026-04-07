@@ -153,13 +153,13 @@ export default function Projects() {
                   </p>
 
                   {/* CTA */}
-                  <div className="pt-2">
+                  <div className="pt-4">
                     <a
                       href="https://navigate.mysites.io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lg font-bold transition-colors"
-                      style={{ color: '#a78bfa' }}
+                      className="inline-block px-8 py-3 font-bold rounded-lg transition-colors"
+                      style={{ backgroundColor: '#a78bfa', color: '#000000' }}
                     >
                       Learn More
                     </a>
