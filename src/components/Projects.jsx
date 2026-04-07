@@ -128,7 +128,7 @@ export default function Projects() {
                 </p>
 
                 {/* Highlights */}
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-12">
                   {experiences[0].highlights.map((highlight, i) => (
                     <li key={i} className="text-base text-gray-400 flex items-start gap-3">
                       <span className="text-gold-400 font-bold mt-1 flex-shrink-0">→</span>
@@ -136,11 +136,9 @@ export default function Projects() {
                     </li>
                   ))}
                 </ul>
-              </div>
 
-              {/* Navigate Platform Card */}
-              <div className="pb-16 border-b border-gray-800">
-                <div className="bg-gray-900/50 border border-purple-500/30 rounded-2xl p-12 space-y-6">
+                {/* Navigate Platform Card */}
+                <div className="bg-gray-900/50 border border-purple-500/30 rounded-2xl p-12 space-y-6 mb-12">
                   {/* Heading */}
                   <h2 className="text-3xl md:text-4xl font-bold">
                     <span className="text-white">Discover </span>
