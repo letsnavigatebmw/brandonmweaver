@@ -140,11 +140,12 @@ export default function Projects() {
 
               {/* Navigate Platform Card */}
               <div className="pb-16 border-b border-gray-800">
-                <div className="max-w-2xl bg-gray-900/50 border border-purple-500/30 rounded-2xl p-8 space-y-6">
+                <div className="max-w-4xl space-y-6">
                   {/* Heading */}
-                  <h3 className="text-4xl font-serif" style={{ color: '#a78bfa' }}>
-                    Discover Navigate
-                  </h3>
+                  <h2 className="text-5xl md:text-6xl font-bold">
+                    <span className="text-white">Discover </span>
+                    <span style={{ color: '#a78bfa' }}>Navigate</span>
+                  </h2>
 
                   {/* Description */}
                   <p className="text-lg text-gray-300 leading-relaxed">
@@ -152,7 +153,7 @@ export default function Projects() {
                   </p>
 
                   {/* CTA */}
-                  <div className="pt-4">
+                  <div className="pt-2">
                     <a
                       href="https://navigate.mysites.io"
                       target="_blank"
