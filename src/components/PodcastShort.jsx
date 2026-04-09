@@ -1,8 +1,15 @@
 export default function PodcastShort() {
+  const youtubeUrl = 'https://youtube.com/shorts/MvYFAvVDfZ8'
+
   return (
     <section className="bg-black py-20 md:py-28 px-6">
       <div className="max-w-2xl mx-auto">
-        <div className="border-2 border-gold-400 rounded-lg p-8 md:p-12 bg-gray-950">
+        <a
+          href={youtubeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block border-2 border-gold-400 rounded-lg p-8 md:p-12 bg-gray-950 hover:bg-gray-900 transition-colors"
+        >
           <p className="text-gold-400 font-bold uppercase tracking-widest text-sm mb-6">
             Podcast Short
           </p>
@@ -12,7 +19,10 @@ export default function PodcastShort() {
           <p className="text-gray-400 text-base">
             Riverside
           </p>
-        </div>
+          <p className="text-gold-400 font-bold uppercase tracking-widest text-xs mt-6">
+            Watch on YouTube →
+          </p>
+        </a>
       </div>
     </section>
   )
