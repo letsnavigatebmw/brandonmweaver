@@ -1,3 +1,5 @@
+import Stats from './Stats'
+
 export default function About() {
   const services = [
     {
@@ -35,6 +37,9 @@ export default function About() {
         </p>
         </div>
       </div>
+
+      {/* Stats Section */}
+      <Stats />
 
       {/* What I Do Section */}
       <div className="pt-24 pb-12 px-6 bg-black">
