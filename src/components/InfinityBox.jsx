@@ -10,7 +10,7 @@ export default function InfinityBox() {
           
           {/* Text */}
           <p className="text-xl md:text-3xl font-serif leading-relaxed" style={{ color: '#c8b99a' }}>
-            Experience forged across industry, a perspective built for what's next…
+            Experience Forged Across Industry, A Perspective Built For What's Next…
           </p>
         </div>
       </div>
