@@ -2,7 +2,7 @@ export default function Projects() {
   const experiences = [
     {
       name: 'Navigate',
-      url: 'https://navigatenow.com',
+      url: 'https://letsnavigatenow.com/',
       dates: 'January 2024 – Present',
       role: 'Co-Founder & Chief Executive Officer',
       description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Navigate has partnered with recognized brokerages like Compass, The Agency, Engel & Volkers and Keller Williams.',
