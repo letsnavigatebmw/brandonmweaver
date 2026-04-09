@@ -1,6 +1,6 @@
 export default function InfinityBox() {
   return (
-    <section className="bg-black py-20 md:py-24 px-6">
+    <section className="bg-black pt-0 pb-20 md:pb-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="border-2 border-gold-400 rounded-lg p-12 md:p-16 bg-gray-950 text-center">
           {/* Infinity Symbol */}
