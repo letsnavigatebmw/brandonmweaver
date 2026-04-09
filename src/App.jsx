@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Tagline from './components/Tagline'
 import Projects from './components/Projects'
 import Education from './components/Education'
 import Differentiator from './components/Differentiator'
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Tagline />
       <Projects />
       <Differentiator />
       <RightNow />
