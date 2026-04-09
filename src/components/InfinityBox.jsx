@@ -1,8 +1,8 @@
 export default function InfinityBox() {
   return (
-    <section className="bg-black pt-0 pb-20 md:pb-24 px-6">
+    <section className="bg-black -mt-6 md:-mt-8 pt-0 pb-20 md:pb-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="border-2 border-gold-400 rounded-lg p-12 md:p-16 bg-gray-950 text-center">
+        <div className="border-4 border-gold-400 rounded-lg p-16 md:p-20 bg-gray-950 text-center">
           {/* Infinity Symbol */}
           <p className="text-6xl md:text-7xl font-serif mb-8" style={{ color: '#c8b99a' }}>
             ∞

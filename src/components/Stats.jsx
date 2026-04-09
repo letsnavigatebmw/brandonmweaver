@@ -22,13 +22,13 @@ export default function Stats() {
     <section className="bg-black py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* 2x2 Grid */}
-        <div className="grid md:grid-cols-2 gap-0 border border-gray-700">
+        <div className="grid md:grid-cols-2 gap-0 border-4 border-gold-400">
           {stats.map((stat, index) => (
             <div
               key={index}
               className={`p-12 md:p-16 flex flex-col justify-start items-start min-h-[250px] md:min-h-[280px] ${
-                index < 2 ? 'border-b border-gray-700' : ''
-              } ${index % 2 === 0 ? 'border-r border-gray-700' : ''}`}
+                index < 2 ? 'border-b-2 border-gold-400' : ''
+              } ${index % 2 === 0 ? 'border-r-2 border-gold-400' : ''}`}
               style={{
                 backgroundColor: index === 3 ? 'rgba(50, 50, 35, 0.2)' : 'transparent',
               }}
