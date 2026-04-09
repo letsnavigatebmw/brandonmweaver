@@ -1,4 +1,5 @@
 import Stats from './Stats'
+import InfinityBox from './InfinityBox'
 
 export default function About() {
   const services = [
@@ -41,17 +42,8 @@ export default function About() {
       {/* Stats Section */}
       <Stats />
 
-      {/* Tagline Section */}
-      <div className="bg-black py-20 md:py-28 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <p
-            className="text-lg md:text-2xl lg:text-3xl font-serif leading-relaxed italic"
-            style={{ color: '#c8b99a' }}
-          >
-            Experience forged across industry, a perspective built for what's next…
-          </p>
-        </div>
-      </div>
+      {/* Infinity Box */}
+      <InfinityBox />
 
       {/* What I Do Section */}
       <div className="pt-24 pb-12 px-6 bg-black">
