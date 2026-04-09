@@ -153,7 +153,7 @@ export default function Projects() {
                   {/* CTA */}
                   <div className="pt-4">
                     <a
-                      href="https://navigate.mysites.io"
+                      href="https://www.letsnavigatenow.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block px-8 py-3 font-bold rounded-lg transition-colors"
