@@ -26,7 +26,7 @@ export default function PodcastShort() {
             <span style={{ color: '#c8b99a' }}>AI, Data, and the Human Touch with Brandon Weaver</span>
           </h2>
           <p className="text-gray-400 text-base">
-            Riverside
+            YouTube
           </p>
         </div>
 
