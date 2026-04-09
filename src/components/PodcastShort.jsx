@@ -14,7 +14,7 @@ export default function PodcastShort() {
             Podcast
           </p>
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-            <span style={{ color: '#c8b99a' }}>Opportunity Moves at The Speed of Connectivity</span>
+            <span style={{ color: '#c8b99a' }}>Moving Prospects from "Indifference to Indebted"</span>
           </h3>
           <p className="text-gray-400 text-base">
             Riverside
