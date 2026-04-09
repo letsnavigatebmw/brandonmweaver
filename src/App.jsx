@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Tagline from './components/Tagline'
+import PodcastShort from './components/PodcastShort'
 import Projects from './components/Projects'
 import Education from './components/Education'
 import Differentiator from './components/Differentiator'
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <Tagline />
+      <PodcastShort />
       <Projects />
       <Differentiator />
       <RightNow />
