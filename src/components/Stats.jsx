@@ -2,7 +2,7 @@ export default function Stats() {
   const stats = [
     {
       number: '10+',
-      description: 'Years as Sales & Marketing Executive',
+      description: 'Brands Launched & Scaled',
     },
     {
       number: '$10M+',
