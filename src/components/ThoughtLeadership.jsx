@@ -30,11 +30,6 @@ export default function ThoughtLeadership() {
       type: 'Guide',
       link: 'https://drive.google.com/file/d/16txU_pi9ye4EMDwKhkJTrTksAeaBSkGZ/view?usp=drive_link',
     },
-    {
-      title: 'Revenue Management for Hotel Operators',
-      type: 'Guide',
-      link: 'https://drive.google.com/file/d/1_RULaBkpiAy9TaxeFc_kM8z1ULpxUcyR/view?usp=drive_link',
-    },
   ]
 
   const lessonsInLuxury = [
@@ -47,6 +42,11 @@ export default function ThoughtLeadership() {
       title: "Don't Chase Them, Make Them Earn It!",
       type: 'E-Book',
       link: 'https://drive.google.com/file/d/1Dmr3uYRw38DMwO8oWA7j3FhN1AUU_AWn/view?usp=drive_link',
+    },
+    {
+      title: 'Revenue Management for Hotel Operators',
+      type: 'Guide',
+      link: 'https://drive.google.com/file/d/1_RULaBkpiAy9TaxeFc_kM8z1ULpxUcyR/view?usp=drive_link',
     },
   ]
 
