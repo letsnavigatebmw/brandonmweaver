@@ -74,6 +74,9 @@ export default function Projects() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Selected <span className="italic">Experience</span>
           </h2>
+          <p className="text-2xl md:text-3xl font-serif mb-8" style={{ color: '#c8b99a', fontStyle: 'italic' }}>
+            Experienced Operator, Connector & Growth Architect
+          </p>
           <p className="text-gray-400 text-lg">
             A career built on scaling operations, driving revenue growth, and building teams that deliver results.
           </p>
