@@ -13,12 +13,12 @@ export default function PodcastShort() {
     },
     {
       title: "Moving Prospects from Indifference to Indebted",
-      platform: "Riverside",
+      platform: "YouTube",
       url: 'https://youtube.com/shorts/DvXgIrExZkA',
     },
     {
       title: "The World Doesn't Reward Talent...",
-      platform: "Riverside",
+      platform: "YouTube",
       url: 'https://youtube.com/shorts/S7OGIjX4rLc',
     },
     {
