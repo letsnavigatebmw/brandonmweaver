@@ -135,8 +135,13 @@ export default function Education() {
               </div>
             </div>
 
-            {/* Right Column - Image */}
-            <div className="flex justify-center md:justify-end">
+            {/* Right Column - Text Box + Image */}
+            <div className="flex flex-col gap-6 justify-center md:justify-end">
+              <div className="w-full border-2 border-gray-700 rounded-lg p-8 bg-gray-950/50">
+                <p className="text-2xl md:text-3xl font-serif text-white leading-tight">
+                  Experienced Operator, Connector & Growth Architect
+                </p>
+              </div>
               <img 
                 src="/brandon-headshot.jpg" 
                 alt="Brandon Weaver" 
