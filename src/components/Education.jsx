@@ -114,35 +114,21 @@ export default function Education() {
       {/* Lasting Message */}
       <div className="border-t border-gray-800 pt-12 pb-12 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Text Column */}
-            <div>
-              <div className="mb-12">
-                <h3 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-                  A Leader with A Global <span className="italic">Perspective</span>
-                </h3>
-                <p className="text-gray-600 text-sm uppercase tracking-widest font-medium">
-                  Connector & Builder | Modern Leader | Problem Solver
-                </p>
-              </div>
-              <div className="space-y-6">
-                <p className="text-base text-gray-400 leading-relaxed">
-                  My professional and personal story has been largely shaped by the power of connectivity. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our collective potential. Modern leadership is about instilling in others the belief that they have the ability to transform their reality.
-                </p>
-                <p className="text-base text-gray-400 leading-relaxed">
-                  As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a rare authenticity that stands out in a world of AI and artifice. For me, it's not just about building businesses. It's about building bridges, one real conversation at a time.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column - Text Box */}
-            <div className="flex justify-center md:justify-end">
-              <div className="w-full max-w-sm border-2 border-gray-700 rounded-lg p-8 bg-gray-950/50">
-                <p className="text-2xl md:text-3xl font-serif text-white leading-tight">
-                  Experienced Operator, Connector & Growth Architect
-                </p>
-              </div>
-            </div>
+          <div className="mb-12">
+            <h3 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
+              A Leader with A Global <span className="italic">Perspective</span>
+            </h3>
+            <p className="text-gray-600 text-sm uppercase tracking-widest font-medium">
+              Connector & Builder | Modern Leader | Problem Solver
+            </p>
+          </div>
+          <div className="space-y-6">
+            <p className="text-base text-gray-400 leading-relaxed">
+              My professional and personal story has been largely shaped by the power of connectivity. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our collective potential. Modern leadership is about instilling in others the belief that they have the ability to transform their reality.
+            </p>
+            <p className="text-base text-gray-400 leading-relaxed">
+              As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a rare authenticity that stands out in a world of AI and artifice. For me, it's not just about building businesses. It's about building bridges, one real conversation at a time.
+            </p>
           </div>
         </div>
       </div>
