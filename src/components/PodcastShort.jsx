@@ -1,36 +1,63 @@
 export default function PodcastShort() {
+  const mainPodcast = {
+    title: "AI, Data, and the Human Touch with Brandon Weaver",
+    platform: "YouTube",
+    url: 'https://www.youtube.com/@BrandonMWeaver/videos',
+  }
+
   const shorts = [
     {
       title: "It's Not Happening to You, It's Happening for You",
+      platform: "YouTube",
       url: 'https://youtube.com/shorts/MvYFAvVDfZ8',
     },
     {
       title: "Moving Prospects from Indifference to Indebted",
+      platform: "Riverside",
       url: 'https://youtube.com/shorts/DvXgIrExZkA',
     },
     {
       title: "The World Doesn't Reward Talent...",
+      platform: "Riverside",
       url: 'https://youtube.com/shorts/S7OGIjX4rLc',
     },
   ]
 
   return (
-    <section className="bg-black py-12 md:py-16 px-6">
-      <div className="max-w-4xl mx-auto">
-        {/* Podcast Header Section */}
-        <div className="mb-16">
-          <p className="text-gold-400 font-bold uppercase tracking-widest text-sm mb-4">
-            Podcast
+    <section id="podcast" className="py-12 px-6 bg-black">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-12">
+          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
+            Featured Content
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-            <span style={{ color: '#c8b99a' }}>AI, Data, and the Human Touch with Brandon Weaver</span>
+          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
+            <span className="italic">Podcast</span>
           </h2>
-          <p className="text-gray-400 text-base">
-            YouTube
-          </p>
         </div>
 
-        {/* Grid of Shorts */}
+        {/* Divider */}
+        <div className="w-full h-px bg-gray-800 mb-12" />
+
+        {/* Main Podcast Card */}
+        <a
+          href={mainPodcast.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block mb-12 border-2 border-gold-400 rounded-2xl p-8 md:p-12 bg-gray-950/50 hover:bg-gray-900 transition-all hover:border-gold-300"
+        >
+          <p className="text-gold-400 font-bold uppercase tracking-widest text-sm mb-6">
+            Podcast
+          </p>
+          <h3 className="text-3xl md:text-4xl font-serif text-white mb-6" style={{ color: '#c8b99a' }}>
+            {mainPodcast.title}
+          </h3>
+          <p className="text-gray-400">
+            {mainPodcast.platform}
+          </p>
+        </a>
+
+        {/* Podcast Shorts Grid */}
         <div className="grid md:grid-cols-3 gap-6">
           {shorts.map((short, index) => (
             <a
@@ -38,13 +65,16 @@ export default function PodcastShort() {
               href={short.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block border-2 border-gold-400 rounded-lg p-6 md:p-8 bg-gray-950 hover:bg-gray-900 transition-colors"
+              className="block border border-gray-700 rounded-xl p-6 bg-gray-950/30 hover:bg-gray-900 hover:border-gray-600 transition-all"
             >
-              <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                {short.title}
+              <p className="text-gold-400 font-bold uppercase tracking-widest text-xs mb-4">
+                Podcast
               </p>
-              <p className="text-gold-400 font-bold uppercase tracking-widest text-xs">
-                Watch →
+              <h4 className="text-lg font-serif text-white mb-4">
+                {short.title}
+              </h4>
+              <p className="text-gray-500 text-sm">
+                {short.platform}
               </p>
             </a>
           ))}
