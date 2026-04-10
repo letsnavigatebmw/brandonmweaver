@@ -1,8 +1,8 @@
 export default function Stats() {
   const stats = [
     {
-      number: '10+',
-      description: 'Brands Launched & Scaled',
+      number: '8+',
+      description: 'B2C & B2B Brands Launched & Scaled',
     },
     {
       number: '$10M+',
@@ -10,7 +10,7 @@ export default function Stats() {
     },
     {
       number: '20+',
-      description: 'Years Across CPH, Hospitality, Real Estate & Finance',
+      description: 'Years Working Across FMCG, Hospitality, Real Estate, Finance and Technology',
     },
     {
       number: '$750M+',
@@ -26,7 +26,7 @@ export default function Stats() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className={`p-12 md:p-16 flex flex-col justify-start items-start min-h-[250px] md:min-h-[280px] ${
+              className={`p-8 md:p-10 flex flex-col justify-start items-start min-h-[180px] md:min-h-[200px] ${
                 index < 2 ? 'border-b-2 border-gold-400' : ''
               } ${index % 2 === 0 ? 'border-r-2 border-gold-400' : ''}`}
               style={{
