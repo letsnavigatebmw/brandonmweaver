@@ -26,7 +26,7 @@ export default function About() {
       {/* Full-width Bio Section */}
       <div className="border-b border-gray-800 py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
+          <h2 className="text-6xl md:text-7xl font-serif mb-12" style={{ color: '#c8b99a' }}>Many Rooms, One <span className="italic">Frequency</span></h2>
 
         <p className="text-gray-400 text-lg leading-relaxed mb-8">
 Brandon Weaver grew up in Los Angeles, educated at one of the city's most selective private schools, surrounded by the children of people who had already made it. The expectation in his house was clear: medicine or education. Safe, respected, durable.
