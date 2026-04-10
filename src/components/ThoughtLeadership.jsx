@@ -44,6 +44,11 @@ export default function ThoughtLeadership() {
       link: 'https://drive.google.com/file/d/1Dmr3uYRw38DMwO8oWA7j3FhN1AUU_AWn/view?usp=drive_link',
     },
     {
+      title: 'Brand-to-Demand: How Luxury Brand Thinking Makes Performance Marketing Better',
+      type: 'Guide',
+      link: 'https://drive.google.com/file/d/1pLur9KDw4xYY239aYOrxdXjsAd6iYjma/view?usp=drive_link',
+    },
+    {
       title: 'Revenue Management for Hotel Operators',
       type: 'Guide',
       link: 'https://drive.google.com/file/d/1_RULaBkpiAy9TaxeFc_kM8z1ULpxUcyR/view?usp=drive_link',
@@ -51,11 +56,6 @@ export default function ThoughtLeadership() {
   ]
 
   const marketingStrategy = [
-    {
-      title: 'Brand-to-Demand: How Luxury Brand Thinking Makes Performance Marketing Better',
-      type: 'Guide',
-      link: 'https://drive.google.com/file/d/1pLur9KDw4xYY239aYOrxdXjsAd6iYjma/view?usp=drive_link',
-    },
     {
       title: 'The Death of the Funnel: Why Modern B2C Marketing Needs a New Model',
       type: 'Guide',
