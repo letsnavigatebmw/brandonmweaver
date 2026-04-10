@@ -74,7 +74,7 @@ export default function Projects() {
           <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
             Selected <span className="italic">Experience</span>
           </h2>
-          <p className="text-2xl md:text-3xl font-serif mb-8" style={{ color: '#c8b99a', fontStyle: 'italic' }}>
+          <p style={{ color: '#c8b99a', fontStyle: 'italic', fontSize: '1.5rem' }} className="md:text-3xl font-serif mb-8">
             Experienced Operator, Connector & Growth Architect
           </p>
           <p className="text-gray-400 text-lg">
