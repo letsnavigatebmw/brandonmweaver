@@ -73,6 +73,19 @@ export default function ThoughtLeadership() {
     },
   ]
 
+  const lessonsInLeadership = [
+    {
+      title: 'The Noise is Real',
+      type: 'E-Book',
+      link: 'https://drive.google.com/file/d/1JCuKrMAria-dvPeLp_Urc47NuAj8MK8Q/view?usp=drive_link',
+    },
+    {
+      title: 'Cross-Functional Leadership: Why the Best Operators Are Translators',
+      type: 'E-Book',
+      link: 'https://drive.google.com/file/d/1PC-FKhF8O684POd64LPEMKVkMUjP-H1B/view?usp=drive_link',
+    },
+  ]
+
   const aiStrategy = [
     {
       title: 'Why Most Companies Are Using AI Wrong',
@@ -171,6 +184,14 @@ export default function ThoughtLeadership() {
             Marketing Strategy
           </h3>
           <ContentGrid items={marketingStrategy} />
+        </div>
+
+        {/* Lessons in Leadership */}
+        <div className="mb-20">
+          <h3 className="text-2xl md:text-3xl font-serif text-white mb-8" style={{ color: '#c8b99a' }}>
+            Lessons in <span className="italic">Leadership</span>
+          </h3>
+          <ContentGrid items={lessonsInLeadership} />
         </div>
 
         {/* AI Strategy */}
