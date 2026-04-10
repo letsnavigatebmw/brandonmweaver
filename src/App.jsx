@@ -16,11 +16,11 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <PodcastShort />
       <Projects />
       <Differentiator />
       <RightNow />
       <ThoughtLeadership />
+      <PodcastShort />
       <Education />
       <ContactIntake />
       <Footer />
