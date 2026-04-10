@@ -21,7 +21,7 @@ export default function Education() {
   ]
 
   return (
-    <section id="education" className="py-24 px-6 bg-black">
+    <section id="education" className="py-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-20">
@@ -112,9 +112,9 @@ export default function Education() {
       </div>
 
       {/* Lasting Message */}
-      <div className="border-t border-gray-800 pt-24 pb-12 px-6">
+      <div className="border-t border-gray-800 pt-12 pb-12 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20">
+          <div className="mb-12">
             <h3 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
               A Leader with A Global <span className="italic">Perspective</span>
             </h3>

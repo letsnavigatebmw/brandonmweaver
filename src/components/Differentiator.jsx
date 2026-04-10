@@ -18,7 +18,7 @@ export default function Differentiator() {
   ]
 
   return (
-    <section id="differentiator" className="py-24 px-6 bg-black">
+    <section id="differentiator" className="py-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-20">

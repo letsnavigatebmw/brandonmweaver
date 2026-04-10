@@ -64,10 +64,10 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="pt-12 pb-24 px-6 bg-black">
+    <section id="projects" className="pt-12 pb-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-20">
+        <div className="mb-12">
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Professional Journey
           </p>

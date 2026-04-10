@@ -15,7 +15,7 @@ export default function RightNow() {
   ]
 
   return (
-    <section id="right-now" className="py-24 px-6 bg-black">
+    <section id="right-now" className="py-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-20">

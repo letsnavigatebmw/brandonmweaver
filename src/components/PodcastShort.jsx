@@ -15,7 +15,7 @@ export default function PodcastShort() {
   ]
 
   return (
-    <section className="bg-black py-20 md:py-28 px-6">
+    <section className="bg-black py-12 md:py-16 px-6">
       <div className="max-w-4xl mx-auto">
         {/* Podcast Header Section */}
         <div className="mb-16">
