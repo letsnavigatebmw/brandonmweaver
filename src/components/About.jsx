@@ -28,44 +28,30 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-6xl md:text-7xl font-serif mb-12" style={{ color: '#c8b99a' }}>Many Rooms, One <span className="italic">Frequency</span></h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Text Column */}
-            <div>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
 Brandon Weaver grew up in Los Angeles, educated at one of the city's most selective private schools, surrounded by the children of people who had already made it. The expectation in his house was clear: medicine or education. Safe, respected, durable.
-              </p>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+        </p>
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
 He chose neither.
-              </p>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+        </p>
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
 Instead, he followed a thread. It took him from <span className="font-bold text-white">USC's Annenberg School</span> to <span className="font-bold text-white">Harvard's Kennedy School of Government</span> in Cambridge, to <span className="font-bold text-white">Northwestern's Kellogg School</span> of Management. Three institutions. Three distinct worldviews. One persistent question underneath all of them: how do you build something that actually matters?
-              </p>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+        </p>
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
 That question got sharper on the ground. Living and working across the UK, South Africa, New York, Boston, Miami, Dallas, and Los Angeles taught him something no classroom could: that commerce and community are not opposites. They're in constant negotiation. The best builders are fluent in both.
-              </p>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+        </p>
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
 From leading <span className="font-bold text-white">Diageo's</span> luxury portfolio vision across Africa to scaling and eventually selling a PE-backed hospitality platform, <span className="font-bold text-white">Brandon built a career at the intersection of connectivity, creativity, and opportunity. He didn't inherit a playbook. He wrote one.</span>
-              </p>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+        </p>
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
 That same instinct brought him to real estate technology. Navigate wasn't a pivot. It was the logical conclusion of two decades spent watching an industry resist modernisation until someone forces the issue.
-              </p>
-              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+        </p>
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
 But the thread running through all of it isn't the résumé. It's the relationships. Brandon moves through rooms differently, not as the loudest voice, but as the most connected one. <span className="font-bold text-white">He builds relationship capital the way others build financial capital: deliberately, generously, and with a long time horizon.</span> The "plug" who knows someone for everything, and shares that access freely.
-              </p>
-              <p className="text-gray-400 text-lg leading-relaxed">
+        </p>
+        <p className="text-gray-400 text-lg leading-relaxed">
 In a world increasingly mediated by algorithms, Brandon's conviction is simple. <span className="font-bold text-white">Success moves at the speed of connectivity.</span>
-              </p>
-            </div>
-
-            {/* Image Column */}
-            <div className="flex justify-center md:justify-end">
-              <img 
-                src="/brandon-headshot.jpg" 
-                alt="Brandon Weaver" 
-                className="rounded-lg w-full max-w-sm object-cover"
-              />
-            </div>
-          </div>
+        </p>
         </div>
       </div>
 
