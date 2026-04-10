@@ -82,6 +82,13 @@ export default function Projects() {
         {/* Divider */}
         <div className="w-full h-px bg-gray-800 mb-20" />
 
+        {/* Bio Section */}
+        <div className="mb-20 pb-20 border-b border-gray-800">
+          <p className="text-gray-400 text-lg leading-relaxed">
+            I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
+          </p>
+        </div>
+
         {/* Experience Cards */}
         <div className="space-y-20">
           {/* Navigate Employment Card */}

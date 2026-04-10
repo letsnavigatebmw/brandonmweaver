@@ -27,9 +27,7 @@ export default function About() {
       <div className="border-b border-gray-800 py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-gold-400 font-bold uppercase tracking-wide mb-6">Global Executive | Relationship Builder | P&L Leader</h3>
-        <p className="text-gray-400 text-lg leading-relaxed mb-8">
-          I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
-        </p>
+
         <p className="text-gray-400 text-lg leading-relaxed mb-8">
           Currently, I'm Co-Founder and CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="font-bold text-gold-400 hover:text-gold-300 transition-colors">Navigate</a>, a prospecting intelligence platform modernizing residential real estate. I've restructured ownership, stabilized operations, redesigned pricing, and renegotiated core partnerships to materially improve unit economics. Navigate serves residential real estate agents across the US partnering with recognized brokerages like Compass, The Agency and Douglas Elliman.
         </p>
