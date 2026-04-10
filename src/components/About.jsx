@@ -57,13 +57,13 @@ In a world increasingly mediated by algorithms, Brandon's conviction is simple. 
               </p>
             </div>
 
-            {/* Right Column - Photo Only */}
+            {/* Right Column - Text Box */}
             <div className="flex justify-center md:justify-end">
-              <img 
-                src="/brandon-headshot.jpg" 
-                alt="Brandon Weaver" 
-                className="rounded-lg w-full max-w-sm object-cover"
-              />
+              <div className="w-full max-w-sm border-2 border-gray-700 rounded-lg p-8 bg-gray-950/50">
+                <p className="text-2xl md:text-3xl font-serif text-white leading-tight">
+                  Experienced Operator, Connector & Growth Architect
+                </p>
+              </div>
             </div>
           </div>
         </div>
