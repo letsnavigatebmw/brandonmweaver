@@ -34,12 +34,12 @@ export default function Differentiator() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-16" />
+        <div className="w-full h-px bg-gray-600 mb-16" />
 
         {/* 3-Column Grid */}
         <div className="grid md:grid-cols-3 gap-12 mb-20">
           {principles.map((principle, index) => (
-            <div key={index} className="space-y-8 pb-12 md:border-r md:border-gray-800 md:last:border-r-0 md:pr-12">
+            <div key={index} className="space-y-8 pb-12 md:border-r md:border-gray-600 md:last:border-r-0 md:pr-12">
               {/* Number */}
               <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider">
                 {principle.number}
@@ -61,7 +61,7 @@ export default function Differentiator() {
         </div>
 
         {/* Bottom Divider */}
-        <div className="w-full h-px bg-gray-800 mb-16" />
+        <div className="w-full h-px bg-gray-600 mb-16" />
 
         {/* Quote & CTA */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-8">
