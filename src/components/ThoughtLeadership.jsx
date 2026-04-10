@@ -48,11 +48,6 @@ export default function ThoughtLeadership() {
       type: 'Guide',
       link: 'https://drive.google.com/file/d/1pLur9KDw4xYY239aYOrxdXjsAd6iYjma/view?usp=drive_link',
     },
-    {
-      title: 'What Spirits & Hospitality Taught Me About Emotional Brand Building at Scale',
-      type: 'Guide',
-      link: 'https://drive.google.com/file/d/1YfnbifrFnvxLNGymwz_0AYF-VUF65cME/view?usp=drive_link',
-    },
   ]
 
   const marketingStrategy = [
@@ -65,6 +60,11 @@ export default function ThoughtLeadership() {
       title: 'The Death of the Funnel: Why Modern B2C Marketing Needs a New Model',
       type: 'Guide',
       link: 'https://drive.google.com/file/d/17OE9Ocp4-1WkogBV9cgbODbDJh3cg75E/view?usp=drive_link',
+    },
+    {
+      title: 'What Spirits & Hospitality Taught Me About Emotional Brand Building at Scale',
+      type: 'Guide',
+      link: 'https://drive.google.com/file/d/1YfnbifrFnvxLNGymwz_0AYF-VUF65cME/view?usp=drive_link',
     },
     {
       title: 'Multi-Channel Campaign Architecture — Lessons from Diageo to Startups',
