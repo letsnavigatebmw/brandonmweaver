@@ -25,6 +25,11 @@ export default function ThoughtLeadership() {
       type: 'Guide',
       link: 'https://drive.google.com/file/d/16txU_pi9ye4EMDwKhkJTrTksAeaBSkGZ/view?usp=drive_link',
     },
+    {
+      title: 'Revenue Management for Hotel Operators',
+      type: 'Guide',
+      link: 'https://drive.google.com/file/d/1_RULaBkpiAy9TaxeFc_kM8z1ULpxUcyR/view?usp=drive_link',
+    },
   ]
 
   const lessonsInLuxury = [
@@ -47,11 +52,6 @@ export default function ThoughtLeadership() {
       title: 'What Spirits & Hospitality Taught Me About Emotional Brand Building at Scale',
       type: 'Guide',
       link: 'https://drive.google.com/file/d/1YfnbifrFnvxLNGymwz_0AYF-VUF65cME/view?usp=drive_link',
-    },
-    {
-      title: 'Revenue Management for Hotel Operators',
-      type: 'Guide',
-      link: 'https://drive.google.com/file/d/1_RULaBkpiAy9TaxeFc_kM8z1ULpxUcyR/view?usp=drive_link',
     },
   ]
 
