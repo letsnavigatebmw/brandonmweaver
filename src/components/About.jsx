@@ -58,9 +58,6 @@ In a world increasingly mediated by algorithms, Brandon's conviction is simple. 
       {/* Stats Section */}
       <Stats />
 
-      {/* Infinity Box */}
-      <InfinityBox />
-
       {/* What I Do Section */}
       <div className="pt-24 pb-12 px-6 bg-black">
         <div className="max-w-7xl mx-auto">
@@ -99,6 +96,9 @@ In a world increasingly mediated by algorithms, Brandon's conviction is simple. 
           </p>
         </div>
       </div>
+
+      {/* Infinity Box */}
+      <InfinityBox />
     </section>
   )
 }
