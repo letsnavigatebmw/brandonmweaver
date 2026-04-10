@@ -37,12 +37,12 @@ export default function Education() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-20" />
+        <div className="w-full h-px bg-gray-800 mb-12" />
 
         {/* Education Cards */}
-        <div className="space-y-16 mb-20">
+        <div className="space-y-8 mb-12">
           {education.map((edu, index) => (
-            <div key={index} className="pb-16 border-b border-gray-800 last:border-b-0">
+            <div key={index} className="pb-8 border-b border-gray-800 last:border-b-0">
               {/* Number */}
               <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
                 {String(index + 1).padStart(2, '0')}
