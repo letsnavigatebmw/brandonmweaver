@@ -14,7 +14,7 @@ export default function PodcastShort() {
     {
       title: "Moving Prospects from Indifference to Indebted",
       platform: "YouTube",
-      url: 'https://youtube.com/shorts/DvXgIrExZkA',
+      url: 'https://youtube.com/shorts/AckWa5ML22w',
     },
     {
       title: "The World Doesn't Reward Talent...",
