@@ -11,11 +11,6 @@ export default function ThoughtLeadership() {
       link: 'https://drive.google.com/file/d/1UW0HlnfRpW3Lim32Cl1F4AhQv3QjHHcj/view?usp=drive_link',
     },
     {
-      title: 'The Gap Between Marketing and Revenue—And How to Fix It',
-      type: 'Article',
-      link: 'https://drive.google.com/file/d/1rZHQaXVEpHxITLhQoI2gcFLmu6g_vZ2W/view?usp=drive_link',
-    },
-    {
       title: 'State of Real Estate Prospecting',
       type: 'Guide',
       link: 'https://drive.google.com/file/d/1QsWEmWkKb2nhaPIdILVrxPwP-bQ_JBoQ/view?usp=drive_link',
@@ -61,6 +56,11 @@ export default function ThoughtLeadership() {
   ]
 
   const marketingStrategy = [
+    {
+      title: 'The Gap Between Marketing and Revenue—And How to Fix It',
+      type: 'Article',
+      link: 'https://drive.google.com/file/d/1rZHQaXVEpHxITLhQoI2gcFLmu6g_vZ2W/view?usp=drive_link',
+    },
     {
       title: 'The Death of the Funnel: Why Modern B2C Marketing Needs a New Model',
       type: 'Guide',
