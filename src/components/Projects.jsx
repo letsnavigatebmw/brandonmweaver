@@ -84,8 +84,29 @@ export default function Projects() {
 
         {/* Bio Section */}
         <div className="mb-20 pb-20 border-b border-gray-800">
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+Brandon Weaver grew up in Los Angeles, educated at one of the city's most selective private schools, surrounded by the children of people who had already made it. The expectation in his house was clear: medicine or education. Safe, respected, durable.
+          </p>
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+He chose neither.
+          </p>
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+Instead, he followed a thread. It took him from USC's Annenberg School to Harvard's Kennedy School of Government in Cambridge, to Northwestern's Kellogg School of Management. Three institutions. Three distinct worldviews. One persistent question underneath all of them: how do you build something that actually matters?
+          </p>
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+That question got sharper on the ground. Living and working across the UK, South Africa, New York, Boston, Miami, Dallas, and Los Angeles taught him something no classroom could: that commerce and community are not opposites. They're in constant negotiation. The best builders are fluent in both.
+          </p>
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+From leading Diageo's luxury portfolio vision across Africa to scaling and eventually selling a PE-backed hospitality platform, Brandon built a career at the intersection of connectivity, creativity, and opportunity. He didn't inherit a playbook. He wrote one.
+          </p>
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+That same instinct brought him to real estate technology. Navigate wasn't a pivot. It was the logical conclusion of two decades spent watching an industry resist modernisation until someone forces the issue.
+          </p>
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+But the thread running through all of it isn't the résumé. It's the relationships. Brandon moves through rooms differently, not as the loudest voice, but as the most connected one. He builds relationship capital the way others build financial capital: deliberately, generously, and with a long time horizon. The "plug" who knows someone for everything, and shares that access freely.
+          </p>
           <p className="text-gray-400 text-lg leading-relaxed">
-            I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
+In a world increasingly mediated by algorithms, Brandon's conviction is simple. Success moves at the speed of connectivity.
           </p>
         </div>
 
