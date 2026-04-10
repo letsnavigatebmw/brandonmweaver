@@ -96,12 +96,12 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
         </div>
 
         {/* Experience Cards */}
-        <div className="space-y-20">
+        <div className="space-y-12">
           {/* Navigate Employment Card */}
           {experiences[0] && (
             <>
               {/* First Experience (Navigate) */}
-              <div key={0} className="pb-16 border-b border-gray-800">
+              <div key={0} className="pb-12 border-b border-gray-800">
                 {/* Company & Role */}
                 <div className="mb-6">
                   <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
@@ -183,7 +183,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
           {/* Remaining Experience Cards */}
           {experiences.map((exp, index) => (
             index === 0 ? null : (
-            <div key={index} className="pb-16 border-b border-gray-800 last:border-b-0">
+            <div key={index} className="pb-12 border-b border-gray-800 last:border-b-0">
               {/* Company & Role */}
               <div className="mb-6">
                 <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
