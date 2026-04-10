@@ -21,6 +21,11 @@ export default function PodcastShort() {
       platform: "Riverside",
       url: 'https://youtube.com/shorts/S7OGIjX4rLc',
     },
+    {
+      title: "Opportunity Moves at The Speed of Connectivity",
+      platform: "YouTube",
+      url: 'https://youtube.com/shorts/DvXgIrExZkA?si=wRcLDQvk5_x9Da_a',
+    },
   ]
 
   return (
