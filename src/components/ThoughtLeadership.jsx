@@ -88,6 +88,11 @@ export default function ThoughtLeadership() {
 
   const aiStrategy = [
     {
+      title: 'SaaS Isn't Dead. It's Finding Its True North',
+      type: 'Article',
+      link: 'https://drive.google.com/file/d/1ijl3R1nlgxhujY-NCLEC-bPnG3CbSZ_q/view?usp=drive_link',
+    },
+    {
       title: 'Why Most Companies Are Using AI Wrong',
       type: 'E-Book',
       link: 'https://drive.google.com/file/d/1E1TzaIwGLd9k3RL5BEHLMKTcSN7ckc2_/view?usp=drive_link',
