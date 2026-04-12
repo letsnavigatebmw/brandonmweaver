@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="hero-content space-y-8">
         {/* Headline */}
         <div className="space-y-6">
-          <h1 style={{ fontStyle: 'italic' }} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+          <h1 style={{ fontStyle: 'italic', color: '#c8b99a' }} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
             Experienced Operator,<br />
             Connector & Growth<br />
             Architect
