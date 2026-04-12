@@ -18,6 +18,11 @@ export default function Hero() {
       <div className="hero-content space-y-8">
         {/* Headline */}
         <div className="space-y-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight italic">
+            Experienced Operator,<br />
+            Connector & Growth<br />
+            Architect
+          </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed">
