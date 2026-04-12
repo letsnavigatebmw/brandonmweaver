@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Phone, Linkedin, ArrowRight } from 'lucide-react'
+import { Mail, Phone, Linkedin, ArrowRight, FileText } from 'lucide-react'
 
 export default function ContactIntake() {
   const [formData, setFormData] = useState({
@@ -253,6 +253,23 @@ export default function ContactIntake() {
                   <h3 className="text-sm font-bold text-white mb-1">LinkedIn</h3>
                   <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors flex items-center gap-1">
                     Connect
+                    <ArrowRight size={12} />
+                  </p>
+                </div>
+              </a>
+
+              {/* Executive Bio */}
+              <a
+                href="https://drive.google.com/file/d/1XO_GTYhCTan_CFLp6-IsaTrERrkLmjWM/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex flex-col justify-between min-h-[120px]"
+              >
+                <FileText className="w-6 h-6 text-gold-400 mb-3 group-hover:scale-110 transition-transform" />
+                <div>
+                  <h3 className="text-sm font-bold text-white mb-1">Executive Bio</h3>
+                  <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors flex items-center gap-1">
+                    Download
                     <ArrowRight size={12} />
                   </p>
                 </div>
