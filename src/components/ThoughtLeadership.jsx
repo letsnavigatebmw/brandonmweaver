@@ -88,7 +88,7 @@ export default function ThoughtLeadership() {
 
   const aiStrategy = [
     {
-      title: 'SaaS Isn't Dead. It's Finding Its True North',
+      title: "SaaS Isn't Dead. It's Finding Its True North",
       type: 'Article',
       link: 'https://drive.google.com/file/d/1ijl3R1nlgxhujY-NCLEC-bPnG3CbSZ_q/view?usp=drive_link',
     },
