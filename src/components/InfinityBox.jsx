@@ -9,7 +9,7 @@ export default function InfinityBox() {
           </p>
           
           {/* Text */}
-          <p className="text-sm md:text-base font-serif leading-relaxed" style={{ color: '#c8b99a' }}>
+          <p className="text-lg md:text-2xl font-serif leading-relaxed" style={{ color: '#c8b99a' }}>
             Experience Forged Across Industry, A Perspective Built For What's Next…
           </p>
         </div>
