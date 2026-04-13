@@ -216,11 +216,11 @@ export default function ContactIntake() {
               {/* Email */}
               <a
                 href="mailto:brandon@navigatenow.com"
-                className="group p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex flex-col justify-between min-h-[120px]"
+                className="group p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex gap-3"
               >
-                <Mail className="w-6 h-6 text-gold-400 mb-3 group-hover:scale-110 transition-transform" />
+                <Mail className="w-6 h-6 text-gold-400 group-hover:scale-110 transition-transform flex-shrink-0" />
                 <div>
-                  <h3 className="text-sm font-bold text-white mb-1">Email</h3>
+                  <h3 className="text-sm font-bold text-white">Email</h3>
                   <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors">
                     brandon@navigatenow.com
                   </p>
@@ -230,11 +230,11 @@ export default function ContactIntake() {
               {/* Phone */}
               <a
                 href="tel:+13106916419"
-                className="group p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex flex-col justify-between min-h-[120px]"
+                className="group p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex gap-3"
               >
-                <Phone className="w-6 h-6 text-gold-400 mb-3 group-hover:scale-110 transition-transform" />
+                <Phone className="w-6 h-6 text-gold-400 group-hover:scale-110 transition-transform flex-shrink-0" />
                 <div>
-                  <h3 className="text-sm font-bold text-white mb-1">Phone</h3>
+                  <h3 className="text-sm font-bold text-white">Phone</h3>
                   <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors">
                     (310) 691-6419
                   </p>
