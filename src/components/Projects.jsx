@@ -107,9 +107,9 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
           {experiences[0] && (
             <>
               {/* First Experience (Navigate) */}
-              <div key={0} className="pb-12 border-b border-gray-800">
+              <div key={0} className="pb-8 border-b border-gray-800">
                 {/* Company & Role */}
-                <div className="mb-6">
+                <div className="mb-4">
                   <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
                     01
                   </p>
@@ -178,12 +178,12 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                 </div>
 
                 {/* Description */}
-                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-300 mb-6 leading-relaxed">
                   {experiences[0].description}
                 </p>
 
                 {/* Highlights */}
-                <ul className="space-y-3 mb-12">
+                <ul className="space-y-3 mb-8">
                   {experiences[0].highlights.map((highlight, i) => (
                     <li key={i} className="text-base text-gray-400 flex items-start gap-3">
                       <span className="text-gold-400 font-bold mt-1 flex-shrink-0">→</span>
@@ -193,7 +193,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                 </ul>
 
                 {/* Navigate Platform Card */}
-                <div className="bg-gray-900/50 border border-purple-500/30 rounded-2xl p-12 space-y-6 mb-12">
+                <div className="bg-gray-900/50 border border-purple-500/30 rounded-2xl p-8 space-y-4 mb-8">
                   {/* Heading */}
                   <h2 className="text-3xl md:text-4xl font-bold">
                     <span className="text-white">Discover </span>
@@ -225,9 +225,9 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
           {/* Remaining Experience Cards */}
           {experiences.map((exp, index) => (
             index === 0 ? null : (
-            <div key={index} className="pb-12 border-b border-gray-800 last:border-b-0">
+            <div key={index} className="pb-8 border-b border-gray-800 last:border-b-0">
               {/* Company & Role */}
-              <div className="mb-6">
+              <div className="mb-4">
                 <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
                   {String(index + 1).padStart(2, '0')}
                 </p>
@@ -270,7 +270,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
               </div>
 
               {/* Description */}
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
                 {exp.description}
               </p>
 
