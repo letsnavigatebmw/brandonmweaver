@@ -76,11 +76,6 @@ export default function Education() {
 
         {/* Interests & Achievements */}
         <div className="space-y-6">
-          {/* Framing Statement */}
-          <p className="text-base text-gray-400 leading-relaxed italic pb-3 border-b border-gray-800">
-            A global leader immersed in culture, commerce, and community—shaped by curiosity, connection, and a relentless pursuit of growth across continents and industries.
-          </p>
-
           {/* Interests */}
           <div>
             <h3 className="text-lg font-bold text-white mb-2">Interests</h3>
