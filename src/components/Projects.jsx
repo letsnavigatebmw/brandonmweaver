@@ -1,4 +1,4 @@
-import { Linkedin } from 'lucide-react'
+import { Linkedin, Instagram } from 'lucide-react'
 
 export default function Projects() {
   const experiences = [
@@ -6,6 +6,7 @@ export default function Projects() {
       name: 'Navigate',
       url: 'https://letsnavigatenow.com/',
       linkedin: 'https://www.linkedin.com/company/navigatenow/',
+      instagram: 'https://www.instagram.com/prospectwithnavigate?igsh=MXZkdnJmZmhocGh1ag%3D%3D&utm_source=qr',
       dates: 'January 2024 – Present',
       role: 'Co-Founder & Chief Executive Officer',
       description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Navigate has partnered with recognized brokerages like Compass, The Agency, Engel & Volkers and Keller Williams.',
@@ -132,16 +133,28 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     )}
                   </div>
                   {/* Social Links */}
-                  {experiences[0].linkedin && (
-                    <div className="flex items-center gap-3 mb-4">
-                      <a
-                        href={experiences[0].linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group"
-                      >
-                        <Linkedin className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
-                      </a>
+                  {(experiences[0].linkedin || experiences[0].instagram) && (
+                    <div className="flex items-center gap-4 mb-4">
+                      {experiences[0].linkedin && (
+                        <a
+                          href={experiences[0].linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group"
+                        >
+                          <Linkedin className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
+                        </a>
+                      )}
+                      {experiences[0].instagram && (
+                        <a
+                          href={experiences[0].instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group"
+                        >
+                          <Instagram className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
+                        </a>
+                      )}
                     </div>
                   )}
 
