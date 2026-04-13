@@ -18,9 +18,9 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <ApertureHospitality />
       <Differentiator />
       <RightNow />
-      <ApertureHospitality />
       <ThoughtLeadership />
       <PodcastShort />
       <Education />
