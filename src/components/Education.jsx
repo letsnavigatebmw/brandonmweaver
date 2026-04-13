@@ -21,7 +21,7 @@ export default function Education() {
   ]
 
   return (
-    <section id="education" className="py-8 px-6 bg-black">
+    <section id="education" className="py-8 px-6 bg-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
