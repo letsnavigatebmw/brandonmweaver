@@ -107,12 +107,12 @@ export default function Education() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 my-8" />
+        <div className="w-full h-px bg-gray-800 my-4" />
 
       </div>
 
       {/* Lasting Message */}
-      <div className="border-t border-gray-800 pt-8 pb-4 px-6">
+      <div className="border-t border-gray-800 pt-4 pb-4 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <h3 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
