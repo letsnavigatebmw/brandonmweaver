@@ -1,6 +1,6 @@
 export default function ApertureHospitality() {
   return (
-    <section className="py-12 px-6 bg-black">
+    <section className="py-12 px-6 bg-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
