@@ -21,10 +21,10 @@ export default function Education() {
   ]
 
   return (
-    <section id="education" className="py-12 px-6 bg-black">
+    <section id="education" className="py-8 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-20">
+        <div className="mb-8">
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Academic Background
           </p>
@@ -32,29 +32,29 @@ export default function Education() {
             Education, Interests & <span className="italic">Achievements</span>
           </h2>
           <p className="text-gray-400 text-lg">
-            Advanced degrees in business, public administration, and communications from world-class institutions.
+            Advanced degrees in Business, Public Administration, and Communications from world-class institutions.
           </p>
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-12" />
+        <div className="w-full h-px bg-gray-800 mb-8" />
 
         {/* Education Cards */}
-        <div className="space-y-8 mb-12">
+        <div className="space-y-6 mb-8">
           {education.map((edu, index) => (
-            <div key={index} className="pb-8 border-b border-gray-800 last:border-b-0">
+            <div key={index} className="pb-6 border-b border-gray-800 last:border-b-0">
               {/* Number */}
-              <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
+              <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2">
                 {String(index + 1).padStart(2, '0')}
               </p>
 
               {/* School */}
-              <h3 className="text-3xl md:text-4xl font-serif text-white mb-3">
+              <h3 className="text-3xl md:text-4xl font-serif text-white mb-2">
                 {edu.school}
               </h3>
 
               {/* Degree */}
-              <p className="text-lg mb-6" style={{ color: '#c8b99a' }}>
+              <p className="text-lg mb-4" style={{ color: '#c8b99a' }}>
                 {edu.degree}
               </p>
 
@@ -72,18 +72,18 @@ export default function Education() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-16" />
+        <div className="w-full h-px bg-gray-800 mb-8" />
 
         {/* Interests & Achievements */}
-        <div className="space-y-12">
+        <div className="space-y-6">
           {/* Framing Statement */}
-          <p className="text-base text-gray-400 leading-relaxed italic pb-4 border-b border-gray-800">
+          <p className="text-base text-gray-400 leading-relaxed italic pb-3 border-b border-gray-800">
             A global leader immersed in culture, commerce, and community—shaped by curiosity, connection, and a relentless pursuit of growth across continents and industries.
           </p>
 
           {/* Interests */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-3">Interests</h3>
+            <h3 className="text-lg font-bold text-white mb-2">Interests</h3>
             <p className="text-base text-gray-400 leading-relaxed">
               Football (<em>American & European</em>) | Travel | Art | Fashion | Architecture & Design | Leadership & Mentoring
             </p>
@@ -91,7 +91,7 @@ export default function Education() {
 
           {/* Advisory */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-3">Advisory</h3>
+            <h3 className="text-lg font-bold text-white mb-2">Advisory</h3>
             <p className="text-base text-gray-400 leading-relaxed">
               Dowling St. (Board Member & Strategic Advisor, 2016–Present) | The Runda Lab (Advisor, 2023–Present) | WES Brands (Former Advisor, 2021–2023)
             </p>
@@ -99,7 +99,7 @@ export default function Education() {
 
           {/* Awards */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-3">Awards</h3>
+            <h3 className="text-lg font-bold text-white mb-2">Awards</h3>
             <p className="text-base text-gray-400 leading-relaxed">
               Cannes Golden Lion (2012) — Best Mobile Application ("Captain's Conquest") | Diageo Future Leaders Program (2013)
             </p>
@@ -107,14 +107,14 @@ export default function Education() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 my-20" />
+        <div className="w-full h-px bg-gray-800 my-8" />
 
       </div>
 
       {/* Lasting Message */}
-      <div className="border-t border-gray-800 pt-12 pb-6 px-6">
+      <div className="border-t border-gray-800 pt-8 pb-4 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-12">
+          <div className="mb-8">
             <h3 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
               A Leader with A Global <span className="italic">Perspective</span>
             </h3>
@@ -122,7 +122,7 @@ export default function Education() {
               Connector & Builder | Modern Leader | Problem Solver
             </p>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-4">
             <p className="text-base text-gray-400 leading-relaxed">
               My professional and personal story has been largely shaped by the power of connectivity. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our collective potential. Modern leadership is about instilling in others the belief that they have the ability to transform their reality.
             </p>
