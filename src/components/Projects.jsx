@@ -57,7 +57,8 @@ export default function Projects() {
       name: 'Diageo',
       url: 'https://www.diageo.com/en',
       dates: '2011 – 2014',
-      role: 'Futures Leaders Program Participant',
+      role: 'Regional Marketing Director',
+      program: 'Future Leaders of Diageo Inaugural Program Participant',
       description: 'Global spirits leader managing P&L for luxury portfolio including Johnnie Walker, Don Julio, Tanqueray, and Bulleit. Selected for Diageo\'s inaugural Futures Leaders Program and deployed to South Africa to lead strategic sales and marketing initiatives. Drove award-winning campaigns and launched groundbreaking mobile application that won Cannes Golden Lion.',
       highlights: [
         'Managed P&L for luxury spirits portfolio, delivering +7% NSV growth and +2% category share gain in Vodka category',
@@ -234,9 +235,19 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                   {exp.name}
                 </h3>
                 <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-2">
-                  <p className="text-lg" style={{ color: '#c8b99a' }}>
-                    {exp.role}
-                  </p>
+                  <div className="flex flex-col md:flex-row md:items-center gap-2">
+                    <p className="text-lg" style={{ color: '#c8b99a' }}>
+                      {exp.role}
+                    </p>
+                    {exp.program && (
+                      <>
+                        <span className="text-gray-600 hidden md:inline">|</span>
+                        <p className="text-sm text-gray-400">
+                          {exp.program}
+                        </p>
+                      </>
+                    )}
+                  </div>
                   {exp.url && (
                     <div className="flex items-center gap-2">
                       <span className="text-gray-600 hidden md:inline">|</span>
