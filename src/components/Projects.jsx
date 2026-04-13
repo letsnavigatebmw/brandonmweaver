@@ -73,7 +73,7 @@ export default function Projects() {
     <section id="projects" className="pt-12 pb-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-8">
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Professional Journey
           </p>
@@ -86,10 +86,10 @@ export default function Projects() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-20" />
+        <div className="w-full h-px bg-gray-800 mb-8" />
 
         {/* Bio Section */}
-        <div className="mb-20 pb-20 border-b border-gray-800">
+        <div className="mb-12 pb-12 border-b border-gray-800">
           <p className="text-gray-400 text-lg leading-relaxed mb-8">
 I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
           </p>
