@@ -241,39 +241,44 @@ export default function ContactIntake() {
                 </div>
               </a>
 
-              {/* LinkedIn */}
-              <a
-                href="https://linkedin.com/in/brandonmweaver"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex flex-col justify-between min-h-[120px]"
-              >
-                <Linkedin className="w-6 h-6 text-gold-400 mb-3 group-hover:scale-110 transition-transform" />
-                <div>
-                  <h3 className="text-sm font-bold text-white mb-1">LinkedIn</h3>
-                  <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors flex items-center gap-1">
-                    Connect
-                    <ArrowRight size={12} />
-                  </p>
-                </div>
-              </a>
+              {/* Social Links (LinkedIn & Instagram) */}
+              <div className="p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all">
+                <div className="space-y-6">
+                  {/* LinkedIn */}
+                  <a
+                    href="https://linkedin.com/in/brandonmweaver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-start gap-3"
+                  >
+                    <Linkedin className="w-5 h-5 text-gold-400 group-hover:scale-110 transition-transform flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="text-sm font-bold text-white">LinkedIn</h3>
+                      <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors flex items-center gap-1">
+                        Connect
+                        <ArrowRight size={12} />
+                      </p>
+                    </div>
+                  </a>
 
-              {/* Instagram */}
-              <a
-                href="https://instagram.com/bmarkweaver"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex flex-col justify-between min-h-[120px]"
-              >
-                <Instagram className="w-6 h-6 text-gold-400 mb-3 group-hover:scale-110 transition-transform" />
-                <div>
-                  <h3 className="text-sm font-bold text-white mb-1">Instagram</h3>
-                  <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors flex items-center gap-1">
-                    @bmarkweaver
-                    <ArrowRight size={12} />
-                  </p>
+                  {/* Instagram */}
+                  <a
+                    href="https://instagram.com/bmarkweaver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-start gap-3"
+                  >
+                    <Instagram className="w-5 h-5 text-gold-400 group-hover:scale-110 transition-transform flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="text-sm font-bold text-white">Instagram</h3>
+                      <p className="text-gray-400 text-xs group-hover:text-gold-400 transition-colors flex items-center gap-1">
+                        @bmarkweaver
+                        <ArrowRight size={12} />
+                      </p>
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
 
               {/* Executive Bio */}
               <a
