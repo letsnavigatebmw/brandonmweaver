@@ -281,9 +281,9 @@ export default function ContactIntake() {
               </div>
 
               {/* Executive Bio */}
-              <div className="p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex gap-3">
-                <div className="flex flex-col items-start gap-3">
-                  <FileText className="w-6 h-6 text-gold-400 group-hover:scale-110 transition-transform flex-shrink-0" />
+              <div className="p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex gap-3 items-start">
+                <div className="flex flex-col items-start gap-2 flex-shrink-0">
+                  <FileText className="w-6 h-6 text-gold-400 hover:scale-110 transition-transform" />
                   <a
                     href="https://drive.google.com/file/d/1XO_GTYhCTan_CFLp6-IsaTrERrkLmjWM/view?usp=sharing"
                     target="_blank"
@@ -294,7 +294,7 @@ export default function ContactIntake() {
                     <ArrowRight size={12} />
                   </a>
                 </div>
-                <div>
+                <div className="pt-0.5">
                   <h3 className="text-sm font-bold text-white">Executive Bio</h3>
                 </div>
               </div>
