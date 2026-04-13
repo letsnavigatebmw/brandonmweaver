@@ -18,7 +18,7 @@ export default function ApertureHospitality() {
         {/* Content */}
         <div className="max-w-3xl">
           <p className="text-gray-400 text-lg leading-relaxed mb-8">
-            Aperture Hospitality is a boutique hospitality consulting practice that helps companies operating in the hospitality sector with solutions across marketing, sales, and operations. Formed in 2021 to help brands develop strategies that unlock value, spot new opportunity, or reposition for transformative growth. Aperture has advised brands across real estate, luxury travel, and Wine & Spirits.
+            I'm <span className="text-white font-bold">Founder & CEO</span> of Aperture Hospitality, a boutique hospitality consulting practice that helps companies operating in the hospitality sector with solutions across marketing, sales, and operations. Formed in 2021 to help brands develop strategies that unlock value, spot new opportunity, or reposition for transformative growth. Aperture has advised brands across real estate, luxury travel, and Wine & Spirits.
           </p>
 
           {/* CTA */}
