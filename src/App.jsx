@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Differentiator from './components/Differentiator'
 import RightNow from './components/RightNow'
+import ApertureHospitality from './components/ApertureHospitality'
 import ThoughtLeadership from './components/ThoughtLeadership'
 import ContactIntake from './components/ContactIntake'
 import Footer from './components/Footer'
@@ -19,6 +20,7 @@ function App() {
       <Projects />
       <Differentiator />
       <RightNow />
+      <ApertureHospitality />
       <ThoughtLeadership />
       <PodcastShort />
       <Education />
