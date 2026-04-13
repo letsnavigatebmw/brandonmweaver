@@ -209,7 +209,7 @@ export default function ContactIntake() {
             <div className="space-y-6">
               <div>
                 <p className="text-gray-600 text-xs uppercase tracking-widest font-bold mb-4">
-                  Social
+                  How to Reach Me
                 </p>
               </div>
 
