@@ -7,7 +7,7 @@ export default function Education() {
       year: '2008 - 2011',
     },
     {
-      school: 'Harvard University Kennedy School of Government',
+      school: 'Harvard University, Kennedy School of Government',
       degree: 'Master of Public Administration (MPA)',
       major: 'Public Administration',
       year: '2009 - 2011',
