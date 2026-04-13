@@ -281,7 +281,7 @@ export default function ContactIntake() {
               </div>
 
               {/* Executive Bio */}
-              <div className="p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex gap-4">
+              <div className="p-6 border border-gray-800 rounded-lg hover:border-gold-400 transition-all flex gap-3">
                 <div className="flex flex-col items-start gap-3">
                   <FileText className="w-6 h-6 text-gold-400 group-hover:scale-110 transition-transform flex-shrink-0" />
                   <a
