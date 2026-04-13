@@ -18,7 +18,7 @@ export default function RightNow() {
     <section id="right-now" className="py-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-20">
+        <div className="mb-8">
           <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
             Current Focus
           </p>
@@ -31,7 +31,7 @@ export default function RightNow() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-16" />
+        <div className="w-full h-px bg-gray-800 mb-8" />
 
         {/* Focus Areas */}
         <div className="grid md:grid-cols-3 gap-12">
@@ -48,7 +48,7 @@ export default function RightNow() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-20 pt-16 border-t border-gray-800 flex flex-col gap-8">
+        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col gap-6">
           <p className="text-gray-600 italic text-base">
             If any of this resonates—or if you're working on something similar—let's talk.
           </p>
