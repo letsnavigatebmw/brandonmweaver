@@ -1,4 +1,4 @@
-import { Linkedin, Instagram } from 'lucide-react'
+import { Linkedin, Instagram, Youtube } from 'lucide-react'
 
 export default function Projects() {
   const experiences = [
@@ -7,6 +7,7 @@ export default function Projects() {
       url: 'https://letsnavigatenow.com/',
       linkedin: 'https://www.linkedin.com/company/navigatenow/',
       instagram: 'https://www.instagram.com/prospectwithnavigate?igsh=MXZkdnJmZmhocGh1ag%3D%3D&utm_source=qr',
+      youtube: 'https://www.youtube.com/@ProspectwithNavigate',
       dates: 'January 2024 – Present',
       role: 'Co-Founder & Chief Executive Officer',
       description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Navigate has partnered with recognized brokerages like Compass, The Agency, Engel & Volkers and Keller Williams.',
@@ -133,7 +134,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     )}
                   </div>
                   {/* Social Links */}
-                  {(experiences[0].linkedin || experiences[0].instagram) && (
+                  {(experiences[0].linkedin || experiences[0].instagram || experiences[0].youtube) && (
                     <div className="flex items-center gap-4 mb-4">
                       {experiences[0].linkedin && (
                         <a
@@ -153,6 +154,16 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                           className="group"
                         >
                           <Instagram className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
+                        </a>
+                      )}
+                      {experiences[0].youtube && (
+                        <a
+                          href={experiences[0].youtube}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group"
+                        >
+                          <Youtube className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
                         </a>
                       )}
                     </div>
