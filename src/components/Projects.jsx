@@ -1,8 +1,11 @@
+import { Linkedin } from 'lucide-react'
+
 export default function Projects() {
   const experiences = [
     {
       name: 'Navigate',
       url: 'https://letsnavigatenow.com/',
+      linkedin: 'https://www.linkedin.com/company/navigatenow/',
       dates: 'January 2024 – Present',
       role: 'Co-Founder & Chief Executive Officer',
       description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Navigate has partnered with recognized brokerages like Compass, The Agency, Engel & Volkers and Keller Williams.',
@@ -128,6 +131,20 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                       </div>
                     )}
                   </div>
+                  {/* Social Links */}
+                  {experiences[0].linkedin && (
+                    <div className="flex items-center gap-3 mb-4">
+                      <a
+                        href={experiences[0].linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group"
+                      >
+                        <Linkedin className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
+                      </a>
+                    </div>
+                  )}
+
                   {experiences[0].dates && (
                     <p className="text-sm text-gray-500 mb-4">
                       {experiences[0].dates}
