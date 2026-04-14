@@ -60,7 +60,7 @@ export default function Projects() {
     {
       name: 'Diageo',
       logo: '/diageo-logo.png',
-      url: 'https://www.diageo.com/en',
+      url: 'https://www.diageo.com',
       dates: '2011 – 2014',
       role: 'Regional Marketing Director',
       program: 'Future Leaders of Diageo Program Participant',
