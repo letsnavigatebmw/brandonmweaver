@@ -128,24 +128,23 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     {experiences[0].url && (
                       <div className="flex items-center gap-2">
                         <span className="text-gray-600 hidden md:inline">|</span>
-                        <a
-                          href={experiences[0].url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
-                        >
-                          {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
-                        </a>
-                        {experiences[0].logo && (
-                          <>
-                            <span className="text-gray-600 hidden md:inline">|</span>
+                        <div className="flex items-center gap-2">
+                          <a
+                            href={experiences[0].url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
+                          >
+                            {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
+                          </a>
+                          {experiences[0].logo && (
                             <img 
                               src={experiences[0].logo} 
                               alt={experiences[0].name}
                               className="h-6 md:h-7 w-auto bg-black px-2 py-1 rounded"
                             />
-                          </>
-                        )}
+                          )}
+                        </div>
                       </div>
                     )}
                   </div>
@@ -266,24 +265,23 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                   {exp.url && (
                     <div className="flex items-center gap-2">
                       <span className="text-gray-600 hidden md:inline">|</span>
-                      <a
-                        href={exp.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
-                      >
-                        {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
-                      </a>
-                      {exp.logo && (
-                        <>
-                          <span className="text-gray-600 hidden md:inline">|</span>
+                      <div className="flex items-center gap-2">
+                        <a
+                          href={exp.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
+                        >
+                          {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
+                        </a>
+                        {exp.logo && (
                           <img 
                             src={exp.logo} 
                             alt={exp.name}
                             className="h-6 md:h-7 w-auto bg-black px-2 py-1 rounded"
                           />
-                        </>
-                      )}
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
