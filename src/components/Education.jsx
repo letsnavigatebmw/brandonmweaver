@@ -15,7 +15,7 @@ export default function Education() {
     {
       school: 'University of Southern California (USC)',
       degree: 'Bachelor of Arts, Annenberg School of Communication',
-      major: '',
+      major: 'Major - Communications | Minor - Business Administration',
       year: '1998 - 2002',
     },
   ]
