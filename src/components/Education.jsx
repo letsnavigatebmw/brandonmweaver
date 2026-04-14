@@ -3,19 +3,19 @@ export default function Education() {
     {
       school: 'Kellogg School of Management, Northwestern University',
       degree: 'Master of Business Administration (MBA)',
-      major: 'Corporate Finance',
+      major: 'Concentration - Corporate Finance',
       year: '2008 - 2011',
     },
     {
       school: 'Harvard University, Kennedy School of Government',
       degree: 'Master of Public Administration (MPA)',
-      major: 'Public Administration',
+      major: 'Concentration - Economics',
       year: '2009 - 2011',
     },
     {
       school: 'University of Southern California (USC)',
-      degree: 'Bachelor of Arts',
-      major: 'Communication Studies (Annenberg School) & Business Administration (Marshall School)',
+      degree: 'Bachelor of Arts, Annenberg School of Communication',
+      major: '',
       year: '1998 - 2002',
     },
   ]
