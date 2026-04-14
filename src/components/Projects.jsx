@@ -126,13 +126,13 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                       {experiences[0].role}
                     </p>
                     {experiences[0].url && (
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center gap-0">
                         <span className="text-gray-600 hidden md:inline">|</span>
                         <a
                           href={experiences[0].url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-3"
+                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-2"
                         >
                           {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                         </a>
@@ -265,13 +265,13 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     )}
                   </div>
                   {exp.url && (
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-0">
                       <span className="text-gray-600 hidden md:inline">|</span>
                       <a
                         href={exp.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-3"
+                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-2"
                       >
                         {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                       </a>
