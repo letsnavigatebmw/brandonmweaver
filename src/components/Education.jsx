@@ -111,7 +111,7 @@ export default function Education() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <h3 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-              A Leader with A Global <span className="italic">Perspective</span>
+              A Leader with <span className="italic">A Global Perspective</span>
             </h3>
             <p className="text-gray-600 text-sm uppercase tracking-widest font-medium">
               Connector & Builder | Modern Leader | Problem Solver
