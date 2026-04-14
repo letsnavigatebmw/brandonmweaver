@@ -123,6 +123,12 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     {experiences[0].url && (
                       <div className="flex items-center gap-2">
                         <span className="text-gray-600 hidden md:inline">|</span>
+                        <img 
+                          src="/navigate-logo.png" 
+                          alt="Navigate" 
+                          className="h-6 md:h-7 w-auto"
+                        />
+                        <span className="text-gray-600 hidden md:inline">|</span>
                         <a
                           href={experiences[0].url}
                           target="_blank"
