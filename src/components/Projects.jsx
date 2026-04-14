@@ -126,13 +126,13 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                       {experiences[0].role}
                     </p>
                     {experiences[0].url && (
-                      <div className="flex items-center gap-0">
+                      <div className="flex items-center gap-2">
                         <span className="text-gray-600 hidden md:inline">|</span>
                         <a
                           href={experiences[0].url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-2"
+                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
                         >
                           {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                         </a>
@@ -142,7 +142,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                             <img 
                               src={experiences[0].logo} 
                               alt={experiences[0].name}
-                              className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black -ml-3"
+                              className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black -ml-1"
                               style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(experiences[0].name) ? { filter: 'brightness(0.6)' } : {}}
                             />
                           </>
@@ -265,13 +265,13 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     )}
                   </div>
                   {exp.url && (
-                    <div className="flex items-center gap-0">
+                    <div className="flex items-center gap-2">
                       <span className="text-gray-600 hidden md:inline">|</span>
                       <a
                         href={exp.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-2"
+                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
                       >
                         {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                       </a>
@@ -281,7 +281,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                           <img 
                             src={exp.logo} 
                             alt={exp.name}
-                            className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black -ml-3"
+                            className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black -ml-1"
                             style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(exp.name) ? { filter: 'brightness(0.6)' } : {}}
                           />
                         </>
