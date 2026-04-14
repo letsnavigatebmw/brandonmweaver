@@ -4,6 +4,7 @@ export default function Projects() {
   const experiences = [
     {
       name: 'Navigate',
+      logo: '/navigate-logo.png',
       url: 'https://letsnavigatenow.com/',
       linkedin: 'https://www.linkedin.com/company/navigatenow/',
       instagram: 'https://www.instagram.com/prospectwithnavigate?igsh=MXZkdnJmZmhocGh1ag%3D%3D&utm_source=qr',
@@ -19,6 +20,7 @@ export default function Projects() {
     },
     {
       name: 'Lacure',
+      logo: '/lacure-logo.png',
       url: 'https://www.lacurevillas.com/',
       dates: 'October 2021 – November 2023',
       role: 'Chief Commercial Officer',
@@ -31,6 +33,7 @@ export default function Projects() {
     },
     {
       name: 'Sonder Hospitality',
+      logo: '/sonder-logo.png',
       url: 'https://www.sonder.com/',
       dates: 'June 2019 – September 2021',
       role: 'Area General Manager',
@@ -43,6 +46,7 @@ export default function Projects() {
     },
     {
       name: 'Bonotel Exclusive Travel',
+      logo: '/bonotel-logo.png',
       url: 'https://www.bonotel.com/',
       dates: '2014 – 2017',
       role: 'Chief Marketing Officer & Chief Operations Officer',
@@ -55,6 +59,7 @@ export default function Projects() {
     },
     {
       name: 'Diageo',
+      logo: '/diageo-logo.png',
       url: 'https://www.diageo.com/en',
       dates: '2011 – 2014',
       role: 'Regional Marketing Director',
@@ -123,12 +128,6 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     {experiences[0].url && (
                       <div className="flex items-center gap-2">
                         <span className="text-gray-600 hidden md:inline">|</span>
-                        <img 
-                          src="/navigate-logo.png" 
-                          alt="Navigate" 
-                          className="h-6 md:h-7 w-auto"
-                        />
-                        <span className="text-gray-600 hidden md:inline">|</span>
                         <a
                           href={experiences[0].url}
                           target="_blank"
@@ -137,6 +136,16 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                         >
                           {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                         </a>
+                        {experiences[0].logo && (
+                          <>
+                            <span className="text-gray-600 hidden md:inline">|</span>
+                            <img 
+                              src={experiences[0].logo} 
+                              alt={experiences[0].name}
+                              className="h-6 md:h-7 w-auto bg-black px-2 py-1 rounded"
+                            />
+                          </>
+                        )}
                       </div>
                     )}
                   </div>
@@ -265,6 +274,16 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                       >
                         {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                       </a>
+                      {exp.logo && (
+                        <>
+                          <span className="text-gray-600 hidden md:inline">|</span>
+                          <img 
+                            src={exp.logo} 
+                            alt={exp.name}
+                            className="h-6 md:h-7 w-auto bg-black px-2 py-1 rounded"
+                          />
+                        </>
+                      )}
                     </div>
                   )}
                 </div>
