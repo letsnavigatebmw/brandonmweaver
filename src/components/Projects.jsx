@@ -126,7 +126,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                       {experiences[0].role}
                     </p>
                     {experiences[0].url && (
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
                         <span className="text-gray-600 hidden md:inline">|</span>
                         <a
                           href={experiences[0].url}
@@ -142,7 +142,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                             <img 
                               src={experiences[0].logo} 
                               alt={experiences[0].name}
-                              className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
+                              className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black -ml-1"
                               style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(experiences[0].name) ? { filter: 'brightness(0.25)' } : {}}
                             />
                           </>
@@ -265,7 +265,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                     )}
                   </div>
                   {exp.url && (
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1">
                       <span className="text-gray-600 hidden md:inline">|</span>
                       <a
                         href={exp.url}
@@ -281,7 +281,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                           <img 
                             src={exp.logo} 
                             alt={exp.name}
-                            className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
+                            className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black -ml-1"
                             style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(exp.name) ? { filter: 'brightness(0.25)' } : {}}
                           />
                         </>
