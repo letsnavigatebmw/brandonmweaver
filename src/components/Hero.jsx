@@ -47,7 +47,7 @@ export default function Hero() {
             href="#projects"
             className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-gold-400 text-gold-400 font-bold rounded-lg hover:bg-gold-400/10 transition-colors text-base sm:text-lg inline-block text-center min-h-[44px] flex items-center justify-center"
           >
-            See What I've Built
+            Learn More
           </a>
         </div>
       </div>
