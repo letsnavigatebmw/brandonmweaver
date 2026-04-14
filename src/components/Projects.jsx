@@ -132,7 +132,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                           href={experiences[0].url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
+                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-3"
                         >
                           {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                         </a>
@@ -271,7 +271,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                         href={exp.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
+                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline px-3"
                       >
                         {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                       </a>
