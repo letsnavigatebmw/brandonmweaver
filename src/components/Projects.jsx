@@ -143,7 +143,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                               src={experiences[0].logo} 
                               alt={experiences[0].name}
                               className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
-                              style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(experiences[0].name) ? { filter: 'brightness(0.2) saturate(0) invert(1)' } : {}}
+                              style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(experiences[0].name) ? { filter: 'brightness(0)' } : {}}
                             />
                           </>
                         )}
@@ -282,7 +282,7 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                             src={exp.logo} 
                             alt={exp.name}
                             className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
-                            style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(exp.name) ? { filter: 'brightness(0.2) saturate(0) invert(1)' } : {}}
+                            style={['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(exp.name) ? { filter: 'brightness(0)' } : {}}
                           />
                         </>
                       )}
