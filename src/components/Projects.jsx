@@ -4,6 +4,7 @@ export default function Projects() {
   const experiences = [
     {
       name: 'Navigate',
+      logo: '/navigate-logo.png',
       url: 'https://letsnavigatenow.com/',
       linkedin: 'https://www.linkedin.com/company/navigatenow/',
       instagram: 'https://www.instagram.com/prospectwithnavigate?igsh=MXZkdnJmZmhocGh1ag%3D%3D&utm_source=qr',
@@ -19,6 +20,7 @@ export default function Projects() {
     },
     {
       name: 'Lacure',
+      logo: '/lacure-logo.png',
       url: 'https://www.lacurevillas.com/',
       dates: 'October 2021 – November 2023',
       role: 'Chief Commercial Officer',
@@ -31,6 +33,7 @@ export default function Projects() {
     },
     {
       name: 'Sonder Hospitality',
+      logo: '/sonder-logo.png',
       url: 'https://www.sonder.com/',
       dates: 'June 2019 – September 2021',
       role: 'Area General Manager',
@@ -43,6 +46,7 @@ export default function Projects() {
     },
     {
       name: 'Bonotel Exclusive Travel',
+      logo: '/bonotel-logo.png',
       url: 'https://www.bonotel.com/',
       dates: '2014 – 2017',
       role: 'Chief Marketing Officer & Chief Operations Officer',
@@ -55,6 +59,7 @@ export default function Projects() {
     },
     {
       name: 'Diageo',
+      logo: '/diageo-logo.png',
       url: 'https://www.diageo.com/en',
       dates: '2011 – 2014',
       role: 'Regional Marketing Director',
@@ -113,9 +118,18 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                   <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
                     01
                   </p>
-                  <h3 className="text-4xl md:text-5xl font-serif text-white mb-3">
-                    {experiences[0].name}
-                  </h3>
+                  <div className="flex items-center gap-4 mb-3">
+                    {experiences[0].logo && (
+                      <img 
+                        src={experiences[0].logo} 
+                        alt={experiences[0].name}
+                        className="h-12 md:h-14 w-auto"
+                      />
+                    )}
+                    <h3 className="text-4xl md:text-5xl font-serif text-white">
+                      {experiences[0].name}
+                    </h3>
+                  </div>
                   <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-2">
                     <p className="text-lg" style={{ color: '#c8b99a' }}>
                       {experiences[0].role}
@@ -237,9 +251,18 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                 <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
                   {String(index + 1).padStart(2, '0')}
                 </p>
-                <h3 className="text-4xl md:text-5xl font-serif text-white mb-3">
-                  {exp.name}
-                </h3>
+                <div className="flex items-center gap-4 mb-3">
+                  {exp.logo && (
+                    <img 
+                      src={exp.logo} 
+                      alt={exp.name}
+                      className={`h-12 md:h-14 w-auto ${exp.name === 'Sonder Hospitality' ? 'bg-black px-2 py-1 rounded' : ''}`}
+                    />
+                  )}
+                  <h3 className="text-4xl md:text-5xl font-serif text-white">
+                    {exp.name}
+                  </h3>
+                </div>
                 <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-2">
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     <p className="text-lg" style={{ color: '#c8b99a' }}>
