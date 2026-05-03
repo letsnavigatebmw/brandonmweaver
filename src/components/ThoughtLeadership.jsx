@@ -52,6 +52,11 @@ export default function ThoughtLeadership() {
 
   const marketingStrategy = [
     {
+      title: 'The Prospecting Problem Nobody Wants to Admit',
+      type: 'Article',
+      link: 'https://drive.google.com/file/d/1ctFTDmgkxhZETlKts_G7ZpU3KjAAkxvn/view?usp=drive_link',
+    },
+    {
       title: 'The Gap Between Marketing and Revenue—And How to Fix It',
       type: 'Article',
       link: 'https://drive.google.com/file/d/1rZHQaXVEpHxITLhQoI2gcFLmu6g_vZ2W/view?usp=drive_link',
