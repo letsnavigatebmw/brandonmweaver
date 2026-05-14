@@ -22,7 +22,7 @@ export default function Projects() {
     },
     {
       name: 'Voyage Real Estate',
-      location: '(Compass) | Los Angeles, CA',
+      location: 'Compass | LA, Miami, NYC',
       logo: '/voyage-logo.png',
       url: 'https://www.voyageretail.com/',
       dates: 'November 2023 – August 2024',
