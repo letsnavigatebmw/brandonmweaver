@@ -4,18 +4,37 @@ export default function Projects() {
   const experiences = [
     {
       name: 'Navigate',
+      location: 'Los Angeles, CA',
       logo: '/navigate-logo.png',
       url: 'https://letsnavigatenow.com/',
       linkedin: 'https://www.linkedin.com/company/navigatenow/',
       instagram: 'https://www.instagram.com/prospectwithnavigate?igsh=MXZkdnJmZmhocGh1ag%3D%3D&utm_source=qr',
       youtube: 'https://www.youtube.com/@ProspectwithNavigate',
-      dates: 'January 2024 – Present',
+      dates: 'August 2024 – March 2026',
       role: 'Co-Founder & Chief Executive Officer',
-      description: 'Prospecting intelligence platform designed to modernize prospecting for residential real estate agents. Restructured ownership, stabilized operations, redesigned pricing architecture, and renegotiated core data partnerships to materially improve unit economics. Navigate has partnered with recognized brokerages like Compass, The Agency, Engel & Volkers and Keller Williams.',
+      description: '',
       highlights: [
-        'Reduced data enrichment unit costs by 25% (from ~$2.50 → $1.90 per record) through vendor renegotiation and demand-based pricing optimization',
-        'Established strategic partnership with Compass; increased trial participation by +75% and improved trial-to-paid conversion to 90% within three months',
-        'Scaled workflows to support 150+ users, 300+ executed campaigns, and 300K+ owner/property records retrieved per month',
+        'Acquired and assumed control of Navigate, investing personal capital to restructure ownership, stabilize operations, and reposition the company for scalable growth.',
+        'Defined company vision and led end-to-end product strategy for a real estate intelligence and automated outreach platform integrating owner, property, and marketing data; scaled workflows to support 150+ users, 300+ executed campaigns, and 300K+ owner/property records retrieved per month.',
+        'Owned full P&L, pricing strategy, and financial modeling; reduced data enrichment unit costs by 25% (from ~$2.50 → $1.90 per record) through vendor renegotiation and demand-based pricing optimization.',
+        'Established strategic partnership with Compass, embedding Navigate into Learning & Development programming and lead generation infrastructure; built cross-functional product and RevOps systems that increased trial participation by +75% and improved trial-to-paid conversion to 90% within three months.',
+      ],
+    },
+    {
+      name: 'Voyage',
+      location: '(Compass) | Los Angeles, CA',
+      logo: '/voyage-logo.png',
+      url: 'https://www.voyageretail.com/',
+      dates: 'November 2023 – August 2024',
+      role: 'Consultant (via Aperture Hospitality)',
+      description: '',
+      highlights: [
+        'Worked with leadership team to design and execute a phased growth roadmap to support market expansion to Miami and New York markets projected to drive 20–30% agent base growth over 12–18 months.',
+        'Designed and operationalized agent recruitment strategy, contributing to a 2–3x increase in qualified agent pipeline and improving conversion efficiency by ~25% through clearer brand positioning and lead generation capability (Navigate)',
+        'Partnered with leadership to evolve Voyage into a more scalable multi-market platform, supporting expansion readiness, accelerating recruitment timelines, and improved brand positioning.',
+        'Developed adjacent product and service strategy (partnerships, ancillary offerings), unlocking potential to increase agent retention by +10–15% and expand revenue per agent by +15–25%.',
+        'Introduced scalable infrastructure and workflows that improved transaction velocity, contributing to an estimated 10–20% increase in deal throughput per agent.',
+        'Refined positioning and go-to-market strategy, strengthening differentiation within the Compass ecosystem and supporting higher-quality inbound interest from experienced agents.',
       ],
     },
     {
@@ -78,32 +97,11 @@ export default function Projects() {
     <section id="projects" className="pt-12 pb-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-8">
-          <p className="text-gray-600 text-sm uppercase tracking-widest font-medium mb-6">
-            Professional Journey
-          </p>
-          <h2 className="text-6xl md:text-7xl font-serif mb-6" style={{ color: '#c8b99a' }}>
-            Featured <span className="italic">Experience</span>
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold tracking-wide mb-8" style={{ color: '#000' }}>
+            PROFESSIONAL EXPERIENCE
           </h2>
-          <p className="text-gray-400 text-lg">
-            A career built on scaling operations, driving revenue growth, and building teams that deliver results.
-          </p>
-        </div>
-
-        {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-8" />
-
-        {/* Bio Section */}
-        <div className="mb-12 pb-12 border-b border-gray-800">
-          <p className="text-gray-400 text-lg leading-relaxed mb-8">
-I'm a global commercial executive and founder with more than two decades of experience leading growth, transformation, and disciplined financial performance across consumer brands, hospitality, real estate, and technology-enabled platforms. I've built and repositioned businesses across publicly traded multinationals, private equity-backed enterprises, and venture-stage companies, with a focus on aligning product strategy, distribution, and unit economics to create durable enterprise value.
-          </p>
-          <p className="text-gray-400 text-lg leading-relaxed mb-8">
-Currently, I'm Co-Founder and CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="font-bold text-gold-400 hover:text-gold-300 transition-colors">Navigate</a>, a prospecting intelligence platform modernizing residential real estate. I've restructured ownership, stabilized operations, redesigned pricing, and renegotiated core partnerships to materially improve unit economics. Navigate serves residential real estate agents across the US partnering with recognized brokerages like Compass, The Agency and Douglas Elliman.
-          </p>
-          <p className="text-gray-400 text-lg leading-relaxed">
-Prior roles include Chief Commercial Officer at Lacure, executive leadership at Sonder Hospitality and Bonotel (Carlyle-backed $300M platform), and commercial leadership at Diageo managing luxury brands like Johnnie Walker, Don Julio, and Tanqueray. I hold an MBA from Northwestern's Kellogg School of Management, a Masters in Public Administration (MPA) from Harvard's Kennedy School of Government, and a BA from USC's Annenberg School of Communication.
-          </p>
+          <div className="w-full h-px bg-gray-400 mb-8" />
         </div>
 
         {/* Experience Cards */}
@@ -118,125 +116,35 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                   <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
                     01
                   </p>
-                  <h3 className="text-4xl md:text-5xl font-serif text-white mb-3">
-                    {experiences[0].name}
-                  </h3>
-                  <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-2">
-                    <p className="text-lg" style={{ color: '#c8b99a' }}>
-                      {experiences[0].role}
-                    </p>
-                    {experiences[0].url && (
-                      <div className="flex items-center gap-2">
-                        <span className="text-gray-600 hidden md:inline">|</span>
-                        <a
-                          href={experiences[0].url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
-                        >
-                          {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
-                        </a>
-                        {experiences[0].logo && (
-                          <>
-                            <span className="text-gray-600 hidden md:inline">|</span>
-                            <img 
-                              src={experiences[0].logo} 
-                              alt={experiences[0].name}
-                              className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
-                              style={{
-                                marginLeft: '-0.65rem',
-                                ...(['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(experiences[0].name) ? { filter: 'brightness(0.6)' } : {})
-                              }}
-                            />
-                          </>
-                        )}
-                      </div>
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <h3 className="text-4xl md:text-5xl font-serif text-white mb-1">
+                        {experiences[0].name}
+                        {experiences[0].location && <span className="text-2xl md:text-3xl"> | {experiences[0].location}</span>}
+                      </h3>
+                    </div>
+                    {experiences[0].dates && (
+                      <p className="text-sm text-gray-500 whitespace-nowrap ml-4">
+                        {experiences[0].dates}
+                      </p>
                     )}
                   </div>
-                  {/* Social Links */}
-                  {(experiences[0].linkedin || experiences[0].instagram || experiences[0].youtube) && (
-                    <div className="flex items-center gap-4 mb-4">
-                      {experiences[0].linkedin && (
-                        <a
-                          href={experiences[0].linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group"
-                        >
-                          <Linkedin className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
-                        </a>
-                      )}
-                      {experiences[0].instagram && (
-                        <a
-                          href={experiences[0].instagram}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group"
-                        >
-                          <Instagram className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
-                        </a>
-                      )}
-                      {experiences[0].youtube && (
-                        <a
-                          href={experiences[0].youtube}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group"
-                        >
-                          <Youtube className="w-5 h-5 text-gold-400 hover:text-gold-300 transition-colors group-hover:scale-110 transform" />
-                        </a>
-                      )}
-                    </div>
-                  )}
-
-                  {experiences[0].dates && (
-                    <p className="text-sm text-gray-500 mb-4">
-                      {experiences[0].dates}
-                    </p>
-                  )}
+                  <p className="text-lg italic text-gray-300 mb-4">
+                    {experiences[0].role}
+                  </p>
                 </div>
 
-                {/* Description */}
-                <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                  {experiences[0].description}
-                </p>
+
 
                 {/* Highlights */}
                 <ul className="space-y-3 mb-8">
                   {experiences[0].highlights.map((highlight, i) => (
                     <li key={i} className="text-base text-gray-400 flex items-start gap-3">
-                      <span className="text-gold-400 font-bold mt-1 flex-shrink-0">→</span>
+                      <span className="text-gold-400 font-bold mt-1 flex-shrink-0">•</span>
                       <span>{highlight}</span>
                     </li>
                   ))}
                 </ul>
-
-                {/* Navigate Platform Card */}
-                <div className="bg-gray-900/50 border border-purple-500/30 rounded-2xl p-8 space-y-4 mb-8">
-                  {/* Heading */}
-                  <h2 className="text-3xl md:text-4xl font-bold">
-                    <span className="text-white">Discover </span>
-                    <span style={{ color: '#a78bfa' }}>Navigate</span>
-                  </h2>
-
-                  {/* Description */}
-                  <p className="text-lg text-gray-300 leading-relaxed">
-                    Navigate is a property intelligence platform designed to create opportunity at the intersection of people, property, and possibility. The platform combines owner, property, and marketing intelligence to help you find qualified prospects and reach them at scale.
-                  </p>
-
-                  {/* CTA */}
-                  <div className="pt-4">
-                    <a
-                      href="https://www.letsnavigatenow.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-8 py-3 font-bold rounded-lg transition-colors"
-                      style={{ backgroundColor: '#a78bfa', color: '#000000' }}
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
               </div>
             </>
           )}
@@ -250,68 +158,30 @@ Prior roles include Chief Commercial Officer at Lacure, executive leadership at 
                 <p className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-3">
                   {String(index + 1).padStart(2, '0')}
                 </p>
-                <h3 className="text-4xl md:text-5xl font-serif text-white mb-3">
-                  {exp.name}
-                </h3>
-                <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-2">
-                  <div className="flex flex-col md:flex-row md:items-center gap-2">
-                    <p className="text-lg" style={{ color: '#c8b99a' }}>
-                      {exp.role}
-                    </p>
-                    {exp.program && (
-                      <>
-                        <span className="text-gray-600 hidden md:inline">|</span>
-                        <p className="text-sm text-gray-400 italic">
-                          {exp.program}
-                        </p>
-                      </>
-                    )}
+                <div className="flex justify-between items-start mb-3">
+                  <div>
+                    <h3 className="text-4xl md:text-5xl font-serif text-white mb-1">
+                      {exp.name}
+                      {exp.location && <span className="text-2xl md:text-3xl"> | {exp.location}</span>}
+                    </h3>
                   </div>
-                  {exp.url && (
-                    <div className="flex items-center gap-2">
-                      <span className="text-gray-600 hidden md:inline">|</span>
-                      <a
-                        href={exp.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
-                      >
-                        {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
-                      </a>
-                      {exp.logo && (
-                        <>
-                          <span className="text-gray-600 hidden md:inline">|</span>
-                          <img 
-                            src={exp.logo} 
-                            alt={exp.name}
-                            className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
-                            style={{
-                              marginLeft: '-0.65rem',
-                              ...(['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(exp.name) ? { filter: 'brightness(0.6)' } : {})
-                            }}
-                          />
-                        </>
-                      )}
-                    </div>
+                  {exp.dates && (
+                    <p className="text-sm text-gray-500 whitespace-nowrap ml-4">
+                      {exp.dates}
+                    </p>
                   )}
                 </div>
-                {exp.dates && (
-                  <p className="text-sm text-gray-500 mb-4">
-                    {exp.dates}
-                  </p>
-                )}
               </div>
 
-              {/* Description */}
-              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                {exp.description}
+              <p className="text-lg italic text-gray-300 mb-4">
+                {exp.role}
               </p>
 
               {/* Highlights */}
               <ul className="space-y-3">
                 {exp.highlights.map((highlight, i) => (
                   <li key={i} className="text-base text-gray-400 flex items-start gap-3">
-                    <span className="text-gold-400 font-bold mt-1 flex-shrink-0">→</span>
+                    <span className="text-gray-400 font-bold mt-1 flex-shrink-0">•</span>
                     <span>{highlight}</span>
                   </li>
                 ))}
