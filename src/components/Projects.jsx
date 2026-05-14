@@ -145,6 +145,33 @@ export default function Projects() {
                     </li>
                   ))}
                 </ul>
+
+                {/* Navigate Platform Card */}
+                <div className="bg-gray-900/50 border border-purple-500/30 rounded-2xl p-8 space-y-4 mb-8">
+                  {/* Heading */}
+                  <h2 className="text-3xl md:text-4xl font-bold">
+                    <span className="text-white">Discover </span>
+                    <span style={{ color: '#a78bfa' }}>Navigate</span>
+                  </h2>
+
+                  {/* Description */}
+                  <p className="text-lg text-gray-300 leading-relaxed">
+                    Navigate is a property intelligence platform designed to create opportunity at the intersection of people, property, and possibility. The platform combines owner, property, and marketing intelligence to help you find qualified prospects and reach them at scale.
+                  </p>
+
+                  {/* CTA */}
+                  <div className="pt-4">
+                    <a
+                      href="https://www.letsnavigatenow.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 font-bold rounded-lg transition-colors"
+                      style={{ backgroundColor: '#a78bfa', color: '#000000' }}
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
               </div>
             </>
           )}
