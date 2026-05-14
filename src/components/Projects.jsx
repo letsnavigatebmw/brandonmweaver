@@ -24,7 +24,7 @@ export default function Projects() {
       name: 'Voyage Real Estate',
       location: 'Compass | LA, Miami, NYC',
       logo: '/voyage-logo.png',
-      url: 'https://www.voyageretail.com/',
+      url: 'https://voyagerealestate.com/',
       dates: 'November 2023 – August 2024',
       role: 'Consultant (via Aperture Hospitality)',
       description: '',
