@@ -21,7 +21,7 @@ export default function Projects() {
       ],
     },
     {
-      name: 'Voyage',
+      name: 'Voyage Real Estate',
       location: '(Compass) | Los Angeles, CA',
       logo: '/voyage-logo.png',
       url: 'https://www.voyageretail.com/',
