@@ -129,9 +129,37 @@ export default function Projects() {
                       </p>
                     )}
                   </div>
-                  <p className="text-lg italic text-gray-300 mb-4">
-                    {experiences[0].role}
-                  </p>
+                  <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-4">
+                    <p className="text-lg italic text-gray-300">
+                      {experiences[0].role}
+                    </p>
+                    {experiences[0].url && (
+                      <div className="flex items-center gap-2">
+                        <span className="text-gray-600 hidden md:inline">|</span>
+                        <a
+                          href={experiences[0].url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
+                        >
+                          {experiences[0].url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
+                        </a>
+                        {experiences[0].logo && (
+                          <>
+                            <span className="text-gray-600 hidden md:inline">|</span>
+                            <img 
+                              src={experiences[0].logo} 
+                              alt={experiences[0].name}
+                              className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
+                              style={{
+                                marginLeft: '-0.65rem',
+                              }}
+                            />
+                          </>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
 
 
@@ -208,9 +236,38 @@ export default function Projects() {
                 </div>
               </div>
 
-              <p className="text-lg italic text-gray-300 mb-4">
-                {exp.role}
-              </p>
+              <div className="flex flex-col md:flex-row md:items-center md:gap-4 gap-2 mb-4">
+                <p className="text-lg italic text-gray-300">
+                  {exp.role}
+                </p>
+                {exp.url && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-600 hidden md:inline">|</span>
+                    <a
+                      href={exp.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-gold-400 hover:text-gold-300 transition-colors font-medium underline"
+                    >
+                      {exp.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
+                    </a>
+                    {exp.logo && (
+                      <>
+                        <span className="text-gray-600 hidden md:inline">|</span>
+                        <img 
+                          src={exp.logo} 
+                          alt={exp.name}
+                          className="h-8 md:h-10 w-auto px-3 py-2 rounded bg-black"
+                          style={{
+                            marginLeft: '-0.65rem',
+                            ...(['Sonder Hospitality', 'Bonotel Exclusive Travel'].includes(exp.name) ? { filter: 'brightness(0.6)' } : {})
+                          }}
+                        />
+                      </>
+                    )}
+                  </div>
+                )}
+              </div>
 
               {/* Highlights */}
               <ul className="space-y-3">
