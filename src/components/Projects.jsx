@@ -168,7 +168,7 @@ export default function Projects() {
                       className="inline-block px-8 py-3 font-bold rounded-lg transition-colors"
                       style={{ backgroundColor: '#a78bfa', color: '#000000' }}
                     >
-                      Learn More
+                      Ready to Navigate
                     </a>
                     <a
                       href="https://letsnavigatenow.com/pg/invest"
