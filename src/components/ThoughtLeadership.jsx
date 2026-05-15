@@ -52,6 +52,11 @@ export default function ThoughtLeadership() {
 
   const marketingStrategy = [
     {
+      title: 'The Data is Already in the Stadium',
+      type: 'Article',
+      link: 'https://drive.google.com/file/d/1JoV2ce3DcIuaaFGC6P4aWm76hiC-IiJj/view?usp=drive_link',
+    },
+    {
       title: 'The Prospecting Problem Nobody Wants to Admit',
       type: 'Article',
       link: 'https://drive.google.com/file/d/1ctFTDmgkxhZETlKts_G7ZpU3KjAAkxvn/view?usp=drive_link',
