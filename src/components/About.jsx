@@ -30,28 +30,28 @@ export default function About() {
 
           <div>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-Brandon Weaver grew up in Los Angeles, educated at one of the city's most selective private schools, surrounded by the children of people who had already made it. The expectation in his house was clear: medicine or education. Safe, respected, durable.
+I've spent much of my life trying to answer a simple question: <span className="font-bold text-white">How do you build something that truly matters?</span>
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-He chose neither.
+Growing up in Los Angeles, I was surrounded by people who had already achieved success. The expected path was fairly straightforward—medicine, education, or another respected profession. I chose a different route.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-Instead, he followed a thread. It took him from <span className="font-bold text-white">USC's Annenberg School</span> to <span className="font-bold text-white">Harvard's Kennedy School of Government</span> in Cambridge, to <span className="font-bold text-white">Northwestern's Kellogg School</span> of Management. Three institutions. Three distinct worldviews. One persistent question underneath all of them: how do you build something that actually matters?
+That decision led me from <span className="font-bold text-white">the University of Southern California's Annenberg School of Communication</span> to <span className="font-bold text-white">the Harvard Kennedy School</span> and <span className="font-bold text-white">Northwestern University's Kellogg School of Management</span>. Each institution challenged me to think differently, but together they reinforced a belief that has shaped my career: <span className="font-bold text-white">meaningful growth happens at the intersection of people, ideas, and opportunity.</span>
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-That question got sharper on the ground. Living and working across the UK, South Africa, New York, Boston, Miami, Dallas, and Los Angeles taught him something no classroom could: that commerce and community are not opposites. They're in constant negotiation. The best builders are fluent in both.
+My career has taken me across industries, continents, and cultures. I've lived and worked throughout the United States, the United Kingdom, and Africa, experiencing firsthand that <span className="font-bold text-white">commerce and community are not opposites—they're in constant negotiation.</span> The best builders are fluent in both.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-From leading <span className="font-bold text-white">Diageo's</span> luxury portfolio vision across Africa to scaling and eventually selling a PE-backed hospitality platform, <span className="font-bold text-white">Brandon built a career at the intersection of connectivity, creativity, and opportunity. He didn't inherit a playbook. He wrote one.</span>
+From leading <span className="font-bold text-white">Diageo's</span> luxury portfolio vision across Africa to scaling and eventually selling a PE-backed hospitality platform, <span className="font-bold text-white">I built a career at the intersection of connectivity, creativity, and opportunity. I didn't inherit a playbook. I wrote one.</span>
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-That same instinct brought him to real estate technology. Navigate wasn't a pivot. It was the logical conclusion of two decades spent watching an industry resist modernisation until someone forces the issue.
+That same instinct brought me to real estate technology. Navigate wasn't a pivot. It was the logical conclusion of two decades spent watching an industry resist modernisation until someone forces the issue.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-But the thread running through all of it isn't the résumé. It's the relationships. Brandon moves through rooms differently, not as the loudest voice, but as the most connected one. <span className="font-bold text-white">He builds relationship capital the way others build financial capital: deliberately, generously, and with a long time horizon.</span> The "plug" who knows someone for everything, and shares that access freely.
+But the thread running through all of it isn't the résumé. It's the relationships. I move through rooms differently, not as the loudest voice, but as the most connected one. <span className="font-bold text-white">I build relationship capital the way others build financial capital: deliberately, generously, and with a long time horizon.</span> The "plug" who knows someone for everything, and shares that access freely.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-In a world increasingly mediated by algorithms, Brandon's conviction is simple. <span className="font-bold text-white">Success moves at the speed of connectivity.</span>
+In a world increasingly mediated by algorithms, my conviction is simple. <span className="font-bold text-white">Success moves at the speed of connectivity.</span>
             </p>
           </div>
         </div>
