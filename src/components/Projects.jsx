@@ -282,6 +282,48 @@ export default function Projects() {
             )
           ))}
         </div>
+
+        {/* Testimonials Section */}
+        <div className="pt-16 mt-16 border-t border-gray-800">
+          <h2 className="text-3xl font-bold tracking-wide mb-8 text-white">
+            WHAT CLIENTS SAY
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Testimonial 1 - Voyage */}
+            <div className="border border-gray-700 rounded-lg p-8 bg-gray-900">
+              <p className="text-gray-300 italic mb-8 text-sm leading-relaxed">
+                "Brandon has a unique ability to connect strategy with execution. During our growth initiatives, he consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion while maintaining a strong focus on agent success. His combination of commercial acumen, relationship-building, and operational discipline makes him an invaluable partner."
+              </p>
+              <div className="border-t border-gray-700 pt-4">
+                <p className="text-white font-semibold text-sm">Ari Afshar</p>
+                <p className="text-gray-500 text-xs uppercase tracking-wider">Founder & CEO, Voyage Real Estate</p>
+              </div>
+            </div>
+
+            {/* Testimonial 2 - Foto Comercio */}
+            <div className="border border-gray-700 rounded-lg p-8 bg-gray-900">
+              <p className="text-gray-300 italic mb-8 text-sm leading-relaxed">
+                "Working with Brandon felt like having a true strategic partner rather than an outside advisor. He quickly understood our business, challenged our assumptions in the right ways, and helped translate complex growth objectives into practical, measurable actions. His ability to bridge data, marketing, and business development is exceptional."
+              </p>
+              <div className="border-t border-gray-700 pt-4">
+                <p className="text-white font-semibold text-sm">Michael Silver</p>
+                <p className="text-gray-500 text-xs uppercase tracking-wider">President, Foto Comercio</p>
+              </div>
+            </div>
+
+            {/* Testimonial 3 - Beverly Spirits */}
+            <div className="border border-gray-700 rounded-lg p-8 bg-gray-900">
+              <p className="text-gray-300 italic mb-8 text-sm leading-relaxed">
+                "Brandon brings a rare blend of luxury brand expertise, commercial leadership, and authentic relationship-building. He understands how to create meaningful customer connection while never losing sight of revenue and operational performance. His strategic thinking and professionalism consistently elevate every project he touches."
+              </p>
+              <div className="border-t border-gray-700 pt-4">
+                <p className="text-white font-semibold text-sm">Andy Borenzweig</p>
+                <p className="text-gray-500 text-xs uppercase tracking-wider">Founder & CEO, Beverly Spirits</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
