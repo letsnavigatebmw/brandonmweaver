@@ -29,11 +29,14 @@ export default function About() {
           <h2 className="text-6xl md:text-7xl font-serif mb-12" style={{ color: '#c8b99a' }}>Many Rooms, One <span className="italic">Frequency</span></h2>
 
           <div>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+            <p className="text-gray-400 text-lg leading-relaxed mb-8 italic">
 My professional and personal story has been largely shaped by the power of connectivity. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our <span className="font-bold text-white">collective potential.</span> Modern leadership is about instilling in others the belief that <span className="font-bold text-white">they have the ability to transform their reality.</span>
             </p>
-            <p className="text-gray-400 text-lg leading-relaxed">
-As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a <span className="font-bold text-white">rare authenticity that stands out in a world of AI and artifice.</span> For me, it's not just about building businesses. It's about <span className="font-bold text-white">building bridges, one real conversation at a time.</span>
+            <p className="text-gray-400 text-lg leading-relaxed mb-8 italic">
+As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a <span className="font-bold text-white">rare authenticity that stands out in a world of AI and artifice.</span>
+            </p>
+            <p className="text-gray-400 text-lg leading-relaxed italic">
+For me, it's not just about building businesses. It's about <span className="font-bold text-white">building bridges, one real conversation at a time.</span>
             </p>
           </div>
         </div>
