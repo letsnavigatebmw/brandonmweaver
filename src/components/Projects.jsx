@@ -284,9 +284,9 @@ export default function Projects() {
         </div>
 
         {/* Testimonials Section */}
-        <div className="pt-16 mt-16 border-t border-gray-800">
-          <h2 className="text-3xl font-bold tracking-wide mb-8 text-white">
-            WHAT CLIENTS SAY
+        <div className="pt-12 mt-12 border-t border-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-wide mb-8 text-white">
+            What Clients Say
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6">
