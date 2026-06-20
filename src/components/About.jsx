@@ -30,28 +30,10 @@ export default function About() {
 
           <div>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-I've spent much of my life trying to answer a simple question: <span className="font-bold text-white">How do you build something that truly matters?</span>
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-Growing up in Los Angeles, I was surrounded by people who had already achieved success. The expected path was fairly straightforward—medicine, education, or another respected profession. I chose a different route.
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-That decision led me from <span className="font-bold text-white">the University of Southern California's Annenberg School of Communication</span> to <span className="font-bold text-white">the Harvard Kennedy School</span> and <span className="font-bold text-white">Northwestern University's Kellogg School of Management</span>. Each institution challenged me to think differently, but together they reinforced a belief that has shaped my career: <span className="font-bold text-white">meaningful growth happens at the intersection of people, ideas, and opportunity.</span>
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-My career has taken me across industries, continents, and cultures. I've lived and worked throughout the United States, the United Kingdom, and Africa, experiencing firsthand that <span className="font-bold text-white">commerce and community are not opposites—they're in constant negotiation.</span> The best builders are fluent in both.
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-From leading <span className="font-bold text-white">Diageo's</span> luxury portfolio vision across Africa to scaling and eventually selling a PE-backed hospitality platform, <span className="font-bold text-white">I built a career at the intersection of connectivity, creativity, and opportunity. I didn't inherit a playbook. I wrote one.</span>
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-That same instinct brought me to real estate technology. Navigate wasn't a pivot. It was the logical conclusion of two decades spent watching an industry resist modernisation until someone forces the issue.
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-But the thread running through all of it isn't the résumé. It's the relationships. I move through rooms differently, not as the loudest voice, but as the most connected one. <span className="font-bold text-white">I build relationship capital the way others build financial capital: deliberately, generously, and with a long time horizon.</span> The "plug" who knows someone for everything, and shares that access freely.
+My professional and personal story has been largely shaped by the power of connectivity. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our <span className="font-bold text-white">collective potential.</span> Modern leadership is about instilling in others the belief that <span className="font-bold text-white">they have the ability to transform their reality.</span>
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-In a world increasingly mediated by algorithms, my conviction is simple. <span className="font-bold text-white">Success moves at the speed of connectivity.</span>
+As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a <span className="font-bold text-white">rare authenticity that stands out in a world of AI and artifice.</span> For me, it's not just about building businesses. It's about <span className="font-bold text-white">building bridges, one real conversation at a time.</span>
             </p>
           </div>
         </div>
