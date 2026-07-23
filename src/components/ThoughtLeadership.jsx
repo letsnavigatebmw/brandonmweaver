@@ -48,6 +48,11 @@ export default function ThoughtLeadership() {
       type: 'Guide',
       link: 'https://drive.google.com/file/d/1pLur9KDw4xYY239aYOrxdXjsAd6iYjma/view?usp=drive_link',
     },
+    {
+      title: '"Beyond the Room Rate" What Ultra Wealthy Spending Patterns Mean for Luxury Hospitality',
+      type: 'White Paper',
+      link: 'https://drive.google.com/file/d/10LaWoO6VXE5UkuNQSPx_wpOk56NnoMI_/view?usp=drive_link',
+    },
   ]
 
   const marketingStrategy = [
