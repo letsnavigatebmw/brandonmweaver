@@ -101,6 +101,14 @@ export default function ThoughtLeadership() {
     },
   ]
 
+  const operationsStrategy = [
+    {
+      title: 'The Architecture of Luxury Hotel Opening | A Practioner\'s Playbook for Systems, People and Sequence',
+      type: 'Playbook',
+      link: 'https://drive.google.com/file/d/1dkeh3c4sxKWCw7aOYOXpGbOJB9CPxJEj/view?usp=sharing',
+    },
+  ]
+
   const aiStrategy = [
     {
       title: "SaaS Isn't Dead. It's Finding Its True North",
@@ -212,6 +220,14 @@ export default function ThoughtLeadership() {
             Lessons in <span className="italic">Leadership</span>
           </h3>
           <ContentGrid items={lessonsInLeadership} />
+        </div>
+
+        {/* Operations Strategy */}
+        <div className="mb-20">
+          <h3 className="text-2xl md:text-3xl font-serif text-white mb-8" style={{ color: '#c8b99a' }}>
+            Operations Strategy
+          </h3>
+          <ContentGrid items={operationsStrategy} />
         </div>
 
         {/* AI Strategy */}
