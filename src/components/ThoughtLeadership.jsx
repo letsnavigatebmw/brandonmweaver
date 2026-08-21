@@ -214,20 +214,20 @@ export default function ThoughtLeadership() {
           <ContentGrid items={marketingStrategy} />
         </div>
 
-        {/* Lessons in Leadership */}
-        <div className="mb-20">
-          <h3 className="text-2xl md:text-3xl font-serif text-white mb-8" style={{ color: '#c8b99a' }}>
-            Lessons in <span className="italic">Leadership</span>
-          </h3>
-          <ContentGrid items={lessonsInLeadership} />
-        </div>
-
         {/* Operations Strategy */}
         <div className="mb-20">
           <h3 className="text-2xl md:text-3xl font-serif text-white mb-8" style={{ color: '#c8b99a' }}>
             Operations Strategy
           </h3>
           <ContentGrid items={operationsStrategy} />
+        </div>
+
+        {/* Lessons in Leadership */}
+        <div className="mb-20">
+          <h3 className="text-2xl md:text-3xl font-serif text-white mb-8" style={{ color: '#c8b99a' }}>
+            Lessons in <span className="italic">Leadership</span>
+          </h3>
+          <ContentGrid items={lessonsInLeadership} />
         </div>
 
         {/* AI Strategy */}
