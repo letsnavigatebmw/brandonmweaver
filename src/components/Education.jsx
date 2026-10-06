@@ -88,7 +88,7 @@ export default function Education() {
           <div>
             <h3 className="text-lg font-bold text-white mb-2">Advisory</h3>
             <p className="text-base text-gray-400 leading-relaxed">
-              Dowling St. (Board Member & Strategic Advisor, 2016–Present) | The Runda Lab (Advisor, 2023–Present) | WES Brands (Former Advisor, 2021–2023)
+              SWARM (Advisor, 2026–Present) | Dowling St. (Board Member & Strategic Advisor, 2016–Present) | The Runda Lab (Advisor, 2023–Present) | WES Brands (Former Advisor, 2021–2023)
             </p>
           </div>
 

@@ -30,6 +30,11 @@ export default function ThoughtLeadership() {
       type: 'Guide',
       link: 'https://drive.google.com/file/d/1_RULaBkpiAy9TaxeFc_kM8z1ULpxUcyR/view?usp=drive_link',
     },
+    {
+      title: 'The Hotel Exists Before The Opening',
+      type: 'White Paper',
+      link: 'https://drive.google.com/file/d/1pWp7AO27qvfaEKEBtS3MtJ4TO5Um5yBl/view?usp=sharing',
+    },
   ]
 
   const lessonsInLuxury = [
@@ -101,14 +106,6 @@ export default function ThoughtLeadership() {
     },
   ]
 
-  const operationsStrategy = [
-    {
-      title: 'The Architecture of Luxury Hotel Opening | A Practioner\'s Playbook for Systems, People and Sequence',
-      type: 'Playbook',
-      link: 'https://drive.google.com/file/d/1dkeh3c4sxKWCw7aOYOXpGbOJB9CPxJEj/view?usp=sharing',
-    },
-  ]
-
   const aiStrategy = [
     {
       title: "SaaS Isn't Dead. It's Finding Its True North",
@@ -144,6 +141,11 @@ export default function ThoughtLeadership() {
       title: 'AI Voice Agents in Real Estate',
       type: 'Guide',
       link: 'https://drive.google.com/file/d/1IX3ZzK5OUwjKrS9EyCJkE1gDGQCAfG3O/view?usp=drive_link',
+    },
+    {
+      title: 'Why orchestration may become one of the most strategically valuable layers in the emerging AI economy',
+      type: 'White Paper',
+      link: 'https://drive.google.com/file/d/1IFzrM78E6I18-f3Kvuz6DUW2j3A7G5lF/view?usp=sharing',
     },
   ]
 
@@ -212,14 +214,6 @@ export default function ThoughtLeadership() {
             Marketing Strategy
           </h3>
           <ContentGrid items={marketingStrategy} />
-        </div>
-
-        {/* Operations Strategy */}
-        <div className="mb-20">
-          <h3 className="text-2xl md:text-3xl font-serif text-white mb-8" style={{ color: '#c8b99a' }}>
-            Operations Strategy
-          </h3>
-          <ContentGrid items={operationsStrategy} />
         </div>
 
         {/* Lessons in Leadership */}
