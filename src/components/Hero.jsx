@@ -26,7 +26,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed">
-            Co-Founder & CEO of <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>, modernizing real estate prospecting with AI-powered intelligence.
+            <span className="text-white font-semibold">Principal,</span> <a href="https://www.aperturehospitality.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Aperture Hospitality</a> (2018–Present) | <span className="text-white font-semibold">Co-Founder & CEO,</span> <a href="https://navigatenow.com" target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">Navigate</a>
           </p>
 
           {/* Supporting line */}
