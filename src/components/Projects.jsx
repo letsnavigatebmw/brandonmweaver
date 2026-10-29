@@ -189,6 +189,26 @@ export default function Projects() {
                   ))}
                 </ul>
 
+                {/* Aperture CTA Links */}
+                <div className="mb-8 space-y-3">
+                  <a
+                    href="https://www.aperturehospitality.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-gold-400 hover:text-gold-300 transition-colors font-medium underline text-base"
+                  >
+                    Discover Aperture →
+                  </a>
+                  <a
+                    href="https://www.aperturehospitality.com/executive-advisory"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-gold-400 hover:text-gold-300 transition-colors font-medium underline text-base"
+                  >
+                    How Can Aperture Help You →
+                  </a>
+                </div>
+
                 {/* Navigate Platform Card */}
                 <div className="bg-transparent border border-white rounded-2xl p-8 space-y-4 mb-8">
                   {/* Heading */}
