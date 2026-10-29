@@ -243,6 +243,41 @@ export default function Projects() {
                     </a>
                   </div>
                 </div>
+
+                {/* Aperture Platform Card */}
+                <div className="bg-transparent border border-white rounded-2xl p-8 space-y-4 mb-8">
+                  {/* Heading */}
+                  <h2 className="text-3xl md:text-4xl font-bold">
+                    <span className="text-white">Discover </span>
+                    <span style={{ color: '#a78bfa' }}>Aperture</span>
+                  </h2>
+
+                  {/* Description */}
+                  <p className="text-lg text-gray-300 leading-relaxed">
+                    Aperture provides fractional commercial leadership—Chief Commercial Officer and Chief Marketing Officer expertise for growth-stage and PE-backed hospitality, travel, and consumer brands. We drive go-to-market strategy, revenue optimization, and partnership development.
+                  </p>
+
+                  {/* CTAs */}
+                  <div className="pt-4 flex flex-col md:flex-row gap-4">
+                    <a
+                      href="https://www.aperturehospitality.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 font-bold rounded-lg transition-colors"
+                      style={{ backgroundColor: '#a78bfa', color: '#000000' }}
+                    >
+                      Discover Aperture
+                    </a>
+                    <a
+                      href="https://www.aperturehospitality.com/executive-advisory"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 font-bold rounded-lg transition-colors border border-white text-white hover:bg-white hover:text-black"
+                    >
+                      How Can Aperture Help You
+                    </a>
+                  </div>
+                </div>
               </div>
             </>
           )}
