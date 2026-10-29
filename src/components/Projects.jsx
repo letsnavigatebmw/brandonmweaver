@@ -3,6 +3,21 @@ import { Linkedin, Instagram, Youtube } from 'lucide-react'
 export default function Projects() {
   const experiences = [
     {
+      name: 'Aperture Hospitality',
+      location: 'Los Angeles, CA',
+      logo: '/aperture-logo.png',
+      url: 'https://www.aperturehospitality.com/',
+      dates: '2018 – Present',
+      role: 'Principal',
+      description: '',
+      highlights: [
+        'Fractional Chief Commercial Officer and Chief Marketing Officer for growth-stage and PE-backed hospitality, travel, and consumer brands.',
+        'Drive go-to-market strategy, commercial diagnostics, revenue optimization, and partnership development across luxury hospitality, travel distribution, and technology platforms.',
+        'Leverage Navigate platform to surface market intelligence, competitive positioning, and customer signals that inform strategy and execution.',
+        'Advisory clients include Swarm AI (compute marketplace), Voyage Real Estate (Compass), Perro Verde, Beverly Spirits, Wilbur Labs, and Boatsetter.',
+      ],
+    },
+    {
       name: 'Navigate',
       location: 'Los Angeles, CA',
       logo: '/navigate-logo.png',
