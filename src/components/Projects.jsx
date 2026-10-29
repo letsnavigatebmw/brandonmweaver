@@ -195,7 +195,7 @@ export default function Projects() {
                     href="https://www.aperturehospitality.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors"
+                    className="inline-block px-8 py-2 font-bold rounded-lg transition-colors"
                     style={{ backgroundColor: '#b8924a', color: '#ffffff' }}
                     onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#a07e40')}
                     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#b8924a')}
@@ -206,7 +206,7 @@ export default function Projects() {
                     href="https://www.aperturehospitality.com/executive-advisory"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors border"
+                    className="inline-block px-8 py-2 font-bold rounded-lg transition-colors border"
                     style={{ borderColor: '#b8924a', color: '#b8924a', backgroundColor: 'transparent' }}
                     onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#b8924a'; e.currentTarget.style.color = '#ffffff'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#b8924a'; }}
