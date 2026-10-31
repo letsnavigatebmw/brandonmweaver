@@ -31,6 +31,7 @@ export const logos = [
   { name: 'Sonder', src: '/logos/sonder.png', h: 26 },
   { name: 'Lacure Villas', src: '/logos/lacure.png', h: 40 },
   { name: 'GE Money', src: '/logos/ge.svg', h: 36 },
+  { name: 'Moët Hennessy', src: '/logos/moet-hennessy.png', h: 22 },
 ];
 
 // Typeset until official logo files are supplied
