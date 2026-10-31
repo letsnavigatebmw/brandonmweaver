@@ -190,15 +190,15 @@ export default function Projects() {
                 </ul>
 
                 {/* Aperture CTA Links */}
-                <div className="mb-8 flex flex-col gap-3">
+                <div className="mb-8 flex flex-col md:flex-row gap-3">
                   <a
                     href="https://www.aperturehospitality.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full px-8 py-3 font-bold rounded-xl transition-colors text-center text-black"
-                    style={{ backgroundColor: '#b8924a' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#a07e40')}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#b8924a')}
+                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-black"
+                    style={{ backgroundColor: '#E8E1D5' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dcd4c8')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E8E1D5')}
                   >
                     Discover Aperture
                   </a>
@@ -206,10 +206,10 @@ export default function Projects() {
                     href="https://www.aperturehospitality.com/executive-advisory"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full px-8 py-3 font-bold rounded-xl transition-colors text-center text-black"
-                    style={{ backgroundColor: '#b8924a' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#a07e40')}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#b8924a')}
+                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-black"
+                    style={{ backgroundColor: '#E8E1D5' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dcd4c8')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E8E1D5')}
                   >
                     How Can Aperture Help You
                   </a>
