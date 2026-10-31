@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
-import portrait from '../assets/brandon-about.jpg';
+import portrait from '../assets/brandon-about.png';
 import { culture, cultureCos, celebrityFounders, interests, person } from '../data/site';
 ---
 <Base title="About" description="The story behind Brandon M. Weaver: Los Angeles, Diageo in Cape Town, Bonotel, Sonder, Lacure and Aperture Hospitality.">
@@ -66,8 +66,8 @@ import { culture, cultureCos, celebrityFounders, interests, person } from '../da
   .head { display: grid; gap: 2.5rem; align-items: center; }
   @media (min-width: 900px) { .head { grid-template-columns: 8fr 4fr; gap: 4rem; } }
   .head .eyebrow { margin: 0 0 1.25rem; }
-  .photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; max-width: 420px; border-radius: 2px; }
-  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 57% 30%; }
+  .photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; max-width: 420px; -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent); mask-image: linear-gradient(to bottom, #000 80%, transparent); }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
   .essay p { font-size: 1.125rem; line-height: 1.75; }
   .essay .lede { font-size: 1.5rem; line-height: 1.45; color: var(--ink); margin-bottom: 1.5rem; }
   .pull { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2.1rem) !important; line-height: 1.25 !important; color: var(--accent) !important; font-weight: 600; margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--rule); }
