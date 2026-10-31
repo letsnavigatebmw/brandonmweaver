@@ -33,15 +33,15 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
     <div class="container">
       <div class="creds">
         <div class="creds__group" aria-label="Where I have worked">
-          <span class="label">Where I’ve worked</span>
+          <h2 class="creds__title">Where I’ve Worked</h2>
           <ul class="creds__logos">
             {logos.slice(0, 4).map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
-            <li class="wordmark">Stillhouse</li>
+            <li><span class="wordmark">Stillhouse</span></li>
             {logos.slice(4).map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
           </ul>
         </div>
         <div class="creds__group creds__group--edu" aria-label="Education">
-          <span class="label">Education</span>
+          <h2 class="creds__title">Education</h2>
           <ul class="creds__schools">
             {schools.map((s) => <li>{s.src ? <img src={s.src} alt={s.name} style={{ height: `${s.h}px`, width: 'auto' }} class="creds__school" loading="lazy" /> : <span class="wordmark">{s.name}</span>}<span class="creds__sub">{s.sub}</span></li>)}
           </ul>
@@ -211,17 +211,21 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
 
   .creds { display: grid; gap: 2.25rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
   @media (min-width: 1000px) { .creds { grid-template-columns: 1fr 320px; gap: 0; } .creds__group--edu { padding-left: 2.75rem; margin-left: 2.75rem; border-left: 1px solid var(--rule); } }
-  .creds__group { display: grid; gap: 1.25rem; align-content: start; }
-  .creds__logos, .creds__schools { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 1.75rem 2.75rem; }
-  .creds__logos img { width: auto; opacity: .72; transition: opacity .2s ease; }
+  .creds__group { display: grid; gap: 1.5rem; align-content: start; }
+  .creds__title { font-family: var(--sans); font-size: .875rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 0; }
+  .creds__logos, .creds__schools { list-style: none; margin: 0; padding: 0; }
+  .creds__logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; }
+  @media (min-width: 640px) { .creds__logos { grid-template-columns: repeat(4, 1fr); } }
+  .creds__logos li { display: flex; align-items: center; justify-content: flex-start; min-height: 76px; }
+  .creds__logos img { width: auto; max-width: 150px; object-fit: contain; opacity: .78; transition: opacity .2s ease; }
   .creds__logos img:hover { opacity: 1; }
   .wordmark { font-family: var(--serif); font-size: 1.45rem; line-height: 1; color: var(--ink); opacity: .78; letter-spacing: .02em; font-variant: small-caps; white-space: nowrap; }
-  .creds__schools { flex-direction: column; align-items: flex-start; gap: 1.1rem; }
-  @media (max-width: 999px) { .creds__schools { flex-direction: row; flex-wrap: wrap; gap: 1.25rem 2rem; } }
+  .creds__schools { display: flex; flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+  @media (max-width: 999px) { .creds__schools { flex-direction: row; flex-wrap: wrap; gap: 1.25rem 2.5rem; } }
   .creds__schools li { display: grid; gap: .3rem; }
   .creds__schools .wordmark { font-size: 1.2rem; }
   .creds__school { opacity: .78; }
-  .creds__sub { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+  .creds__sub { font-size: .75rem; font-weight: 550; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
 
   /* Proof */
   .stats { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.25rem; margin: 0; border-top: 1px solid var(--ink); }
