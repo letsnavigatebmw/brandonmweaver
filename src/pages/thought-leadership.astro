@@ -6,7 +6,7 @@ import { person } from '../data/site';
 <Base title="Thought Leadership" description="Essays, guides and white papers by Brandon M. Weaver on AI strategy, sales, marketing, luxury and leadership.">
   <section class="page-head">
     <div class="container">
-      <p class="label label--accent">Thought leadership</p>
+      <p class="eyebrow eyebrow--accent">Thought leadership</p>
       <h1 class="display">Notes From the <em>Field</em>.</h1>
       <p class="lede">Essays, guides and white papers on AI, commercial strategy, luxury and leadership. New writing goes out first on Expand Your Aperture.</p>
       <a class="btn" href={person.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
@@ -36,7 +36,7 @@ import { person } from '../data/site';
 
   <section class="section">
     <div class="container">
-      <span class="label">Video</span>
+      <span class="eyebrow">Video</span>
       <h2 class="h2" style="margin:.75rem 0 2rem">Short Takes.</h2>
       <div class="vids">
         {videos.map((v) => (
@@ -53,7 +53,7 @@ import { person } from '../data/site';
 
 <style>
   .page-head { padding: clamp(3rem, 7vw, 6rem) 0 clamp(2.5rem, 5vw, 4rem); }
-  .page-head .label { margin: 0 0 1.25rem; }
+  .page-head .eyebrow { margin: 0 0 1.25rem; }
   .page-head .lede { max-width: 40rem; margin: 1.5rem 0 2rem; }
   .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
   .filters button { font: 500 .875rem/1 var(--sans); padding: .65rem 1rem; border: 1px solid var(--rule); background: transparent; color: var(--ink-2); border-radius: 999px; cursor: pointer; min-height: 40px; }

@@ -216,6 +216,28 @@ export const roles: Role[] = [
   },
 ];
 
+export const launches = [
+  'Captain Morgan Black Spiced',
+  'Captain Morgan Sherry Spice',
+  'Stillhouse Classic Vodka',
+  'BEYOND by Bonotel',
+  'Bonotel Sports',
+  'Lacure Reserve Collection',
+  'Beverly Spirits RTD',
+  'Navigate',
+];
+
+export const capabilities = [
+  { title: 'Company Strategy & P&L', proof: 'Full P&L for $12M Stillhouse Spirits; COO of Bonotel, a $268M gross revenue platform.' },
+  { title: 'Fundraising & Board Partnership', proof: 'Raised a $1.5M growth round at BLKBOX, supported a $3M seed for Swarm, and led diligence with Moelis on the sale of Bonotel.' },
+  { title: 'Brand Launch & Innovation', proof: 'Owned the Captain Morgan Black Spiced launch: 375,000 cases and ~$33M in shipment value in year one.' },
+  { title: 'Grocery, Mass & Independent Retail', proof: 'Helped win Walmart (140 stores), Publix (220) and a Kroger test for Stillhouse.' },
+  { title: 'DTC & Ecommerce', proof: 'Won Mondelēz’s Brand Accelerator for personalized direct-to-consumer Nabisco bundles; relaunched Pantene Gold Series across Walmart, Target and Amazon.' },
+  { title: 'Pricing, Margin & Trade Spend', proof: 'Built a three-tier partner program that grew revenue 44% across 23 Four Seasons properties; cut Navigate’s data costs 25%.' },
+  { title: 'Forecasting & Operating Cadence', proof: 'Built the operating cadence behind +7.5% depletions at Stillhouse in Q1 2019; rolled out forecasting across 2,180+ Bonotel partners.' },
+  { title: 'Team & Culture Building', proof: 'Scaled Sonder California from a team of one to 45; led a 65-person organization at Lacure across 45+ countries.' },
+];
+
 export const principles = [
   {
     title: 'Connectivity Is the Advantage',

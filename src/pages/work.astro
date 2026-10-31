@@ -5,7 +5,7 @@ import { roles, advisory, education, person } from '../data/site';
 <Base title="Work" description="Experience, advisory roles and education of Brandon M. Weaver: Aperture Hospitality, Navigate, Lacure, Sonder, Stillhouse Spirits, BLKBOX, Bonotel, Diageo and GE.">
   <section class="page-head">
     <div class="container">
-      <p class="label label--accent">Work</p>
+      <p class="eyebrow eyebrow--accent">Work</p>
       <h1 class="display">The Track <em>Record</em>.</h1>
       <p class="lede">Spirits, luxury hospitality, travel and real estate technology. Founder, COO, CCO, GM and brand marketer.</p>
       <a class="link" href={person.execBio} target="_blank" rel="noopener">Download the executive bio</a>
@@ -38,7 +38,7 @@ import { roles, advisory, education, person } from '../data/site';
   <section class="section">
     <div class="container two">
       <div class="reveal">
-        <span class="label">Board & advisory</span>
+        <span class="eyebrow">Board & advisory</span>
         <ul class="list">
           {advisory.map((a) => (
             <li>
@@ -50,7 +50,7 @@ import { roles, advisory, education, person } from '../data/site';
         </ul>
       </div>
       <div class="reveal">
-        <span class="label">Education</span>
+        <span class="eyebrow">Education</span>
         <ul class="list">
           {education.map((e) => (
             <li>
@@ -67,7 +67,7 @@ import { roles, advisory, education, person } from '../data/site';
 
 <style>
   .page-head { padding: clamp(3rem, 7vw, 6rem) 0 clamp(2.5rem, 5vw, 4rem); }
-  .page-head .label { margin: 0 0 1.25rem; }
+  .page-head .eyebrow { margin: 0 0 1.25rem; }
   .page-head .lede { max-width: 40rem; margin: 1.5rem 0 1.75rem; }
   .roles { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
   .role { display: grid; gap: .75rem 3rem; padding: 2.5rem 0; border-bottom: 1px solid var(--rule); }

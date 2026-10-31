@@ -8,7 +8,7 @@ import { culture, cultureCos, interests, person } from '../data/site';
   <section class="page-head">
     <div class="container head">
       <div>
-        <p class="label label--accent">About</p>
+        <p class="eyebrow eyebrow--accent">About</p>
         <h1 class="display">Many Rooms, One <em>Frequency</em>.</h1>
       </div>
       <figure class="photo">
@@ -20,7 +20,7 @@ import { culture, cultureCos, interests, person } from '../data/site';
   <section class="section">
     <div class="container rail">
       <div class="rail__head">
-        <span class="label">The story</span>
+        <span class="eyebrow">The story</span>
       </div>
       <div class="prose essay">
         <p class="lede">I’ve spent much of my life trying to answer a simple question: how do you build something that truly matters?</p>
@@ -36,7 +36,7 @@ import { culture, cultureCos, interests, person } from '../data/site';
 
   <section class="section">
     <div class="container rail">
-      <div class="rail__head"><span class="label">Brands × culture</span></div>
+      <div class="rail__head"><span class="eyebrow">Brands × culture</span></div>
       <div class="prose">
         <p>Through Diageo, Stillhouse Spirits and BLKBOX, I’ve built brand programs with artists and the industry around them. Music and talent are how brands earn attention they can’t buy.</p>
         <ul class="tags">{culture.map((c) => <li>{c}</li>)}</ul>
@@ -47,7 +47,7 @@ import { culture, cultureCos, interests, person } from '../data/site';
 
   <section class="section">
     <div class="container rail">
-      <div class="rail__head"><span class="label">Off the clock</span></div>
+      <div class="rail__head"><span class="eyebrow">Off the clock</span></div>
       <div class="prose">
         <ul class="tags">{interests.map((c) => <li>{c}</li>)}</ul>
         <p style="margin-top:2rem"><a class="link" href={person.linkedin} target="_blank" rel="noopener">Say hello on LinkedIn</a></p>
@@ -60,7 +60,7 @@ import { culture, cultureCos, interests, person } from '../data/site';
   .page-head { padding: clamp(3rem, 7vw, 6rem) 0 clamp(2.5rem, 5vw, 4rem); }
   .head { display: grid; gap: 2.5rem; align-items: end; }
   @media (min-width: 900px) { .head { grid-template-columns: 8fr 4fr; gap: 4rem; } }
-  .head .label { margin: 0 0 1.25rem; }
+  .head .eyebrow { margin: 0 0 1.25rem; }
   .photo { margin: 0; background: #efefef; aspect-ratio: 4 / 5; overflow: hidden; max-width: 380px; border-radius: 2px; }
   .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; }
   .essay p { font-size: 1.125rem; line-height: 1.75; }

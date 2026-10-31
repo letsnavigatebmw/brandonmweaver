@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Contact from '../components/Contact.astro';
 import portrait from '../assets/brandon-portrait.jpg';
-import { person, stats, logos, schools, testimonials, roles, principles, culture } from '../data/site';
+import { person, stats, logos, schools, testimonials, roles, principles, culture, capabilities, launches } from '../data/site';
 import { writing, videos } from '../data/writing';
 
 const featured = writing.filter((w) => w.featured);
@@ -73,11 +73,34 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
     </div>
   </section>
 
+  <!-- What I Do -->
+  <section class="section" id="capabilities">
+    <div class="container rail">
+      <div class="rail__head reveal">
+        <span class="eyebrow">Capabilities</span>
+        <h2 class="h2">What I Do.</h2>
+        <div class="launch">
+          <p class="launch__n num">8+</p>
+          <p class="launch__l">Brands, Products and Business Lines Launched</p>
+          <ul class="launch__list">{launches.map((l) => <li>{l}</li>)}</ul>
+        </div>
+      </div>
+      <ul class="caps reveal">
+        {capabilities.map((c) => (
+          <li>
+            <h3 class="caps__t">{c.title}</h3>
+            <p>{c.proof}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
   <!-- Now -->
   <section class="section">
     <div class="container rail">
       <div class="rail__head reveal">
-        <span class="label">Now</span>
+        <span class="eyebrow">Now</span>
         <h2 class="h2">What I’m Building.</h2>
       </div>
       <div class="now reveal">
@@ -101,7 +124,7 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   <section class="section" id="work">
     <div class="container rail">
       <div class="rail__head reveal">
-        <span class="label">Track record</span>
+        <span class="eyebrow">Track record</span>
         <h2 class="h2">Twenty Years, One Through Line.</h2>
         <p class="lede" style="margin-top:1.25rem">Launch it, scale it, make the numbers work.</p>
       </div>
@@ -127,7 +150,7 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   <section class="section">
     <div class="container">
       <div class="reveal" style="max-width:760px">
-        <span class="label">How I operate</span>
+        <span class="eyebrow">How I operate</span>
         <h2 class="h2" style="margin-top:1rem">Three Principles.</h2>
       </div>
       <ol class="principles reveal">
@@ -146,7 +169,7 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   <section class="section">
     <div class="container rail">
       <div class="rail__head reveal">
-        <span class="label">Thought leadership</span>
+        <span class="eyebrow">Thought leadership</span>
         <h2 class="h2">On the Record.</h2>
         <p class="lede" style="margin-top:1.25rem">27 essays, guides and white papers on AI, growth and luxury.</p>
       </div>
@@ -180,7 +203,7 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   <section class="section">
     <div class="container rail">
       <div class="rail__head reveal">
-        <span class="label">About</span>
+        <span class="eyebrow">About</span>
         <h2 class="h2">Many Rooms, One <em>Frequency</em>.</h2>
       </div>
       <div class="prose reveal">
@@ -212,7 +235,7 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   .creds { display: grid; gap: 2.25rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
   @media (min-width: 1000px) { .creds { grid-template-columns: 1fr 320px; gap: 0; } .creds__group--edu { padding-left: 2.75rem; margin-left: 2.75rem; border-left: 1px solid var(--rule); } }
   .creds__group { display: grid; gap: 1.5rem; align-content: start; }
-  .creds__title { font-family: var(--sans); font-size: .875rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 0; }
+  .creds__title { font-family: var(--sans); font-size: .9375rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 0; }
   .creds__logos, .creds__schools { list-style: none; margin: 0; padding: 0; }
   .creds__logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; }
   @media (min-width: 640px) { .creds__logos { grid-template-columns: repeat(4, 1fr); } }
@@ -242,6 +265,18 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   .quote figcaption { margin-top: 1.25rem; display: grid; gap: .15rem; font-size: .875rem; }
   .quote figcaption strong { color: var(--ink); font-weight: 600; }
   .quote figcaption span { color: var(--ink-3); }
+
+  /* What I Do */
+  .launch { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  .launch__n { margin: 0; font-family: var(--serif); font-weight: 300; font-size: clamp(2.75rem, 4.5vw, 3.75rem); line-height: 1; color: var(--accent); }
+  .launch__l { margin: .6rem 0 1rem; font-size: .9375rem; font-weight: 600; color: var(--ink); }
+  .launch__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .launch__list li { font-size: .8125rem; padding: .3rem .65rem; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink-2); }
+  .caps { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--ink); }
+  @media (min-width: 700px) { .caps { grid-template-columns: 1fr 1fr; column-gap: 2.5rem; } }
+  .caps li { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+  .caps__t { font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; font-weight: 450; margin: 0 0 .5rem; }
+  .caps p { margin: 0; font-size: 1rem; }
 
   /* Now */
   .now { display: grid; gap: 1.5rem; }
