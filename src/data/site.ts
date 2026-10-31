@@ -35,10 +35,9 @@ export const logos = [
   { name: 'Moët Hennessy', src: '/logos/moet-hennessy.png', h: 22 },
 ];
 
-// Typeset until official logo files are supplied
 export const schools: { name: string; sub: string; src?: string; h?: number }[] = [
   { name: 'Kellogg', sub: 'Northwestern · MBA', src: '/logos/kellogg.png', h: 34 },
-  { name: 'Harvard Kennedy School', sub: 'MPA' },
+  { name: 'Harvard Kennedy School', sub: 'MPA, Economics', src: '/logos/hks.png', h: 40 },
   { name: 'USC Annenberg', sub: 'BA, Communication', src: '/logos/usc-annenberg.png', h: 44 },
 ];
 
