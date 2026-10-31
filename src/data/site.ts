@@ -247,25 +247,25 @@ export const brandGroups: { title: string; brands: Brand[] }[] = [
   {
     title: 'Brands I Managed · Diageo',
     brands: [
-      { name: 'Johnnie Walker' }, { name: 'Captain Morgan' }, { name: 'Cîroc' },
+      { name: 'Johnnie Walker', src: '/logos/brands/johnniewalker.png', h: 76 }, { name: 'Captain Morgan' }, { name: 'Cîroc' },
       { name: 'Don Julio' }, { name: 'Bulleit' }, { name: 'Tanqueray' },
     ],
   },
   {
     title: 'Brands I Ran, Supported and Advised',
-    brands: [{ name: 'Stillhouse' }, { name: 'Dom Pérignon' }, { name: 'Beverly Spirits' }, { name: 'Perro Verde' }],
+    brands: [{ name: 'Stillhouse' }, { name: 'Dom Pérignon', src: '/logos/brands/domperignon.png', h: 46 }, { name: 'Beverly Spirits' }, { name: 'Perro Verde' }],
   },
   {
     title: 'Brands I Built Programs For · BLKBOX',
-    brands: [{ name: 'Pantene' }, { name: 'Ritz' }, { name: 'belVita' }, { name: 'Samsung' }],
+    brands: [{ name: 'Pantene' }, { name: 'Ritz' }, { name: 'belVita' }, { name: 'Samsung', src: '/logos/brands/samsung.png', h: 18 }],
   },
   {
     title: 'Partnerships',
     brands: [
-      { name: 'American Express' },
-      { name: 'Visa' },
-      { name: 'NetJets' }, { name: 'VistaJet' }, { name: 'Belmond' },
-      { name: 'Sisley Paris' }, { name: 'Four Seasons' }, { name: 'Abercrombie & Kent' },
+      { name: 'American Express', src: '/logos/brands/amex.png', h: 50 },
+      { name: 'Visa', src: '/logos/brands/visa.png', h: 26 },
+      { name: 'NetJets' }, { name: 'VistaJet' }, { name: 'Belmond', src: '/logos/brands/belmond.png', h: 54 },
+      { name: 'Sisley Paris' }, { name: 'Four Seasons', src: '/logos/brands/fourseasons.png', h: 66 }, { name: 'Abercrombie & Kent' },
     ],
   },
 ];
