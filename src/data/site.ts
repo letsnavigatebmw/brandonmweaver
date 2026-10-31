@@ -28,7 +28,7 @@ export const logos = [
   { name: 'Diageo', src: '/logos/diageo.png', h: 22 },
   { name: 'Bonotel Exclusive Travel', src: '/logos/bonotel.png', h: 34 },
   { name: 'Sonder', src: '/logos/sonder.png', h: 26 },
-  { name: 'Lacure Villas', src: '/logos/lacure.png', h: 40 },
+  { name: 'Lacure Villas', src: '/logos/lacure.png', h: 24 },
   { name: 'Stillhouse Spirits Co.', src: '/logos/brands/stillhouse.png', h: 40 },
   { name: 'GE Money', src: '/logos/ge-money.png', h: 40 },
   { name: 'UBS', src: '/logos/ubs.png', h: 34 },
