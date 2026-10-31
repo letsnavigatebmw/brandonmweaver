@@ -108,8 +108,8 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
         <span class="eyebrow">Brands</span>
         <h2 class="h2">Brands I’ve Worked With.</h2>
       </div>
-    </div>
-    <div class="marquee reveal" aria-label="Brands I have worked with">
+    <div class="marquee-wrap reveal">
+    <div class="marquee" aria-label="Brands I have worked with">
       {[0, 1].map((copy) => (
         <ul class="marquee__track" aria-hidden={copy === 1 ? 'true' : undefined}>
           {brands.map((b) => (
@@ -121,6 +121,8 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
           ))}
         </ul>
       ))}
+    </div>
+    </div>
     </div>
   </section>
 
@@ -309,8 +311,9 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .caps p { margin: 0; font-size: 1rem; }
 
   /* Brand carousel */
-  .marquee { position: relative; display: flex; overflow: hidden; margin-top: 2.75rem; padding: 1.25rem 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule);
-    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .marquee-wrap { margin-top: 2.75rem; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
+  .marquee { position: relative; display: flex; overflow: hidden; padding: 1.25rem 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
   .marquee__track { list-style: none; margin: 0; padding: 0; display: flex; flex-shrink: 0; align-items: center; gap: 4rem; padding-right: 4rem; animation: marquee 130s linear infinite; }
   .marquee:hover .marquee__track { animation-play-state: paused; }
   .marquee__track li { display: flex; align-items: center; min-height: 88px; flex-shrink: 0; }
@@ -318,7 +321,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .marquee__name { font-family: var(--serif); font-size: 1.5rem; line-height: 1; color: var(--ink); opacity: .8; font-variant: small-caps; letter-spacing: .02em; white-space: nowrap; }
   @keyframes marquee { to { transform: translateX(-100%); } }
   @media (prefers-reduced-motion: reduce) {
-    .marquee { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; max-width: var(--container); margin-left: auto; margin-right: auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+    .marquee { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; }
     .marquee__track { animation: none; flex-wrap: wrap; flex-shrink: 1; gap: 1.5rem 3rem; }
     .marquee__track[aria-hidden] { display: none; }
   }
