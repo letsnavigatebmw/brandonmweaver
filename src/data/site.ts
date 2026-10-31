@@ -329,6 +329,7 @@ export const celebrityFounders = [
   { name: 'Mark Wahlberg', brand: 'Flecha Azul Tequila' },
   { name: 'Gal Gadot', brand: 'Aspen Vodka' },
   { name: 'Benicio Del Toro', brand: 'Perro Verde' },
+  { name: 'Nacho Figueras', brand: 'Dom Pérignon' },
 ];
 export const cultureCos = ['Universal Music', 'Sony Music', 'Complex', 'The FADER'];
 

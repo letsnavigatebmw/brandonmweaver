@@ -39,10 +39,10 @@ import { culture, cultureCos, celebrityFounders, interests, person } from '../da
     <div class="container rail">
       <div class="rail__head"><span class="eyebrow">Brands × culture</span></div>
       <div class="prose">
-        <p>Through Diageo, Stillhouse Spirits and BLKBOX, I’ve built brand programs with artists and the industry around them, and I’ve worked on spirits brands built by celebrity founders. Music and talent are how brands earn attention they can’t buy.</p>
+        <p>Through Diageo, Stillhouse Spirits and BLKBOX, I’ve built brand programs with artists and the industry around them, and I’ve worked on brands built and fronted by celebrity founders and ambassadors. Music and talent are how brands earn attention they can’t buy.</p>
         <p class="tags__label label">Artists</p>
         <ul class="tags">{culture.map((c) => <li>{c}</li>)}</ul>
-        <p class="tags__label label">Celebrity-Founded Spirits Brands</p>
+        <p class="tags__label label">Celebrity Founders & Ambassadors</p>
         <ul class="tags">{celebrityFounders.map((c) => <li>{c.name} <span class="tags__brand">· {c.brand}</span></li>)}</ul>
         <p class="tags__label label">Music & Media</p>
         <ul class="tags tags--quiet">{cultureCos.map((c) => <li>{c}</li>)}</ul>
