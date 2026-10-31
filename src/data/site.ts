@@ -241,37 +241,40 @@ export const capabilities = [
   { title: 'Team & Culture Building', proof: 'Scaled Sonder California from a team of one to 45; led a 65-person organization at Lacure across 45+ countries.' },
 ];
 
-// Brand wall. A brand without `src` renders as a typeset name until its logo file is added.
+// Brands I've Worked With carousel, in display order. Entries without `src` render as typeset names.
 export type Brand = { name: string; src?: string; h?: number };
-export const brandGroups: { title: string; brands: Brand[] }[] = [
-  {
-    title: 'Brands I Managed · Diageo',
-    brands: [
-      { name: 'Johnnie Walker', src: '/logos/brands/johnniewalker.png', h: 76 }, { name: 'Captain Morgan' }, { name: 'Cîroc' },
-      { name: 'Don Julio' }, { name: 'Bulleit' }, { name: 'Tanqueray' },
-    ],
-  },
-  {
-    title: 'Brands I Ran, Supported and Advised',
-    brands: [{ name: 'Stillhouse' }, { name: 'Dom Pérignon', src: '/logos/brands/domperignon.png', h: 46 }, { name: 'Beverly Spirits' }, { name: 'Perro Verde' }],
-  },
-  {
-    title: 'Brands I Built Programs For · BLKBOX',
-    brands: [{ name: 'Pantene' }, { name: 'Ritz' }, { name: 'belVita' }, { name: 'Samsung', src: '/logos/brands/samsung.png', h: 18 }],
-  },
-  {
-    title: 'Partnerships',
-    brands: [
-      { name: 'American Express', src: '/logos/brands/amex.png', h: 50 },
-      { name: 'Visa', src: '/logos/brands/visa.png', h: 26 },
-      { name: 'NetJets' }, { name: 'VistaJet' }, { name: 'Belmond', src: '/logos/brands/belmond.png', h: 54 },
-      { name: 'Sisley Paris' }, { name: 'Four Seasons', src: '/logos/brands/fourseasons.png', h: 66 }, { name: 'Abercrombie & Kent' },
-      { name: 'The St. James', src: '/logos/brands/stjames.png', h: 18 },
-    ],
-  },
+export const brands: Brand[] = [
+  { name: 'Johnnie Walker', src: '/logos/brands/johnniewalker.png', h: 28 },
+  { name: 'Dom Pérignon', src: '/logos/brands/domperignon.png', h: 48 },
+  { name: 'Audemars Piguet', src: '/logos/brands/audemarspiguet.png', h: 36 },
+  { name: 'Stillhouse' },
+  { name: 'American Express', src: '/logos/brands/amex.png', h: 56 },
+  { name: 'Four Seasons', src: '/logos/brands/fourseasons.png', h: 53 },
+  { name: 'Captain Morgan', src: '/logos/brands/captainmorgan.png', h: 39 },
+  { name: 'Beverly Spirits' },
+  { name: 'Belmond', src: '/logos/brands/belmond.png', h: 50 },
+  { name: 'Don Julio', src: '/logos/brands/donjulio.png', h: 43 },
+  { name: 'Chase', src: '/logos/brands/chase.png', h: 30 },
+  { name: 'Perro Verde' },
+  { name: 'Samsung', src: '/logos/brands/samsung.png', h: 24 },
+  { name: 'Cîroc', src: '/logos/brands/ciroc.png', h: 37 },
+  { name: 'NetJets', src: '/logos/brands/netjets.png', h: 35 },
+  { name: 'Pantene' },
+  { name: 'Tanqueray', src: '/logos/brands/tanqueray.png', h: 54 },
+  { name: 'P&G', src: '/logos/brands/pg.png', h: 56 },
+  { name: 'Bulleit', src: '/logos/brands/bulleit.png', h: 54 },
+  { name: 'Ritz' },
+  { name: 'Verizon', src: '/logos/brands/verizon.png', h: 32 },
+  { name: 'Sisley Paris', src: '/logos/brands/sisley.png', h: 62 },
+  { name: 'Bacardi', src: '/logos/brands/bacardi.png', h: 38 },
+  { name: 'belVita' },
+  { name: 'Compass', src: '/logos/brands/compass.png', h: 26 },
+  { name: 'SkinCeuticals', src: '/logos/brands/skinceuticals.png', h: 28 },
+  { name: 'Visa', src: '/logos/brands/visa.png', h: 27 },
+  { name: 'VistaJet' },
+  { name: 'The St. James', src: '/logos/brands/stjames.png', h: 18 },
+  { name: 'Abercrombie & Kent' },
 ];
-
-export const brands: Brand[] = brandGroups.flatMap((g) => g.brands);
 
 export const principles = [
   {
