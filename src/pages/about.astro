@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
-import portrait from '../assets/brandon-portrait.jpg';
+import portrait from '../assets/brandon-cutout.png';
 import { culture, cultureCos, celebrityFounders, interests, person } from '../data/site';
 ---
 <Base title="About" description="The story behind Brandon M. Weaver: Los Angeles, Diageo in Cape Town, Bonotel, Sonder, Lacure and Aperture Hospitality.">
@@ -12,7 +12,7 @@ import { culture, cultureCos, celebrityFounders, interests, person } from '../da
         <h1 class="display">Many Rooms, One <em>Frequency</em>.</h1>
       </div>
       <figure class="photo">
-        <Image src={portrait} alt="Brandon M. Weaver" widths={[360, 560]} sizes="(min-width: 900px) 28vw, 70vw" />
+        <Image src={portrait} alt="Brandon M. Weaver" widths={[360, 560]} sizes="(min-width: 900px) 28vw, 70vw" format="webp" />
       </figure>
     </div>
   </section>
@@ -66,7 +66,7 @@ import { culture, cultureCos, celebrityFounders, interests, person } from '../da
   .head { display: grid; gap: 2.5rem; align-items: end; }
   @media (min-width: 900px) { .head { grid-template-columns: 8fr 4fr; gap: 4rem; } }
   .head .eyebrow { margin: 0 0 1.25rem; }
-  .photo { margin: 0; background: #efefef; aspect-ratio: 4 / 5; overflow: hidden; max-width: 380px; border-radius: 2px; }
+  .photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; max-width: 380px; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
   .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; }
   .essay p { font-size: 1.125rem; line-height: 1.75; }
   .essay .lede { font-size: 1.5rem; line-height: 1.45; color: var(--ink); margin-bottom: 1.5rem; }

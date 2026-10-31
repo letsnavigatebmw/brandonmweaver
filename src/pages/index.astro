@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Contact from '../components/Contact.astro';
-import portrait from '../assets/brandon-portrait.jpg';
+import portrait from '../assets/brandon-cutout.png';
 import { person, stats, logos, schools, testimonials, roles, principles, culture, capabilities, launches, brands } from '../data/site';
 import { writing, videos } from '../data/writing';
 
@@ -27,7 +27,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
         </div>
       </div>
       <figure class="hero__photo">
-        <Image src={portrait} alt="Brandon M. Weaver" widths={[400, 640, 900]} sizes="(min-width: 900px) 40vw, 90vw" loading="eager" fetchpriority="high" />
+        <Image src={portrait} alt="Brandon M. Weaver" widths={[400, 640, 900]} sizes="(min-width: 900px) 40vw, 90vw" format="webp" loading="eager" fetchpriority="high" />
       </figure>
     </div>
     <div class="container">
@@ -51,7 +51,10 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   <!-- Proof -->
   <section class="section" aria-labelledby="proof-h">
     <div class="container">
-      <h2 id="proof-h" class="sr">Selected Results</h2>
+      <div class="reveal sec-head">
+        <span class="eyebrow">By the Numbers</span>
+        <h2 id="proof-h" class="h2">Professional Highlights.</h2>
+      </div>
       <dl class="stats reveal">
         {stats.map((s) => (
           <div class="stat">
@@ -60,6 +63,10 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
           </div>
         ))}
       </dl>
+      <div class="reveal sec-head sec-head--quotes">
+        <span class="eyebrow">Client Testimonials</span>
+        <h2 class="h2">What My Clients Say.</h2>
+      </div>
       <div class="quotes reveal">
         {testimonials.map((t) => (
           <figure class="quote">
@@ -249,24 +256,24 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .hero__copy .label { margin: 0 0 2rem; letter-spacing: .16em; }
   .hero__sub { max-width: 34rem; margin: 2.25rem 0 2.5rem; font-size: 1.125rem; }
   .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2rem; }
-  .hero__photo { margin: 0; background: #efefef; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 2px; }
+  .hero__photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
   .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
   @media (max-width: 899px) { .hero__photo { max-width: 420px; aspect-ratio: 1 / 1; order: -1; } }
 
   .creds { display: grid; gap: 2.25rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
-  @media (min-width: 1000px) { .creds { grid-template-columns: 1fr 320px; gap: 0; } .creds__group--edu { padding-left: 2.75rem; margin-left: 2.75rem; border-left: 1px solid var(--rule); } }
+  .creds__group--edu { padding-top: 2.25rem; border-top: 1px solid var(--rule); }
   .creds__group { display: grid; gap: 1.5rem; align-content: start; }
   .creds__title { font-family: var(--sans); font-size: .9375rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 0; }
   .creds__logos, .creds__schools { list-style: none; margin: 0; padding: 0; }
   .creds__logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; }
   @media (min-width: 640px) { .creds__logos { grid-template-columns: repeat(4, 1fr); } }
-  .creds__logos li { display: flex; align-items: center; justify-content: flex-start; min-height: 76px; }
-  .creds__logos img { width: auto; max-width: 150px; object-fit: contain; opacity: .78; transition: opacity .2s ease; }
+  .creds__logos li { display: flex; align-items: center; justify-content: flex-start; min-height: 96px; }
+  .creds__logos img { width: auto; max-width: 170px; object-fit: contain; opacity: .78; transition: opacity .2s ease; }
   .creds__logos img:hover { opacity: 1; }
   .wordmark { font-family: var(--serif); font-size: 1.45rem; line-height: 1; color: var(--ink); opacity: .78; letter-spacing: .02em; font-variant: small-caps; white-space: nowrap; }
-  .creds__schools { display: flex; flex-direction: column; align-items: flex-start; gap: 1.75rem; }
-  @media (max-width: 999px) { .creds__schools { flex-direction: row; flex-wrap: wrap; gap: 1.25rem 2.5rem; } }
-  .creds__schools li { display: grid; gap: .3rem; }
+  .creds__schools { display: grid; grid-template-columns: 1fr; gap: 1.75rem; align-items: center; }
+  @media (min-width: 640px) { .creds__schools { grid-template-columns: repeat(3, 1fr); } }
+  .creds__schools li { display: flex; align-items: center; min-height: 72px; }
   .creds__schools .wordmark { font-size: 1.2rem; }
   .creds__school { opacity: .78; }
   .creds__sub { font-size: .75rem; font-weight: 550; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
@@ -279,7 +286,9 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   @media (min-width: 1000px) { .stat { border-bottom: 0; padding-right: 2rem; } .stat + .stat { padding-left: 2rem; border-left: 1px solid var(--rule); } }
   .stat__v { font-family: var(--serif); font-weight: 300; font-size: clamp(2.75rem, 4.5vw, 3.75rem); line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
   .stat__l { margin: .9rem 0 0; font-size: .9375rem; line-height: 1.5; color: var(--ink-2); }
-  .quotes { display: grid; gap: 2.5rem; margin-top: clamp(3.5rem, 7vw, 5.5rem); }
+  .sec-head { margin-bottom: 2.5rem; }
+  .sec-head--quotes { margin-top: clamp(4rem, 8vw, 6rem); }
+  .quotes { display: grid; gap: 2.5rem; }
   @media (min-width: 900px) { .quotes { grid-template-columns: repeat(3, 1fr); gap: 3rem; } }
   .quote { margin: 0; }
   .quote blockquote { margin: 0; font-family: var(--serif); font-style: italic; font-size: 1.3rem; line-height: 1.45; color: var(--ink); }
