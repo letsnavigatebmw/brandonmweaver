@@ -5,5 +5,5 @@ export default defineConfig({
   site: 'https://www.brandonmweaver.com',
   integrations: [sitemap()],
   build: { inlineStylesheets: 'auto' },
-  redirects: { '/writing': '/thought-leadership' },
+  redirects: { '/writing': '/thought-leadership', '/work': '/experience' },
 });
