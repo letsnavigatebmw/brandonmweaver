@@ -262,7 +262,7 @@ export const brands: Brand[] = [
   { name: 'American Express', src: '/logos/brands/amex.png', h: 56 },
   { name: 'Aman', src: '/logos/brands/aman.png', h: 30 },
   { name: 'Captain Morgan', src: '/logos/brands/captainmorgan.png', h: 39 },
-  { name: 'Beverly Spirits' },
+  { name: 'The Beverly High Rye', src: '/logos/brands/beverly.png', h: 54 },
   { name: 'Southern Glazer’s Wine & Spirits', src: '/logos/brands/southernglazers.png', h: 66 },
   { name: 'NFL', src: '/logos/brands/nfl.png', h: 60 },
   { name: 'MLB', src: '/logos/brands/mlb.png', h: 46 },
