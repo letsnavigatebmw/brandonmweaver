@@ -312,7 +312,13 @@ export const advisory = [
   { org: 'WES Brands', role: 'Strategic Advisor', note: 'Premium spirits portfolio company', years: '2021 – 2023' },
 ];
 
-export const culture = ['Pharrell Williams', 'French Montana', 'G-Eazy', 'Ryan Leslie', 'Burna Boy', 'Black Coffee'];
+export const culture = ['French Montana', 'G-Eazy', 'Ryan Leslie', 'Burna Boy', 'Black Coffee'];
+export const celebrityFounders = [
+  { name: 'Jamie Foxx', brand: 'Brown Sugar Bourbon' },
+  { name: 'Mark Wahlberg', brand: 'Flecha Azul Tequila' },
+  { name: 'Gal Gadot', brand: 'Aspen Vodka' },
+  { name: 'Benicio Del Toro', brand: 'Perro Verde' },
+];
 export const cultureCos = ['Universal Music', 'Sony Music', 'Complex', 'The FADER'];
 
 export const interests = ['Football, American and European', 'Travel', 'Art', 'Fashion', 'Architecture & design', 'Mentoring'];
