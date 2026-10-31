@@ -23,7 +23,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
         </p>
         <div class="hero__cta">
           <a class="btn" href="#contact">Get in touch</a>
-          <a class="link" href="/work">See the track record</a>
+          <a class="link" href="/experience">See the track record</a>
         </div>
       </div>
       <figure class="hero__photo">
@@ -171,7 +171,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
             </li>
           ))}
         </ol>
-        <a class="link" href="/work">Full experience, advisory roles and education</a>
+        <a class="link" href="/experience">Full experience, advisory roles and education</a>
       </div>
     </div>
   </section>
@@ -181,7 +181,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
     <div class="container">
       <div class="reveal" style="max-width:760px">
         <span class="eyebrow">How I operate</span>
-        <h2 class="h2" style="margin-top:1rem">Three Principles</h2>
+        <h2 class="h2" style="margin-top:1rem">3 Principles That Guide My Approach</h2>
       </div>
       <ol class="principles reveal">
         {principles.map((p, i) => (
@@ -201,7 +201,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
       <div class="rail__head reveal">
         <span class="eyebrow">Thought leadership</span>
         <h2 class="h2">On the Record</h2>
-        <p class="lede" style="margin-top:1.25rem">27 essays, guides and white papers on AI, growth and luxury.</p>
+        <p class="lede" style="margin-top:1.25rem">A selection of white papers, playbooks and opinion pieces on topics ranging from luxury marketing and commercial strategy to operations, artificial intelligence, data and leadership.</p>
       </div>
       <div class="reveal">
         <ul class="pieces">
@@ -234,10 +234,10 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
     <div class="container rail">
       <div class="rail__head reveal">
         <span class="eyebrow">About</span>
-        <h2 class="h2">Many Rooms, One <em>Frequency</em></h2>
+        <h2 class="h2">Many Rooms…<br />One <em>Frequency</em></h2>
       </div>
       <div class="prose reveal">
-        <p class="lede" style="font-style:normal;color:var(--ink)">I grew up in Los Angeles, where the expected path was medicine, education or another respected profession. I chose commerce, and it has taken me from Cape Town boardrooms to Las Vegas hotel deals to the spirits aisle at Walmart.</p>
+        <p>I grew up in Los Angeles, where the expected path was medicine, education or another respected profession. I chose commerce, and it has taken me from Cape Town boardrooms to Las Vegas hotel deals to the spirits aisle at Walmart.</p>
         <p>The thread through all of it is relationships. I build relationship capital the way others build financial capital: deliberately, generously and with a long time horizon. Along the way that has meant brand work with artists including {culture.slice(0, 4).join(', ')} and {culture[4]}, and partnerships with American Express, NetJets and Four Seasons.</p>
         <p class="edu">Kellogg MBA · Harvard Kennedy School MPA · USC Annenberg BA</p>
         <a class="link" href="/about">The longer story</a>
@@ -332,7 +332,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   @media (min-width: 700px) { .now { grid-template-columns: 1fr 1fr; } }
   .card { background: var(--paper-2); padding: 2rem; border-radius: 2px; display: flex; flex-direction: column; gap: .9rem; }
   .card p { margin: 0; }
-  .card .link { margin-top: auto; padding-top: .5rem; }
+  .card .link { margin-top: auto; align-self: flex-start; }
   .card__logo { height: 18px; width: auto; margin: .4rem 0 .4rem; }
   .card__title { font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; color: var(--ink); }
 

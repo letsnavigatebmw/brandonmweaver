@@ -120,12 +120,15 @@ p { margin: 0 0 1em; }
 }
 .btn:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .link {
-  font-weight: 550; font-size: 0.9375rem; color: var(--ink); text-decoration: underline;
-  text-decoration-color: var(--rule); text-underline-offset: 6px; text-decoration-thickness: 1px;
-  transition: text-decoration-color .2s ease, color .2s ease;
+  display: inline-block;
+  font-weight: 600; font-size: 1.125rem; line-height: 1.4; color: var(--ink); text-decoration: none;
+  padding-bottom: 4px; border-bottom: 1px solid var(--rule);
+  transition: border-color .2s ease, color .2s ease;
 }
-.link:hover { color: var(--accent); text-decoration-color: var(--accent); }
-.link::after { content: ' →'; }
+.link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.link::after { content: '\00a0→'; display: inline-block; transition: transform .2s ease; }
+.link:hover::after { transform: translateX(3px); }
+.link--plain { font-size: 1rem; }
 .link--plain::after { content: none; }
 
 /* ---------- Reveal on scroll ---------- */
