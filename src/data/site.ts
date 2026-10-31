@@ -282,6 +282,7 @@ export const brands: Brand[] = [
   { name: 'The h.wood Group', src: '/logos/brands/hwood.png', h: 36 },
   { name: 'Tanqueray', src: '/logos/brands/tanqueray.png', h: 54 },
   { name: 'Lagavulin', src: '/logos/brands/lagavulin.png', h: 20 },
+  { name: 'The Singleton', src: '/logos/brands/singleton.png', h: 40 },
   { name: 'U.S. Army', src: '/logos/brands/usarmy.png', h: 30 },
   { name: 'ESPN', src: '/logos/brands/espn.png', h: 26 },
   { name: 'Hyatt', src: '/logos/brands/hyatt.png', h: 34 },
