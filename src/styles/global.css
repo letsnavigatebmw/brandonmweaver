@@ -67,10 +67,11 @@ p { margin: 0 0 1em; }
 
 /* ---------- Type ---------- */
 .display {
-  font-size: clamp(2.75rem, 6.2vw, 5.5rem);
-  line-height: 1.02;
-  letter-spacing: -0.025em;
+  font-size: clamp(2.75rem, 6vw, 5.25rem);
+  line-height: 1.12;
+  letter-spacing: -0.012em;
   font-variation-settings: 'opsz' 72;
+  text-wrap: balance;
 }
 .h2 { font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.08; font-variation-settings: 'opsz' 60; }
 .h3 { font-size: 1.5rem; line-height: 1.2; font-weight: 450; }
