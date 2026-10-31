@@ -330,6 +330,7 @@ export const celebrityFounders = [
   { name: 'Gal Gadot', brand: 'Aspen Vodka' },
   { name: 'Benicio Del Toro', brand: 'Perro Verde' },
   { name: 'Nacho Figueras', brand: 'Dom Pérignon' },
+  { name: 'Michael Bublé', brand: 'Fraser & Thompson' },
 ];
 export const cultureCos = ['Universal Music', 'Sony Music', 'Complex', 'The FADER'];
 
