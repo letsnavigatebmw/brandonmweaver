@@ -43,7 +43,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
         <div class="creds__group creds__group--edu" aria-label="Education">
           <h2 class="creds__title">Education</h2>
           <ul class="creds__schools">
-            {schools.map((s) => <li>{s.src ? <img src={s.src} alt={s.name} style={{ height: `${s.h}px`, width: 'auto' }} class="creds__school" loading="lazy" /> : <span class="wordmark">{s.name}</span>}<span class="creds__sub">{s.sub}</span></li>)}
+            {schools.map((s) => <li>{s.src ? <img src={s.src} alt={s.name} style={{ height: `${s.h}px`, width: 'auto' }} class="creds__school" loading="lazy" /> : <span class="wordmark">{s.name}</span>}</li>)}
           </ul>
         </div>
       </div>
@@ -266,7 +266,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .creds__logos img { width: auto; max-width: 150px; object-fit: contain; opacity: .78; transition: opacity .2s ease; }
   .creds__logos img:hover { opacity: 1; }
   .wordmark { font-family: var(--serif); font-size: 1.45rem; line-height: 1; color: var(--ink); opacity: .78; letter-spacing: .02em; font-variant: small-caps; white-space: nowrap; }
-  .creds__schools { display: flex; flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+  .creds__schools { display: flex; flex-direction: column; align-items: flex-start; gap: 1.75rem; }
   @media (max-width: 999px) { .creds__schools { flex-direction: row; flex-wrap: wrap; gap: 1.25rem 2.5rem; } }
   .creds__schools li { display: grid; gap: .3rem; }
   .creds__schools .wordmark { font-size: 1.2rem; }
