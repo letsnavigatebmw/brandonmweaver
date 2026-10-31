@@ -35,9 +35,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
         <div class="creds__group" aria-label="Where I have worked">
           <h2 class="creds__title">Where I’ve Worked</h2>
           <ul class="creds__logos">
-            {logos.slice(0, 4).map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
-            <li><span class="wordmark">Stillhouse</span></li>
-            {logos.slice(4).map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
+            {logos.map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
           </ul>
         </div>
         <div class="creds__group creds__group--edu" aria-label="Education">
