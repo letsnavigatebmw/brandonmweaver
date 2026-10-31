@@ -39,7 +39,7 @@ export const logos = [
 export const schools: { name: string; sub: string; src?: string; h?: number }[] = [
   { name: 'Kellogg', sub: 'Northwestern · MBA', src: '/logos/kellogg.png', h: 34 },
   { name: 'Harvard Kennedy School', sub: 'MPA' },
-  { name: 'USC', sub: 'Annenberg · BA' },
+  { name: 'USC Annenberg', sub: 'BA, Communication', src: '/logos/usc-annenberg.png', h: 44 },
 ];
 
 export const testimonials = [
