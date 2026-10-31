@@ -1,0 +1,33 @@
+---
+import { person } from '../data/site';
+const year = new Date().getFullYear();
+---
+<footer class="foot">
+  <div class="container foot__inner">
+    <div>
+      <p class="foot__name">Brandon M. Weaver</p>
+      <p class="foot__sub">Los Angeles · Founder & Principal, Aperture Hospitality</p>
+    </div>
+    <ul class="foot__links">
+      <li><a href={person.linkedin} rel="noopener" target="_blank">LinkedIn</a></li>
+      <li><a href={person.substack} rel="noopener" target="_blank">Substack</a></li>
+      <li><a href={person.youtube} rel="noopener" target="_blank">YouTube</a></li>
+      <li><a href={person.instagram} rel="noopener" target="_blank">Instagram</a></li>
+      <li><a href={`mailto:${person.email}`}>Email</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <p class="foot__legal">© {year} Brandon M. Weaver</p>
+  </div>
+</footer>
+
+<style>
+  .foot { border-top: 1px solid var(--rule); padding: 3.5rem 0 2.5rem; }
+  .foot__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; align-items: flex-start; }
+  .foot__name { font-family: var(--serif); font-size: 1.5rem; color: var(--ink); margin: 0 0 .25rem; }
+  .foot__sub { font-size: .875rem; color: var(--ink-3); margin: 0; }
+  .foot__links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; }
+  .foot__links a { font-size: .9375rem; font-weight: 500; color: var(--ink-2); text-decoration: none; }
+  .foot__links a:hover { color: var(--accent); }
+  .foot__legal { margin: 2.5rem 0 0; font-size: .8125rem; color: var(--ink-3); }
+</style>

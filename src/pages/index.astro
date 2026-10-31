@@ -1,0 +1,366 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Contact from '../components/Contact.astro';
+import portrait from '../assets/brandon-cutout.png';
+import { person, stats, logos, schools, testimonials, roles, principles, culture, capabilities, launches, brands } from '../data/site';
+import { writing, videos } from '../data/writing';
+
+const featured = writing.filter((w) => w.featured);
+const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes(r.company));
+---
+<Base>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="label label--accent">Commerce · Culture · Connectivity</p>
+        <h1 class="display">Turning Strong Brands into <em>Stronger</em> Businesses</h1>
+        <p class="hero__sub">
+          20+ years building and scaling brands across spirits, luxury hospitality, travel and real estate technology.
+          COO of Bonotel through its sale to Certares, GM of Stillhouse Spirits and CCO of Lacure.
+          Today I advise super-premium brands through Aperture Hospitality.
+        </p>
+        <div class="hero__cta">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="link" href="/work">See the track record</a>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <Image src={portrait} alt="Brandon M. Weaver" widths={[400, 640, 900]} sizes="(min-width: 900px) 40vw, 90vw" format="webp" loading="eager" fetchpriority="high" />
+      </figure>
+    </div>
+    <div class="container">
+      <div class="creds">
+        <div class="creds__group" aria-label="Where I have worked">
+          <h2 class="creds__title">Where I’ve Worked</h2>
+          <ul class="creds__logos">
+            {logos.map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
+          </ul>
+        </div>
+        <div class="creds__group creds__group--edu" aria-label="Education">
+          <h2 class="creds__title">Education</h2>
+          <ul class="creds__schools">
+            {schools.map((s) => <li>{s.src ? <img src={s.src} alt={s.name} style={{ height: `${s.h}px`, width: 'auto' }} class="creds__school" loading="lazy" /> : <span class="wordmark">{s.name}</span>}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof -->
+  <section class="section" aria-labelledby="proof-h">
+    <div class="container">
+      <div class="reveal sec-head">
+        <span class="eyebrow">By the Numbers</span>
+        <h2 id="proof-h" class="h2">Professional Highlights</h2>
+      </div>
+      <dl class="stats reveal">
+        {stats.map((s) => (
+          <div class="stat">
+            <dt class="stat__v num">{s.value}</dt>
+            <dd class="stat__l">{s.label}</dd>
+          </div>
+        ))}
+      </dl>
+      <div class="reveal sec-head sec-head--quotes">
+        <span class="eyebrow">Client Testimonials</span>
+        <h2 class="h2">What My Clients Say</h2>
+      </div>
+      <div class="quotes reveal">
+        {testimonials.map((t) => (
+          <figure class="quote">
+            <blockquote>“{t.quote}”</blockquote>
+            <figcaption><strong>{t.name}</strong><span>{t.title}</span></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do -->
+  <section class="section" id="capabilities">
+    <div class="container rail">
+      <div class="rail__head reveal">
+        <span class="eyebrow">Capabilities</span>
+        <h2 class="h2">What I Do</h2>
+        <div class="launch">
+          <p class="launch__n num">8+</p>
+          <p class="launch__l">Brands, Products and Business Lines Launched</p>
+          <ul class="launch__list">{launches.map((l) => <li>{l}</li>)}</ul>
+        </div>
+      </div>
+      <ul class="caps reveal">
+        {capabilities.map((c) => (
+          <li>
+            <h3 class="caps__t">{c.title}</h3>
+            <p>{c.proof}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="section" id="brands">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">Brands</span>
+        <h2 class="h2">Brands I’ve Worked With</h2>
+      </div>
+    <div class="marquee-wrap reveal">
+    <div class="marquee" aria-label="Brands I have worked with">
+      {[0, 1].map((copy) => (
+        <ul class="marquee__track" aria-hidden={copy === 1 ? 'true' : undefined}>
+          {brands.map((b) => (
+            <li>
+              {b.src
+                ? <img src={b.src} alt={copy === 0 ? b.name : ''} style={{ height: `${b.h ?? 32}px`, width: 'auto' }} loading="lazy" />
+                : <span class="marquee__name">{b.name}</span>}
+            </li>
+          ))}
+        </ul>
+      ))}
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Now -->
+  <section class="section">
+    <div class="container rail">
+      <div class="rail__head reveal">
+        <span class="eyebrow">Now</span>
+        <h2 class="h2">What I’m Building</h2>
+      </div>
+      <div class="now reveal">
+        <article class="card">
+          <img src="/logos/aperture.png" alt="Aperture Hospitality" class="card__logo" loading="lazy" />
+          <p class="label">Founder & Principal · 2018 – Present</p>
+          <p>An advisory practice for spirits, consumer and hospitality brands. Current work includes the RTD route-to-market for Beverly Spirits, distribution strategy for Perro Verde mezcal, and go-to-market for Swarm, an AI compute marketplace.</p>
+          <a class="link" href="https://www.aperturehospitality.com" target="_blank" rel="noopener">aperturehospitality.com</a>
+        </article>
+        <article class="card">
+          <p class="card__title">Expand Your Aperture</p>
+          <p class="label">Publisher · Substack</p>
+          <p>A newsletter on AI, organizational intelligence and business transformation. Written for operators who have to make it work on Monday morning.</p>
+          <a class="link" href={person.substack} target="_blank" rel="noopener">Subscribe</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Track record -->
+  <section class="section" id="work">
+    <div class="container rail">
+      <div class="rail__head reveal">
+        <span class="eyebrow">Track record</span>
+        <h2 class="h2">Twenty Years, One Through Line</h2>
+        <p class="lede" style="margin-top:1.25rem">Launch it, scale it, make the numbers work.</p>
+      </div>
+      <div class="reveal">
+        <ol class="tl">
+          {trackRecord.map((r) => (
+            <li class="tl__row">
+              <span class="tl__yr label num">{r.years}</span>
+              <div>
+                <h3 class="h3">{r.company}</h3>
+                <p class="tl__role">{r.title}</p>
+                <p class="tl__line">{r.headline}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <a class="link" href="/work">Full experience, advisory roles and education</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="max-width:760px">
+        <span class="eyebrow">How I operate</span>
+        <h2 class="h2" style="margin-top:1rem">Three Principles</h2>
+      </div>
+      <ol class="principles reveal">
+        {principles.map((p, i) => (
+          <li>
+            <span class="label num">0{i + 1}</span>
+            <h3 class="h3">{p.title}</h3>
+            <p>{p.body}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Thought leadership -->
+  <section class="section">
+    <div class="container rail">
+      <div class="rail__head reveal">
+        <span class="eyebrow">Thought leadership</span>
+        <h2 class="h2">On the Record</h2>
+        <p class="lede" style="margin-top:1.25rem">27 essays, guides and white papers on AI, growth and luxury.</p>
+      </div>
+      <div class="reveal">
+        <ul class="pieces">
+          {featured.map((w) => (
+            <li>
+              <a href={w.url} target="_blank" rel="noopener">
+                <span class="label">{w.type} · {w.category}</span>
+                <span class="pieces__t">{w.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a class="link" href="/thought-leadership">All thought leadership</a>
+
+        <div class="vids">
+          {videos.slice(0, 3).map((v) => (
+            <a class="vid" href={`https://www.youtube.com/shorts/${v.id}`} target="_blank" rel="noopener">
+              <img src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`} alt="" loading="lazy" width="480" height="360" />
+              <span class="vid__t">{v.title}</span>
+            </a>
+          ))}
+        </div>
+        <a class="link" href={person.youtube} target="_blank" rel="noopener">More on YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About (short) -->
+  <section class="section">
+    <div class="container rail">
+      <div class="rail__head reveal">
+        <span class="eyebrow">About</span>
+        <h2 class="h2">Many Rooms, One <em>Frequency</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p class="lede" style="font-style:normal;color:var(--ink)">I grew up in Los Angeles, where the expected path was medicine, education or another respected profession. I chose commerce, and it has taken me from Cape Town boardrooms to Las Vegas hotel deals to the spirits aisle at Walmart.</p>
+        <p>The thread through all of it is relationships. I build relationship capital the way others build financial capital: deliberately, generously and with a long time horizon. Along the way that has meant brand work with artists including {culture.slice(0, 4).join(', ')} and {culture[4]}, and partnerships with American Express, NetJets and Four Seasons.</p>
+        <p class="edu">Kellogg MBA · Harvard Kennedy School MPA · USC Annenberg BA</p>
+        <a class="link" href="/about">The longer story</a>
+      </div>
+    </div>
+  </section>
+
+  <Contact />
+</Base>
+
+<style>
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+  /* Hero */
+  .hero { padding: clamp(2.5rem, 6vw, 5rem) 0 0; }
+  .hero__grid { display: grid; gap: 2.5rem; align-items: center; }
+  @media (min-width: 900px) { .hero__grid { grid-template-columns: 7fr 5fr; gap: 4rem; } }
+  .hero__copy .label { margin: 0 0 2rem; letter-spacing: .16em; }
+  .hero__sub { max-width: 34rem; margin: 2.25rem 0 2.5rem; font-size: 1.125rem; }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2rem; }
+  .hero__photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
+  .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+  @media (max-width: 899px) { .hero__photo { max-width: 420px; aspect-ratio: 1 / 1; order: -1; } }
+
+  .creds { display: grid; gap: 2.25rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
+  .creds__group--edu { padding-top: 2.25rem; border-top: 1px solid var(--rule); }
+  .creds__group { display: grid; gap: 1.5rem; align-content: start; }
+  .creds__title { font-family: var(--sans); font-size: .9375rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin: 0; }
+  .creds__logos, .creds__schools { list-style: none; margin: 0; padding: 0; }
+  .creds__logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; }
+  @media (min-width: 640px) { .creds__logos { grid-template-columns: repeat(4, 1fr); } }
+  .creds__logos li { display: flex; align-items: center; justify-content: center; min-height: 96px; }
+  .creds__logos img { width: auto; max-width: 170px; object-fit: contain; opacity: .78; transition: opacity .2s ease; }
+  .creds__logos img:hover { opacity: 1; }
+  .wordmark { font-family: var(--serif); font-size: 1.45rem; line-height: 1; color: var(--ink); opacity: .78; letter-spacing: .02em; font-variant: small-caps; white-space: nowrap; }
+  .creds__schools { display: grid; grid-template-columns: 1fr; gap: 1.75rem; align-items: center; }
+  @media (min-width: 640px) { .creds__schools { grid-template-columns: repeat(3, 1fr); } }
+  .creds__schools li { display: flex; align-items: center; justify-content: center; min-height: 104px; }
+  .creds__school { max-width: 100%; }
+  .creds__schools .wordmark { font-size: 1.2rem; }
+  .creds__school { opacity: .78; }
+  .creds__sub { font-size: .75rem; font-weight: 550; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+
+  /* Proof */
+  .stats { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.25rem; margin: 0; border-top: 1px solid var(--ink); }
+  @media (max-width: 639px) { .stat { padding-right: 0; } .stat__l { font-size: .8125rem; } }
+  @media (min-width: 1000px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+  .stat { padding: 1.75rem 1.5rem 1.75rem 0; border-bottom: 1px solid var(--rule); }
+  @media (min-width: 1000px) { .stat { border-bottom: 0; padding-right: 2rem; } .stat + .stat { padding-left: 2rem; border-left: 1px solid var(--rule); } }
+  .stat__v { font-family: var(--serif); font-weight: 600; font-size: clamp(2.75rem, 4.5vw, 3.75rem); line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
+  .stat__l { margin: .9rem 0 0; font-size: .9375rem; line-height: 1.5; color: var(--ink-2); }
+  .sec-head { margin-bottom: 2.5rem; }
+  .sec-head--quotes { margin-top: clamp(4rem, 8vw, 6rem); }
+  .quotes { display: grid; gap: 2.5rem; }
+  @media (min-width: 900px) { .quotes { grid-template-columns: repeat(3, 1fr); gap: 3rem; } }
+  .quote { margin: 0; }
+  .quote blockquote { margin: 0; font-family: var(--serif); font-style: italic; font-size: 1.3rem; line-height: 1.45; color: var(--ink); }
+  .quote figcaption { margin-top: 1.25rem; display: grid; gap: .15rem; font-size: .875rem; }
+  .quote figcaption strong { color: var(--ink); font-weight: 600; }
+  .quote figcaption span { color: var(--ink-3); }
+
+  /* What I Do */
+  .launch { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  .launch__n { margin: 0; font-family: var(--serif); font-weight: 600; font-size: clamp(2.75rem, 4.5vw, 3.75rem); line-height: 1; color: var(--accent); }
+  .launch__l { margin: .6rem 0 1rem; font-size: .9375rem; font-weight: 600; color: var(--ink); }
+  .launch__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .launch__list li { font-size: .8125rem; padding: .3rem .65rem; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink-2); }
+  .caps { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--ink); }
+  @media (min-width: 700px) { .caps { grid-template-columns: 1fr 1fr; column-gap: 2.5rem; } }
+  .caps li { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+  .caps__t { font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; font-weight: 450; margin: 0 0 .5rem; }
+  .caps p { margin: 0; font-size: 1rem; }
+
+  /* Brand carousel */
+  .marquee-wrap { margin-top: 2.75rem; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
+  .marquee { position: relative; display: flex; overflow: hidden; padding: 1.25rem 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+  .marquee__track { list-style: none; margin: 0; padding: 0; display: flex; flex-shrink: 0; align-items: center; gap: 4rem; padding-right: 4rem; animation: marquee 130s linear infinite; }
+  .marquee:hover .marquee__track { animation-play-state: paused; }
+  .marquee__track li { display: flex; align-items: center; min-height: 88px; flex-shrink: 0; }
+  .marquee__track img { max-width: 220px; object-fit: contain; opacity: .8; }
+  .marquee__name { font-family: var(--serif); font-size: 1.5rem; line-height: 1; color: var(--ink); opacity: .8; font-variant: small-caps; letter-spacing: .02em; white-space: nowrap; }
+  @keyframes marquee { to { transform: translateX(-100%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; }
+    .marquee__track { animation: none; flex-wrap: wrap; flex-shrink: 1; gap: 1.5rem 3rem; }
+    .marquee__track[aria-hidden] { display: none; }
+  }
+
+  /* Now */
+  .now { display: grid; gap: 1.5rem; }
+  @media (min-width: 700px) { .now { grid-template-columns: 1fr 1fr; } }
+  .card { background: var(--paper-2); padding: 2rem; border-radius: 2px; display: flex; flex-direction: column; gap: .9rem; }
+  .card p { margin: 0; }
+  .card .link { margin-top: auto; padding-top: .5rem; }
+  .card__logo { height: 18px; width: auto; margin: .4rem 0 .4rem; }
+  .card__title { font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; color: var(--ink); }
+
+  /* Track record */
+  .tl { list-style: none; margin: 0 0 2rem; padding: 0; border-top: 1px solid var(--ink); }
+  .tl__row { display: grid; gap: .35rem 2rem; padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+  @media (min-width: 640px) { .tl__row { grid-template-columns: 9rem 1fr; } .tl__yr { padding-top: .45rem; } }
+  .tl__role { margin: .2rem 0 .4rem; font-family: var(--serif); font-style: italic; color: var(--ink-2); }
+  .tl__line { margin: 0; font-size: 1rem; }
+
+  /* Principles */
+  .principles { list-style: none; padding: 0; margin: 3rem 0 0; display: grid; gap: 2.5rem; border-top: 1px solid var(--ink); }
+  @media (min-width: 900px) { .principles { grid-template-columns: repeat(3, 1fr); gap: 0; } .principles li { padding: 2rem 2rem 0 0; } .principles li + li { padding-left: 2rem; border-left: 1px solid var(--rule); } }
+  .principles li { padding-top: 2rem; }
+  .principles .h3 { margin: .9rem 0 .75rem; }
+  .principles p { margin: 0; }
+
+  /* Writing */
+  .pieces { list-style: none; margin: 0 0 2rem; padding: 0; border-top: 1px solid var(--ink); }
+  .pieces a { display: grid; gap: .4rem; padding: 1.4rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .pieces__t { font-family: var(--serif); font-size: 1.375rem; line-height: 1.25; color: var(--ink); transition: color .2s ease; }
+  .pieces a:hover .pieces__t { color: var(--accent); }
+  .vids { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 3rem 0 1.5rem; }
+  @media (max-width: 559px) { .vids { grid-template-columns: 1fr 1fr; } .vids .vid:nth-child(3) { display: none; } }
+  .vid { text-decoration: none; display: grid; gap: .6rem; }
+  .vid img { aspect-ratio: 9 / 12; object-fit: cover; width: 100%; border-radius: 2px; filter: saturate(.9); transition: filter .2s ease; }
+  .vid:hover img { filter: saturate(1.1); }
+  .vid__t { font-size: .875rem; line-height: 1.4; color: var(--ink); font-weight: 500; }
+
+  .edu { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); font-size: .9375rem; color: var(--ink); font-weight: 500; }
+</style>
