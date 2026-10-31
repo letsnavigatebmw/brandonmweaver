@@ -204,6 +204,7 @@ export const roles: Role[] = [
       'Wrote Johnnie Walker’s F15 South Africa communication strategy, targeting ~$94M in net sales (+17%), and led the Keep Walking South Africa and King of Flavour campaigns.',
       'Oversaw about $35M a year in national media for Captain Morgan.',
     ],
+    partners: 'Formula 1 (Johnnie Walker partnership)',
   },
   {
     company: 'GE Consumer Finance',
