@@ -17,7 +17,7 @@ npm run build    # static output in dist/
 | All bio facts, roles, stats, testimonials, links | `src/data/site.ts` |
 | Writing list and videos | `src/data/writing.ts` |
 | Colors, type, spacing (design tokens) | `src/styles/global.css` |
-| Pages | `src/pages/` (`index`, `work`, `writing`, `about`, `404`) |
+| Pages | `src/pages/` (`index`, `work`, `thought-leadership`, `about`, `404`) |
 | Contact form (Formspree) | `src/components/Contact.astro` |
 | Social share image, favicons | `public/og.png`, `public/favicon.svg` |
 

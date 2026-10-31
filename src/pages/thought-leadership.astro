@@ -3,11 +3,11 @@ import Base from '../layouts/Base.astro';
 import { writing, categories, videos } from '../data/writing';
 import { person } from '../data/site';
 ---
-<Base title="Writing" description="Essays, guides and white papers by Brandon M. Weaver on AI strategy, sales, marketing, luxury and leadership.">
+<Base title="Thought Leadership" description="Essays, guides and white papers by Brandon M. Weaver on AI strategy, sales, marketing, luxury and leadership.">
   <section class="page-head">
     <div class="container">
-      <p class="label label--accent">Writing & media</p>
-      <h1 class="display">Notes from the <em>field</em>.</h1>
+      <p class="label label--accent">Thought leadership</p>
+      <h1 class="display">Notes From the <em>Field</em>.</h1>
       <p class="lede">Essays, guides and white papers on AI, commercial strategy, luxury and leadership. New writing goes out first on Expand Your Aperture.</p>
       <a class="btn" href={person.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
     </div>
@@ -37,7 +37,7 @@ import { person } from '../data/site';
   <section class="section">
     <div class="container">
       <span class="label">Video</span>
-      <h2 class="h2" style="margin:.75rem 0 2rem">Short takes.</h2>
+      <h2 class="h2" style="margin:.75rem 0 2rem">Short Takes.</h2>
       <div class="vids">
         {videos.map((v) => (
           <a class="vid" href={`https://www.youtube.com/shorts/${v.id}`} target="_blank" rel="noopener">

@@ -218,15 +218,15 @@ export const roles: Role[] = [
 
 export const principles = [
   {
-    title: 'Connectivity is the advantage',
+    title: 'Connectivity Is the Advantage',
     body: 'Most operators see their function in isolation. I connect revenue, operations and strategy. The edge is never in one thing. It is in how the pieces fit.',
   },
   {
-    title: 'Alignment creates scale',
+    title: 'Alignment Creates Scale',
     body: 'You can’t scale misalignment. Unit economics, go-to-market and operations only compound when they pull in the same direction.',
   },
   {
-    title: 'Results over storytelling',
+    title: 'Results Over Storytelling',
     body: 'I optimize for what works, not what looks good in a deck. Data over narrative. Efficiency over elegance.',
   },
 ];
