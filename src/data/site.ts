@@ -30,6 +30,14 @@ export const logos = [
   { name: 'Bonotel Exclusive Travel', src: '/logos/bonotel.png', h: 34 },
   { name: 'Sonder', src: '/logos/sonder.png', h: 26 },
   { name: 'Lacure Villas', src: '/logos/lacure.png', h: 40 },
+  { name: 'GE Money', src: '/logos/ge.svg', h: 36 },
+];
+
+// Typeset until official logo files are supplied
+export const schools = [
+  { name: 'Kellogg', sub: 'Northwestern · MBA' },
+  { name: 'Harvard Kennedy School', sub: 'MPA' },
+  { name: 'USC', sub: 'Annenberg · BA' },
 ];
 
 export const testimonials = [

@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Contact from '../components/Contact.astro';
 import portrait from '../assets/brandon-portrait.jpg';
-import { person, stats, logos, testimonials, roles, principles, culture } from '../data/site';
+import { person, stats, logos, schools, testimonials, roles, principles, culture } from '../data/site';
 import { writing, videos } from '../data/writing';
 
 const featured = writing.filter((w) => w.featured);
@@ -31,12 +31,21 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
       </figure>
     </div>
     <div class="container">
-      <div class="logos" aria-label="Companies I have led in">
-        <span class="label">Leadership roles at</span>
-        <ul>
-          {logos.map((l) => <li><img src={l.src} alt={l.name} style={`height:${l.h}px`} loading="lazy" /></li>)}
-          <li class="logos__word">Stillhouse</li>
-        </ul>
+      <div class="creds">
+        <div class="creds__group" aria-label="Companies I have led in">
+          <span class="label">Leadership roles at</span>
+          <ul class="creds__logos">
+            {logos.slice(0, 4).map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
+            <li class="wordmark">Stillhouse</li>
+            {logos.slice(4).map((l) => <li><img src={l.src} alt={l.name} style={{ height: `${l.h}px` }} loading="lazy" /></li>)}
+          </ul>
+        </div>
+        <div class="creds__group creds__group--edu" aria-label="Education">
+          <span class="label">Education</span>
+          <ul class="creds__schools">
+            {schools.map((s) => <li><span class="wordmark">{s.name}</span><span class="creds__sub">{s.sub}</span></li>)}
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -200,11 +209,18 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
   @media (max-width: 899px) { .hero__photo { max-width: 420px; aspect-ratio: 1 / 1; order: -1; } }
 
-  .logos { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2.5rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
-  .logos ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 1.75rem 3rem; }
-  .logos img { width: auto; opacity: .72; transition: opacity .2s ease; }
-  .logos img:hover { opacity: 1; }
-  .logos__word { font-family: var(--serif); font-size: 1.6rem; color: var(--ink); opacity: .72; letter-spacing: .02em; font-variant: small-caps; }
+  .creds { display: grid; gap: 2.25rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
+  @media (min-width: 1000px) { .creds { grid-template-columns: 1fr 320px; gap: 0; } .creds__group--edu { padding-left: 2.75rem; margin-left: 2.75rem; border-left: 1px solid var(--rule); } }
+  .creds__group { display: grid; gap: 1.25rem; align-content: start; }
+  .creds__logos, .creds__schools { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 1.75rem 2.75rem; }
+  .creds__logos img { width: auto; opacity: .72; transition: opacity .2s ease; }
+  .creds__logos img:hover { opacity: 1; }
+  .wordmark { font-family: var(--serif); font-size: 1.45rem; line-height: 1; color: var(--ink); opacity: .78; letter-spacing: .02em; font-variant: small-caps; white-space: nowrap; }
+  .creds__schools { flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+  @media (max-width: 999px) { .creds__schools { flex-direction: row; flex-wrap: wrap; gap: 1.25rem 2rem; } }
+  .creds__schools li { display: grid; gap: .3rem; }
+  .creds__schools .wordmark { font-size: 1.2rem; }
+  .creds__sub { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
 
   /* Proof */
   .stats { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.25rem; margin: 0; border-top: 1px solid var(--ink); }
