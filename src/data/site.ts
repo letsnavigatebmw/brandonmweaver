@@ -36,9 +36,9 @@ export const logos = [
 ];
 
 export const schools: { name: string; sub: string; src?: string; h?: number }[] = [
-  { name: 'Kellogg', sub: 'Northwestern · MBA', src: '/logos/kellogg.png', h: 34 },
-  { name: 'Harvard Kennedy School', sub: 'MPA, Economics', src: '/logos/hks.png', h: 40 },
-  { name: 'USC Annenberg', sub: 'BA, Communication', src: '/logos/usc-annenberg.png', h: 44 },
+  { name: 'Kellogg', sub: 'Northwestern · MBA', src: '/logos/kellogg.png', h: 60 },
+  { name: 'Harvard Kennedy School', sub: 'MPA, Economics', src: '/logos/hks.png', h: 54 },
+  { name: 'USC Annenberg', sub: 'BA, Communication', src: '/logos/usc-annenberg.png', h: 62 },
 ];
 
 export const testimonials = [
