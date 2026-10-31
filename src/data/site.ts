@@ -271,7 +271,7 @@ export const brands: Brand[] = [
   { name: 'Don Julio', src: '/logos/brands/donjulio.png', h: 43 },
   { name: 'Chase', src: '/logos/brands/chase.png', h: 30 },
   { name: 'Boatsetter', src: '/logos/brands/boatsetter.png', h: 32 },
-  { name: 'Perro Verde' },
+  { name: 'Perro Verde', src: '/logos/brands/perroverde.png', h: 62 },
   { name: 'Dorchester Collection', src: '/logos/brands/dorchester.png', h: 22 },
   { name: 'Samsung', src: '/logos/brands/samsung.png', h: 24 },
   { name: 'Cîroc', src: '/logos/brands/ciroc.png', h: 37 },
