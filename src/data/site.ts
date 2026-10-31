@@ -269,6 +269,7 @@ export const brands: Brand[] = [
   { name: 'Formula 1', src: '/logos/brands/f1.png', h: 36 },
   { name: 'Belmond', src: '/logos/brands/belmond.png', h: 50 },
   { name: 'Don Julio', src: '/logos/brands/donjulio.png', h: 43 },
+  { name: 'Caol Ila', src: '/logos/brands/caolila.png', h: 40 },
   { name: 'Chase', src: '/logos/brands/chase.png', h: 30 },
   { name: 'Boatsetter', src: '/logos/brands/boatsetter.png', h: 32 },
   { name: 'Perro Verde', src: '/logos/brands/perroverde.png', h: 62 },
