@@ -43,7 +43,7 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
         <div class="creds__group creds__group--edu" aria-label="Education">
           <span class="label">Education</span>
           <ul class="creds__schools">
-            {schools.map((s) => <li><span class="wordmark">{s.name}</span><span class="creds__sub">{s.sub}</span></li>)}
+            {schools.map((s) => <li>{s.src ? <img src={s.src} alt={s.name} style={{ height: `${s.h}px`, width: 'auto' }} class="creds__school" loading="lazy" /> : <span class="wordmark">{s.name}</span>}<span class="creds__sub">{s.sub}</span></li>)}
           </ul>
         </div>
       </div>
@@ -220,6 +220,7 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   @media (max-width: 999px) { .creds__schools { flex-direction: row; flex-wrap: wrap; gap: 1.25rem 2rem; } }
   .creds__schools li { display: grid; gap: .3rem; }
   .creds__schools .wordmark { font-size: 1.2rem; }
+  .creds__school { opacity: .78; }
   .creds__sub { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
 
   /* Proof */
