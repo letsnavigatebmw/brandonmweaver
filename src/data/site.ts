@@ -19,10 +19,10 @@ export const person = {
 };
 
 export const stats = [
-  { value: '550K', label: 'Cases shipped in year one across two Captain Morgan launches at Diageo' },
-  { value: '$268M', label: 'Gross revenue at Bonotel, where I was COO through its sale to Certares' },
-  { value: '700+', label: 'Rooms opened building Sonder California from a team of one' },
-  { value: '$51M', label: 'Gross booking value led as CCO of Lacure, 65 people in 45+ countries' },
+  { value: '500K+', label: 'Cases Shipped in One Year Across Two Captain Morgan Launches at Diageo North America' },
+  { value: '$268M', label: 'Gross Revenue at Bonotel, Where I Was COO Through Its Sale to Certares' },
+  { value: '700+', label: 'Rooms Opened Building Sonder California From a Team of One' },
+  { value: '$51M', label: 'Gross Booking Value Led as CCO of Lacure, 65 People in 45+ Countries' },
 ];
 
 export const logos = [
