@@ -265,6 +265,7 @@ export const brands: Brand[] = [
   { name: 'Southern Glazer’s Wine & Spirits', src: '/logos/brands/southernglazers.png', h: 66 },
   { name: 'NFL', src: '/logos/brands/nfl.png', h: 60 },
   { name: 'MLB', src: '/logos/brands/mlb.png', h: 46 },
+  { name: 'Formula 1', src: '/logos/brands/f1.png', h: 36 },
   { name: 'Belmond', src: '/logos/brands/belmond.png', h: 50 },
   { name: 'Don Julio', src: '/logos/brands/donjulio.png', h: 43 },
   { name: 'Chase', src: '/logos/brands/chase.png', h: 30 },
