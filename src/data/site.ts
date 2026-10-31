@@ -30,7 +30,7 @@ export const logos = [
   { name: 'Sonder', src: '/logos/sonder.png', h: 26 },
   { name: 'Lacure Villas', src: '/logos/lacure.png', h: 40 },
   { name: 'Stillhouse Spirits Co.', src: '/logos/brands/stillhouse.png', h: 40 },
-  { name: 'GE Money', src: '/logos/ge.svg', h: 36 },
+  { name: 'GE Money', src: '/logos/ge-money.png', h: 40 },
   { name: 'UBS', src: '/logos/ubs.png', h: 34 },
   { name: 'Moët Hennessy', src: '/logos/moet-hennessy.png', h: 22 },
 ];
