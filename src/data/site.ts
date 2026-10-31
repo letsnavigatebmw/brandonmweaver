@@ -292,7 +292,7 @@ export const brands: Brand[] = [
   { name: 'Complex', src: '/logos/brands/complex.png', h: 22 },
   { name: 'Hilton', src: '/logos/brands/hilton.png', h: 40 },
   { name: 'Sisley Paris', src: '/logos/brands/sisley.png', h: 62 },
-  { name: 'VistaJet' },
+  { name: 'VistaJet', src: '/logos/brands/vistajet.png', h: 34 },
   { name: 'Auberge Collection', src: '/logos/brands/auberge.png', h: 26 },
   { name: 'Bacardi', src: '/logos/brands/bacardi.png', h: 38 },
   { name: 'Pelican Hill', src: '/logos/brands/pelicanhill.png', h: 58 },
