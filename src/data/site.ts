@@ -11,7 +11,7 @@ export const person = {
   instagram: 'https://www.instagram.com/bmarkweaver',
   youtube: 'https://www.youtube.com/@BrandonMWeaver',
   substack: 'https://expandyouraperture.substack.com',
-  execBio: 'https://drive.google.com/file/d/1XO_GTYhCTan_CFLp6-IsaTrERrkLmjWM/view?usp=sharing',
+  execBio: '/Brandon_M_Weaver_Executive_Bio.pdf',
   formspree: 'https://formspree.io/f/mzdkjkpa',
   description:
     'Brandon M. Weaver is a commercial executive and brand builder with 20+ years across spirits, luxury hospitality, travel and real estate technology. Former COO of Bonotel, GM of Stillhouse Spirits, CCO of Lacure and Founder of Aperture Hospitality.',
