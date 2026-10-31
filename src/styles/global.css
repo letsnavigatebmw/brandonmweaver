@@ -15,7 +15,7 @@
 
   --container: 1200px;
   --gutter: 24px;
-  --section: clamp(4.5rem, 9vw, 8rem);
+  --section: clamp(3.25rem, 9vw, 8rem);
   color-scheme: light;
 }
 @media (min-width: 768px) { :root { --gutter: 48px; } }
@@ -129,6 +129,11 @@ p { margin: 0 0 1em; }
 .link::after { content: '\00a0→'; display: inline-block; transition: transform .2s ease; }
 .link:hover::after { transform: translateX(3px); }
 .link--plain { font-size: 1rem; }
+@media (max-width: 767px) {
+  .link { min-height: 44px; display: inline-flex; align-items: center; padding: 8px 0; }
+  .label { font-size: 0.78rem; }
+  .eyebrow { margin-bottom: .75rem; }
+}
 .link--plain::after { content: none; }
 
 /* ---------- Reveal on scroll ---------- */

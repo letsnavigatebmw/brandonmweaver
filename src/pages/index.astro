@@ -261,6 +261,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .hero__photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
   .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
   @media (max-width: 899px) { .hero__photo { max-width: 420px; aspect-ratio: 1 / 1; order: -1; } }
+  @media (max-width: 639px) { .hero { padding-top: 1.25rem; } .hero__grid { gap: 1.5rem; } .hero__photo { width: 72%; max-width: 300px; margin: 0 auto; } .hero__copy .label { margin-bottom: 1.25rem; } .hero__sub { margin: 1.5rem 0 2rem; font-size: 1.0625rem; } .creds { margin-top: 2rem; } }
 
   .creds { display: grid; gap: 2.25rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
   .creds__group--edu { padding-top: 2.25rem; border-top: 1px solid var(--rule); }
@@ -282,12 +283,13 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .creds__sub { font-size: .75rem; font-weight: 550; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
 
   /* Proof */
-  .stats { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.25rem; margin: 0; border-top: 1px solid var(--ink); }
+  .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.25rem; margin: 0; border-top: 1px solid var(--ink); }
   @media (max-width: 639px) { .stat { padding-right: 0; } .stat__l { font-size: .8125rem; } }
   @media (min-width: 1000px) { .stats { grid-template-columns: repeat(4, 1fr); } }
   .stat { padding: 1.75rem 1.5rem 1.75rem 0; border-bottom: 1px solid var(--rule); }
   @media (min-width: 1000px) { .stat { border-bottom: 0; padding-right: 2rem; } .stat + .stat { padding-left: 2rem; border-left: 1px solid var(--rule); } }
-  .stat__v { font-family: var(--serif); font-weight: 600; font-size: clamp(2.75rem, 4.5vw, 3.75rem); line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
+  .stat__v { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 9vw, 3.75rem); line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
+  @media (min-width: 640px) { .stat__v { font-size: clamp(2.75rem, 4.5vw, 3.75rem); } }
   .stat__l { margin: .9rem 0 0; font-size: .9375rem; line-height: 1.5; color: var(--ink-2); }
   .sec-head { margin-bottom: 2.5rem; }
   .sec-head--quotes { margin-top: clamp(4rem, 8vw, 6rem); }
