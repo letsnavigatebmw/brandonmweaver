@@ -195,10 +195,7 @@ export default function Projects() {
                     href="https://www.aperturehospitality.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-black"
-                    style={{ backgroundColor: '#E8E1D5' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dcd4c8')}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E8E1D5')}
+                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-black bg-gold-400 hover:bg-gold-300"
                   >
                     Discover Aperture
                   </a>
@@ -206,10 +203,7 @@ export default function Projects() {
                     href="https://www.aperturehospitality.com/executive-advisory"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-black"
-                    style={{ backgroundColor: '#E8E1D5' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dcd4c8')}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E8E1D5')}
+                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-black bg-gold-400 hover:bg-gold-300"
                   >
                     How Can Aperture Help You
                   </a>
