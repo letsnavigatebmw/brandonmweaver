@@ -203,7 +203,7 @@ export default function Projects() {
                     href="https://www.aperturehospitality.com/executive-advisory"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-black bg-gold-400 hover:bg-gold-300"
+                    className="inline-block px-8 py-3 font-bold rounded-lg transition-colors text-center text-white bg-black border border-gold-400 hover:border-gold-300"
                   >
                     How Can Aperture Help You
                   </a>
