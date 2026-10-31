@@ -276,7 +276,7 @@ export const brands: Brand[] = [
   { name: 'Samsung', src: '/logos/brands/samsung.png', h: 24 },
   { name: 'Cîroc', src: '/logos/brands/ciroc.png', h: 37 },
   { name: 'Marriott', src: '/logos/brands/marriott.png', h: 36 },
-  { name: 'Pantene' },
+  { name: 'Pantene', src: '/logos/brands/pantene.png', h: 58 },
   { name: 'NetJets', src: '/logos/brands/netjets.png', h: 35 },
   { name: 'Faena', src: '/logos/brands/faena.png', h: 30 },
   { name: 'The h.wood Group', src: '/logos/brands/hwood.png', h: 36 },
