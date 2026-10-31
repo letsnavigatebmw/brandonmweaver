@@ -294,6 +294,7 @@ export const brands: Brand[] = [
   { name: 'Bacardi', src: '/logos/brands/bacardi.png', h: 38 },
   { name: 'Pelican Hill', src: '/logos/brands/pelicanhill.png', h: 58 },
   { name: 'Compass', src: '/logos/brands/compass.png', h: 26 },
+  { name: 'Engel & Völkers', src: '/logos/brands/engelvolkers.png', h: 21 },
   { name: 'Dowling Street', src: '/logos/brands/dowlingstreet.png', h: 28 },
   { name: 'SkinCeuticals', src: '/logos/brands/skinceuticals.png', h: 28 },
   { name: 'Visa', src: '/logos/brands/visa.png', h: 27 },
