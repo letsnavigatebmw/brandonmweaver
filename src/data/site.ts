@@ -294,6 +294,7 @@ export const brands: Brand[] = [
   { name: 'Verizon', src: '/logos/brands/verizon.png', h: 32 },
   { name: 'Complex', src: '/logos/brands/complex.png', h: 22 },
   { name: 'Hilton', src: '/logos/brands/hilton.png', h: 40 },
+  { name: 'Johnnie Walker Blue Label', src: '/logos/brands/jwbluelabel.png', h: 50 },
   { name: 'Sisley Paris', src: '/logos/brands/sisley.png', h: 62 },
   { name: 'VistaJet', src: '/logos/brands/vistajet.png', h: 34 },
   { name: 'Auberge Collection', src: '/logos/brands/auberge.png', h: 26 },
