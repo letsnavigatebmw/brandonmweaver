@@ -266,9 +266,12 @@ export const brandGroups: { title: string; brands: Brand[] }[] = [
       { name: 'Visa', src: '/logos/brands/visa.png', h: 26 },
       { name: 'NetJets' }, { name: 'VistaJet' }, { name: 'Belmond', src: '/logos/brands/belmond.png', h: 54 },
       { name: 'Sisley Paris' }, { name: 'Four Seasons', src: '/logos/brands/fourseasons.png', h: 66 }, { name: 'Abercrombie & Kent' },
+      { name: 'The St. James', src: '/logos/brands/stjames.png', h: 18 },
     ],
   },
 ];
+
+export const brands: Brand[] = brandGroups.flatMap((g) => g.brands);
 
 export const principles = [
   {
