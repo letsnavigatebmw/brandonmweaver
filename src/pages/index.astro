@@ -7,7 +7,7 @@ import { person, stats, logos, schools, testimonials, roles, principles, culture
 import { writing, videos } from '../data/writing';
 
 const featured = writing.filter((w) => w.featured);
-const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
+const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes(r.company));
 ---
 <Base>
   <!-- Hero -->

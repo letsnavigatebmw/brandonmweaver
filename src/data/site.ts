@@ -10,7 +10,6 @@ export const person = {
   linkedin: 'https://www.linkedin.com/in/brandonmweaver',
   instagram: 'https://www.instagram.com/bmarkweaver',
   youtube: 'https://www.youtube.com/@BrandonMWeaver',
-  // CONFIRM: exact Substack URL for "Expand Your Aperture"
   substack: 'https://expandyouraperture.substack.com',
   execBio: 'https://drive.google.com/file/d/1XO_GTYhCTan_CFLp6-IsaTrERrkLmjWM/view?usp=sharing',
   formspree: 'https://formspree.io/f/mzdkjkpa',
@@ -216,6 +215,15 @@ export const roles: Role[] = [
       'Led a 20-person team supporting $500M+ in mortgage originations and $2.5B+ in securitizations.',
       'Received GE’s Sales Leadership Award (2006).',
     ],
+  },
+  {
+    company: 'UBS',
+    place: '',
+    years: '2002 – 2003',
+    title: 'Financial Analyst',
+    headline: 'Financial analyst in UBS’s private bank. First role after USC.',
+    summary: 'Financial analyst in UBS’s private banking business, my first role after graduating from USC.',
+    bullets: [],
   },
 ];
 

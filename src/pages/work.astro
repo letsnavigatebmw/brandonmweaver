@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { roles, advisory, education, person } from '../data/site';
 ---
-<Base title="Work" description="Experience, advisory roles and education of Brandon M. Weaver: Aperture Hospitality, Navigate, Lacure, Sonder, Stillhouse Spirits, BLKBOX, Bonotel, Diageo and GE.">
+<Base title="Work" description="Experience, advisory roles and education of Brandon M. Weaver: Aperture Hospitality, Navigate, Lacure, Sonder, Stillhouse Spirits, BLKBOX, Bonotel, Diageo, GE and UBS.">
   <section class="page-head">
     <div class="container">
       <p class="eyebrow eyebrow--accent">Work</p>
@@ -27,7 +27,7 @@ import { roles, advisory, education, person } from '../data/site';
               </h2>
               <p class="role__title">{r.title}</p>
               <p class="role__sum">{r.summary}</p>
-              <ul class="role__list">{r.bullets.map((b) => <li>{b}</li>)}</ul>
+              {r.bullets.length > 0 && <ul class="role__list">{r.bullets.map((b) => <li>{b}</li>)}</ul>}
               {r.partners && <p class="role__partners"><span class="label">Partners</span> {r.partners}</p>}
             </div>
           </li>
