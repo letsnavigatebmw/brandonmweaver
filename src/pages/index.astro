@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Contact from '../components/Contact.astro';
 import portrait from '../assets/brandon-portrait.jpg';
-import { person, stats, logos, schools, testimonials, roles, principles, culture, capabilities, launches } from '../data/site';
+import { person, stats, logos, schools, testimonials, roles, principles, culture, capabilities, launches, brandGroups } from '../data/site';
 import { writing, videos } from '../data/writing';
 
 const featured = writing.filter((w) => w.featured);
@@ -93,6 +93,32 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
           </li>
         ))}
       </ul>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="section" id="brands">
+    <div class="container">
+      <div class="reveal" style="max-width:760px">
+        <span class="eyebrow">Brands</span>
+        <h2 class="h2">The Brands Behind the Numbers.</h2>
+      </div>
+      <div class="bw reveal">
+        {brandGroups.map((g) => (
+          <div class="bw__group">
+            <h3 class="bw__title">{g.title}</h3>
+            <ul class="bw__grid">
+              {g.brands.map((b) => (
+                <li>
+                  {b.src
+                    ? <img src={b.src} alt={b.name} style={{ height: `${b.h ?? 32}px`, width: 'auto' }} loading="lazy" />
+                    : <span class="bw__name">{b.name}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -277,6 +303,18 @@ const trackRecord = roles.filter((r) => r.company !== 'GE Consumer Finance');
   .caps li { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
   .caps__t { font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; font-weight: 450; margin: 0 0 .5rem; }
   .caps p { margin: 0; font-size: 1rem; }
+
+  /* Brand wall */
+  .bw { margin-top: 2.5rem; display: grid; gap: 2.75rem; }
+  .bw__group { border-top: 1px solid var(--ink); padding-top: 1.25rem; }
+  .bw__title { font-family: var(--sans); font-size: .875rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); margin: 0 0 .5rem; }
+  .bw__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 640px) { .bw__grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 1000px) { .bw__grid { grid-template-columns: repeat(6, 1fr); } }
+  .bw__grid li { display: flex; align-items: center; min-height: 72px; padding-right: 1rem; }
+  .bw__grid img { max-width: 140px; object-fit: contain; opacity: .78; transition: opacity .2s ease; }
+  .bw__grid img:hover { opacity: 1; }
+  .bw__name { font-family: var(--serif); font-size: 1.3rem; line-height: 1.1; color: var(--ink); opacity: .8; font-variant: small-caps; letter-spacing: .02em; }
 
   /* Now */
   .now { display: grid; gap: 1.5rem; }

@@ -28,6 +28,7 @@ import { roles, advisory, education, person } from '../data/site';
               <p class="role__title">{r.title}</p>
               <p class="role__sum">{r.summary}</p>
               <ul class="role__list">{r.bullets.map((b) => <li>{b}</li>)}</ul>
+              {r.partners && <p class="role__partners"><span class="label">Partners</span> {r.partners}</p>}
             </div>
           </li>
         ))}
@@ -82,6 +83,8 @@ import { roles, advisory, education, person } from '../data/site';
   .role__sum { color: var(--ink); max-width: 65ch; }
   .role__list { margin: 0; padding: 0 0 0 1.1rem; display: grid; gap: .6rem; max-width: 68ch; }
   .role__list li::marker { color: var(--accent); }
+  .role__partners { margin: 1.25rem 0 0; font-size: .9375rem; color: var(--ink); max-width: 68ch; }
+  .role__partners .label { margin-right: .5rem; }
   .two { display: grid; gap: 3.5rem; }
   @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; gap: 4rem; } }
   .list { list-style: none; padding: 0; margin: 1.25rem 0 0; border-top: 1px solid var(--ink); }

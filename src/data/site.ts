@@ -71,6 +71,7 @@ export type Role = {
   headline: string; // one line used on the homepage
   bullets: string[];
   url?: string;
+  partners?: string;
 };
 
 export const roles: Role[] = [
@@ -122,6 +123,7 @@ export const roles: Role[] = [
       'Delivered +13.2% GBV and +9.4% bookings by pruning the portfolio and launching the Reserve Collection.',
       'Standardized contracting, onboarding and quality governance, tying contracts to CRM, ERP and booking systems before inventory went live.',
     ],
+    partners: 'American Express, Visa, NetJets, VistaJet, Belmond, Sisley Paris',
   },
   {
     company: 'Sonder',
@@ -185,6 +187,7 @@ export const roles: Role[] = [
       'Designed a three-tier partner program trading exclusive rates for marketing exposure, enrolling 546 hotels and growing revenue 44% across 23 Four Seasons properties.',
       'Overhauled hotel contracting and added forecasting tools for account teams across 2,180+ partners.',
     ],
+    partners: 'Four Seasons, Abercrombie & Kent, Quintessentially, Kensington Tours, Virgin Holidays, Flight Centre, TUI',
   },
   {
     company: 'Diageo',
@@ -236,6 +239,35 @@ export const capabilities = [
   { title: 'Pricing, Margin & Trade Spend', proof: 'Built a three-tier partner program that grew revenue 44% across 23 Four Seasons properties; cut Navigate’s data costs 25%.' },
   { title: 'Forecasting & Operating Cadence', proof: 'Built the operating cadence behind +7.5% depletions at Stillhouse in Q1 2019; rolled out forecasting across 2,180+ Bonotel partners.' },
   { title: 'Team & Culture Building', proof: 'Scaled Sonder California from a team of one to 45; led a 65-person organization at Lacure across 45+ countries.' },
+];
+
+// Brand wall. A brand without `src` renders as a typeset name until its logo file is added.
+export type Brand = { name: string; src?: string; h?: number };
+export const brandGroups: { title: string; brands: Brand[] }[] = [
+  {
+    title: 'Brands I Managed · Diageo',
+    brands: [
+      { name: 'Johnnie Walker' }, { name: 'Captain Morgan' }, { name: 'Cîroc' },
+      { name: 'Don Julio' }, { name: 'Bulleit' }, { name: 'Tanqueray' },
+    ],
+  },
+  {
+    title: 'Brands I Ran, Supported and Advised',
+    brands: [{ name: 'Stillhouse' }, { name: 'Dom Pérignon' }, { name: 'Beverly Spirits' }, { name: 'Perro Verde' }],
+  },
+  {
+    title: 'Brands I Built Programs For · BLKBOX',
+    brands: [{ name: 'Pantene' }, { name: 'Ritz' }, { name: 'belVita' }, { name: 'Samsung' }],
+  },
+  {
+    title: 'Partnerships',
+    brands: [
+      { name: 'American Express' },
+      { name: 'Visa' },
+      { name: 'NetJets' }, { name: 'VistaJet' }, { name: 'Belmond' },
+      { name: 'Sisley Paris' }, { name: 'Four Seasons' }, { name: 'Abercrombie & Kent' },
+    ],
+  },
 ];
 
 export const principles = [
