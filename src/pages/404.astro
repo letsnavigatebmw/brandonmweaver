@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Not found">
+  <section class="page-head">
+    <div class="container">
+      <p class="label label--accent">404</p>
+      <h1 class="display">Wrong <em>room</em>.</h1>
+      <p class="lede" style="margin:1.5rem 0 2rem">This page doesn’t exist. The rest of the site does.</p>
+      <a class="btn" href="/">Back to the homepage</a>
+    </div>
+  </section>
+</Base>
+<style>.page-head { padding: clamp(4rem, 10vw, 9rem) 0; } .page-head .label { margin: 0 0 1.25rem; }</style>

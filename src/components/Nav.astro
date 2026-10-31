@@ -1,0 +1,62 @@
+---
+const links = [
+  { href: '/work', label: 'Work' },
+  { href: '/writing', label: 'Writing' },
+  { href: '/about', label: 'About' },
+];
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="/" class="nav__name">Brandon M. Weaver</a>
+    <nav aria-label="Primary">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr">Menu</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+      <ul id="nav-menu" class="nav__menu">
+        {links.map((l) => (
+          <li><a href={l.href} aria-current={path === l.href ? 'page' : undefined}>{l.label}</a></li>
+        ))}
+        <li><a href="/#contact" class="btn nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .nav { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--rule); }
+  .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav__name { font-family: var(--serif); font-size: 1.25rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+  .nav__menu { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 2rem; }
+  .nav__menu a:not(.btn) { text-decoration: none; font-size: .9375rem; font-weight: 500; color: var(--ink-2); }
+  .nav__menu a:not(.btn):hover, .nav__menu a[aria-current='page'] { color: var(--ink); }
+  .nav__menu a[aria-current='page'] { text-decoration: underline; text-underline-offset: 6px; text-decoration-color: var(--accent); }
+  .nav__cta { min-height: 40px; padding: 0 1.1rem; }
+  .nav__toggle { display: none; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+  @media (max-width: 767px) {
+    .nav__toggle { display: grid; place-items: center; width: 44px; height: 44px; margin-right: -10px; background: none; border: 0; cursor: pointer; color: var(--ink); }
+    .nav__bars, .nav__bars::before, .nav__bars::after { display: block; width: 20px; height: 1.5px; background: currentColor; position: relative; transition: transform .2s ease, opacity .2s ease; }
+    .nav__bars::before, .nav__bars::after { content: ''; position: absolute; left: 0; }
+    .nav__bars::before { top: -6px; } .nav__bars::after { top: 6px; }
+    [aria-expanded='true'] .nav__bars { background: transparent; }
+    [aria-expanded='true'] .nav__bars::before { transform: translateY(6px) rotate(45deg); }
+    [aria-expanded='true'] .nav__bars::after { transform: translateY(-6px) rotate(-45deg); }
+    .nav__menu { display: none; position: absolute; left: 0; right: 0; top: 72px; flex-direction: column; align-items: stretch; gap: 0; background: var(--paper); border-bottom: 1px solid var(--rule); padding: .5rem var(--gutter) 1.5rem; }
+    .nav__menu.is-open { display: flex; }
+    .nav__menu li a:not(.btn) { display: block; padding: .9rem 0; border-bottom: 1px solid var(--rule); font-size: 1.0625rem; }
+    .nav__cta { margin-top: 1.25rem; width: 100%; min-height: 48px; }
+  }
+</style>
+
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('.nav__toggle');
+  const menu = document.getElementById('nav-menu');
+  if (btn && menu) {
+    const set = (open: boolean) => { btn.setAttribute('aria-expanded', String(open)); menu.classList.toggle('is-open', open); };
+    btn.addEventListener('click', () => set(btn.getAttribute('aria-expanded') !== 'true'));
+    menu.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('a')) set(false); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { set(false); btn.focus(); } });
+  }
+</script>

@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import { writing, categories, videos } from '../data/writing';
+import { person } from '../data/site';
+---
+<Base title="Writing" description="Essays, guides and white papers by Brandon M. Weaver on AI strategy, sales, marketing, luxury and leadership.">
+  <section class="page-head">
+    <div class="container">
+      <p class="label label--accent">Writing & media</p>
+      <h1 class="display">Notes from the <em>field</em>.</h1>
+      <p class="lede">Essays, guides and white papers on AI, commercial strategy, luxury and leadership. New writing goes out first on Expand Your Aperture.</p>
+      <a class="btn" href={person.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters" role="group" aria-label="Filter by topic">
+        <button type="button" aria-pressed="true" data-cat="all">All <span class="num">{writing.length}</span></button>
+        {categories.map((c) => (
+          <button type="button" aria-pressed="false" data-cat={c}>{c} <span class="num">{writing.filter((w) => w.category === c).length}</span></button>
+        ))}
+      </div>
+      <ul class="pieces">
+        {writing.map((w) => (
+          <li data-cat={w.category}>
+            <a href={w.url} target="_blank" rel="noopener">
+              <span class="pieces__t">{w.title}</span>
+              <span class="label">{w.type} · {w.category}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="label">Video</span>
+      <h2 class="h2" style="margin:.75rem 0 2rem">Short takes.</h2>
+      <div class="vids">
+        {videos.map((v) => (
+          <a class="vid" href={`https://www.youtube.com/shorts/${v.id}`} target="_blank" rel="noopener">
+            <img src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`} alt="" loading="lazy" width="480" height="360" />
+            <span>{v.title}</span>
+          </a>
+        ))}
+      </div>
+      <a class="link" href={person.youtube} target="_blank" rel="noopener">YouTube channel</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-head { padding: clamp(3rem, 7vw, 6rem) 0 clamp(2.5rem, 5vw, 4rem); }
+  .page-head .label { margin: 0 0 1.25rem; }
+  .page-head .lede { max-width: 40rem; margin: 1.5rem 0 2rem; }
+  .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
+  .filters button { font: 500 .875rem/1 var(--sans); padding: .65rem 1rem; border: 1px solid var(--rule); background: transparent; color: var(--ink-2); border-radius: 999px; cursor: pointer; min-height: 40px; }
+  .filters button span { color: var(--ink-3); margin-left: .25rem; }
+  .filters button[aria-pressed='true'] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .filters button[aria-pressed='true'] span { color: var(--paper-2); }
+  .pieces { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+  .pieces li[hidden] { display: none; }
+  .pieces a { display: grid; gap: .4rem; padding: 1.4rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  @media (min-width: 900px) { .pieces a { grid-template-columns: 1fr 16rem; align-items: baseline; gap: 2rem; } .pieces .label { text-align: right; } }
+  .pieces__t { font-family: var(--serif); font-size: 1.375rem; line-height: 1.25; color: var(--ink); transition: color .2s ease; }
+  .pieces a:hover .pieces__t { color: var(--accent); }
+  .vids { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  @media (min-width: 800px) { .vids { grid-template-columns: repeat(4, 1fr); } }
+  .vid { text-decoration: none; display: grid; gap: .6rem; font-size: .875rem; font-weight: 500; color: var(--ink); }
+  .vid img { aspect-ratio: 9 / 12; object-fit: cover; width: 100%; border-radius: 2px; }
+</style>
+
+<script>
+  const btns = document.querySelectorAll<HTMLButtonElement>('.filters button');
+  const items = document.querySelectorAll<HTMLLIElement>('.pieces li');
+  btns.forEach((b) => b.addEventListener('click', () => {
+    btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const cat = b.dataset.cat;
+    items.forEach((li) => { li.hidden = cat !== 'all' && li.dataset.cat !== cat; });
+  }));
+</script>
