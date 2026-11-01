@@ -135,7 +135,13 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
       </div>
       <div class="now reveal">
         <article class="card">
-          <img src="/logos/aperture.png" alt="Aperture Hospitality" class="card__logo" loading="lazy" />
+          <a class="ap-logo" href="https://www.aperturehospitality.com" target="_blank" rel="noopener" aria-label="Aperture Hospitality">
+            <svg class="ap-logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+              <circle cx="20" cy="20" r="15" fill="none" stroke="var(--ink)" stroke-opacity=".35" stroke-width="1.25" />
+              <path d="M20 5 A15 15 0 0 1 35 20" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+            <span class="ap-logo__text"><span class="ap-logo__word">APERTURE</span><span class="ap-logo__sub">HOSPITALITY</span></span>
+          </a>
           <p class="label">Founder & Principal · 2018 – Present</p>
           <p>An advisory practice for spirits, consumer and hospitality brands. Current work includes the RTD route-to-market for Beverly Spirits, distribution strategy for Perro Verde mezcal, and go-to-market for Swarm, an AI compute marketplace.</p>
           <a class="link" href="https://www.aperturehospitality.com" target="_blank" rel="noopener">aperturehospitality.com</a>
@@ -334,6 +340,12 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .card p { margin: 0; }
   .card .link { margin-top: auto; align-self: flex-start; }
   .card__logo { height: 18px; width: auto; margin: .4rem 0 .4rem; }
+  /* Aperture Hospitality lockup, matches aperturehospitality.com */
+  .ap-logo { display: inline-flex; align-items: center; gap: .75rem; color: var(--ink); text-decoration: none; align-self: flex-start; margin: .2rem 0 .3rem; }
+  .ap-logo__mark { width: 28px; height: 28px; flex-shrink: 0; }
+  .ap-logo__text { display: inline-flex; flex-direction: column; align-items: flex-start; }
+  .ap-logo__word { font-family: var(--sans); font-size: 1.0625rem; font-weight: 400; letter-spacing: .42em; margin-right: -.42em; line-height: 1; }
+  .ap-logo__sub { font-family: var(--sans); font-size: .59rem; font-weight: 500; letter-spacing: .82em; margin-right: -.82em; line-height: 1; color: var(--ink-3); margin-top: .45rem; }
   .card__title { font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; color: var(--ink); }
 
   /* Track record */
