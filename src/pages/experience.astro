@@ -28,7 +28,7 @@ import { roles, advisory, education, person } from '../data/site';
               <p class="role__title">{r.title}</p>
               <p class="role__sum">{r.summary}</p>
               {r.bullets.length > 0 && <ul class="role__list">{r.bullets.map((b) => <li>{b}</li>)}</ul>}
-              {r.partners && <p class="role__partners"><span class="label">Partners</span> {r.partners}</p>}
+              {r.partners && <p class="role__partners"><span class="label">{r.partnersLabel ?? 'Partners'}</span> {r.partners}</p>}
             </div>
           </li>
         ))}
