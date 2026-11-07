@@ -197,7 +197,7 @@ export const roles: Role[] = [
     company: 'Diageo',
     place: 'New York & Cape Town',
     years: '2011 – 2014',
-    title: 'Regional Marketing Manager',
+    title: 'Regional Brand Manager, Africa · Brand Manager, North American Rum',
     url: 'https://www.diageo.com',
     headline: 'Owned the Captain Morgan Black Spiced and Sherry Spice launches: 550,000 cases in year one.',
     summary:
