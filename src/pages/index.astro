@@ -19,7 +19,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
         <p class="hero__sub">
           20+ years building and scaling brands across spirits, luxury hospitality, travel and real estate technology.
           COO of Bonotel through its sale to Certares, GM of Stillhouse Spirits and CCO of Lacure.
-          Today I advise super-premium brands through Aperture Hospitality.
+          Today I serve as a fractional CCO and CMO through Aperture Hospitality.
         </p>
         <div class="hero__cta">
           <a class="btn" href="#contact">Get in touch</a>
@@ -143,7 +143,13 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
             <span class="ap-logo__text"><span class="ap-logo__word">APERTURE</span><span class="ap-logo__sub">HOSPITALITY</span></span>
           </a>
           <p class="label">Founder & Principal · 2018 – Present</p>
-          <p>An advisory practice for spirits, consumer and hospitality brands. Current work includes the RTD route-to-market for Beverly Spirits, distribution strategy for Perro Verde mezcal, and go-to-market for Swarm, an AI compute marketplace.</p>
+          <p class="card__title">Fractional CCO &amp; CMO</p>
+          <p>Fractional sales and marketing leadership for hospitality, travel and consumer brands. I work with CEOs, founders and boards to build the plan, lead the team through it and measure the result.</p>
+          <ul class="ap-who">
+            <li>Hospitality &amp; travel operators</li>
+            <li>Luxury, lifestyle &amp; spirits brands</li>
+            <li>Travel-tech &amp; proptech</li>
+          </ul>
           <a class="link" href="https://www.aperturehospitality.com" target="_blank" rel="noopener">aperturehospitality.com</a>
         </article>
         <article class="card">
@@ -267,6 +273,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .hero__photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
   .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
   @media (max-width: 899px) { .hero__photo { max-width: 420px; aspect-ratio: 1 / 1; order: -1; } }
+  @media (max-width: 639px) { .hero { padding-top: 1.25rem; } .hero__grid { gap: 1.5rem; } .hero__photo { width: 72%; max-width: 300px; margin: 0 auto; } .hero__copy .label { margin-bottom: 1.25rem; } .hero__sub { margin: 1.5rem 0 2rem; font-size: 1.0625rem; } .creds { margin-top: 2rem; } }
 
   .creds { display: grid; gap: 2.25rem; padding: 2.5rem 0 3rem; margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--rule); }
   .creds__group--edu { padding-top: 2.25rem; border-top: 1px solid var(--rule); }
@@ -288,12 +295,13 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .creds__sub { font-size: .75rem; font-weight: 550; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
 
   /* Proof */
-  .stats { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.25rem; margin: 0; border-top: 1px solid var(--ink); }
+  .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.25rem; margin: 0; border-top: 1px solid var(--ink); }
   @media (max-width: 639px) { .stat { padding-right: 0; } .stat__l { font-size: .8125rem; } }
   @media (min-width: 1000px) { .stats { grid-template-columns: repeat(4, 1fr); } }
   .stat { padding: 1.75rem 1.5rem 1.75rem 0; border-bottom: 1px solid var(--rule); }
   @media (min-width: 1000px) { .stat { border-bottom: 0; padding-right: 2rem; } .stat + .stat { padding-left: 2rem; border-left: 1px solid var(--rule); } }
-  .stat__v { font-family: var(--serif); font-weight: 600; font-size: clamp(2.75rem, 4.5vw, 3.75rem); line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
+  .stat__v { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 9vw, 3.75rem); line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
+  @media (min-width: 640px) { .stat__v { font-size: clamp(2.75rem, 4.5vw, 3.75rem); } }
   .stat__l { margin: .9rem 0 0; font-size: .9375rem; line-height: 1.5; color: var(--ink-2); }
   .sec-head { margin-bottom: 2.5rem; }
   .sec-head--quotes { margin-top: clamp(4rem, 8vw, 6rem); }
@@ -341,12 +349,14 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   .card .link { margin-top: auto; align-self: flex-start; }
   .card__logo { height: 18px; width: auto; margin: .4rem 0 .4rem; }
   /* Aperture Hospitality lockup, matches aperturehospitality.com */
-  .ap-logo { display: inline-flex; align-items: center; gap: .75rem; color: var(--ink); text-decoration: none; align-self: flex-start; margin: .2rem 0 .3rem; }
+  .ap-logo { display: inline-flex; align-items: center; min-height: 44px; gap: .75rem; color: var(--ink); text-decoration: none; align-self: flex-start; margin: .2rem 0 .3rem; }
   .ap-logo__mark { width: 28px; height: 28px; flex-shrink: 0; }
   .ap-logo__text { display: inline-flex; flex-direction: column; align-items: flex-start; }
   .ap-logo__word { font-family: var(--sans); font-size: 1.0625rem; font-weight: 400; letter-spacing: .42em; margin-right: -.42em; line-height: 1; }
   .ap-logo__sub { font-family: var(--sans); font-size: .59rem; font-weight: 500; letter-spacing: .82em; margin-right: -.82em; line-height: 1; color: var(--ink-3); margin-top: .45rem; }
   .card__title { font-family: var(--serif); font-size: 1.5rem; line-height: 1.1; color: var(--ink); }
+  .ap-who { list-style: none; margin: 0; padding: .9rem 0 0; border-top: 1px solid var(--rule); display: grid; gap: .35rem; font-size: .9375rem; color: var(--ink); }
+  .ap-who li::before { content: '·'; color: var(--accent); font-weight: 700; margin-right: .55rem; }
 
   /* Track record */
   .tl { list-style: none; margin: 0 0 2rem; padding: 0; border-top: 1px solid var(--ink); }

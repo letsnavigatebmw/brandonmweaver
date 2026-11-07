@@ -72,6 +72,7 @@ export type Role = {
   bullets: string[];
   url?: string;
   partners?: string;
+  partnersLabel?: string;
 };
 
 export const roles: Role[] = [
@@ -79,17 +80,20 @@ export const roles: Role[] = [
     company: 'Aperture Hospitality',
     place: 'Los Angeles',
     years: '2018 – Present',
-    title: 'Founder & Principal',
+    title: 'Founder & Principal · Fractional CCO & CMO',
     url: 'https://www.aperturehospitality.com',
-    headline: 'Advisory practice for spirits, consumer and hospitality brands, including an RTD launch for Beverly Spirits.',
+    headline: 'Fractional CCO and CMO for hospitality, travel and consumer brands, working with CEOs, founders and boards.',
     summary:
-      'An advisory practice providing commercial strategy, distribution and growth support to spirits, consumer and hospitality brands.',
+      'Fractional sales and marketing leadership for hospitality, travel and consumer brands. Aperture works with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer on growth, go-to-market and turnaround challenges.',
     bullets: [
       'Advise super-premium brands Perro Verde (mezcal) and Beverly Spirits (North American whisky) on sales and marketing strategy, distributor and importer selection, placement, negotiation and fundraising.',
       'For the Beverly Spirits RTD, own pack architecture, can design and pricing, and build route-to-market in California and New York with Southern Glazer’s and LibDib.',
       'Swarm (2026): built the demand model and phased go-to-market plan for an AI compute marketplace and supported a $3M seed raise.',
       'Build financial models, valuations, business cases and investor materials for growth-stage clients including Wilbur Labs, Boatsetter and Voyage Real Estate.',
+      'Engagements span commercial strategy and go-to-market, brand and marketing leadership, revenue turnarounds, partnerships and distribution, and investor readiness.',
     ],
+    partnersLabel: 'Clients',
+    partners: 'Perro Verde Mezcal, WES Brands, Voyage Real Estate (Compass), Beverly Spirits, Swarm, All World Communications Group, Wilbur Labs, Boatsetter',
   },
   {
     company: 'Navigate',
