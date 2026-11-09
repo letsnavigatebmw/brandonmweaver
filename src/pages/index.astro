@@ -5,6 +5,10 @@ import Contact from '../components/Contact.astro';
 import portrait from '../assets/brandon-cutout.png';
 import { person, stats, logos, schools, testimonials, roles, principles, culture, capabilities, launches, brands } from '../data/site';
 import { writing, videos } from '../data/writing';
+import { getPosts } from '../lib/substack';
+
+export const prerender = false; // served from Vercel's cache, refreshed hourly so new Substack posts appear
+const latest = await getPosts(3);
 
 const featured = writing.filter((w) => w.featured);
 const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes(r.company));
@@ -217,6 +221,14 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
       </div>
       <div class="reveal">
         <ul class="pieces">
+          {latest.map((p) => (
+            <li>
+              <a href={p.url} target="_blank" rel="noopener">
+                <span class="label"><span class="new">{p.no ? `Aperture Paper No. ${p.no}` : 'Expand Your Aperture'}</span> · {p.date}</span>
+                <span class="pieces__t">{p.title}</span>
+              </a>
+            </li>
+          ))}
           {featured.map((w) => (
             <li>
               <a href={w.url} target="_blank" rel="noopener">
@@ -375,6 +387,7 @@ const trackRecord = roles.filter((r) => !['GE Consumer Finance', 'UBS'].includes
   /* Writing */
   .pieces { list-style: none; margin: 0 0 2rem; padding: 0; border-top: 1px solid var(--ink); }
   .pieces a { display: grid; gap: .4rem; padding: 1.4rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .pieces .new { color: var(--accent); }
   .pieces__t { font-family: var(--serif); font-size: 1.375rem; line-height: 1.25; color: var(--ink); transition: color .2s ease; }
   .pieces a:hover .pieces__t { color: var(--accent); }
   .vids { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 3rem 0 1.5rem; }
