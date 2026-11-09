@@ -11,17 +11,17 @@ const [lead, ...rest] = posts;
     <div class="container">
       <div class="papers__head">
         <div>
-          <span class="eyebrow">Expand Your Aperture</span>
+          <span class="eyebrow">Weekly on Substack</span>
           <h2 id="papers-h" class="h2">The Aperture <em>Papers</em></h2>
-          <p class="papers__sub">A weekly essay on AI, commerce and the operators building what comes next. Published first on Substack.</p>
+          <p class="papers__sub">A weekly essay on AI, commerce and the operators building what comes next.</p>
         </div>
         <a class="link" href={person.substack} target="_blank" rel="noopener">Full archive</a>
       </div>
 
       <a class="lead" href={lead.url} target="_blank" rel="noopener">
-        <p class="lead__num" aria-hidden="true">{lead.no ? `.${lead.no}` : 'New'}</p>
+        <div class="lead__img"><img src="/papers-portrait.jpg" alt="Brandon M. Weaver" loading="lazy" width="1179" height="1760" /></div>
         <div class="lead__txt">
-          <p class="meta"><span class="no">{lead.no ? `Latest · No. ${lead.no}` : 'Latest'}</span><span class="label">{lead.date}</span></p>
+          <p class="meta"><span class="no">{lead.no ? `No. ${lead.no}` : 'Latest'}</span><span class="label">{lead.date}</span></p>
           <h3 class="lead__t">{lead.title}</h3>
           {lead.dek && <p class="lead__d">{lead.dek}</p>}
           <span class="link">Read the paper</span>
@@ -46,14 +46,15 @@ const [lead, ...rest] = posts;
 )}
 
 <style>
-  .papers { padding-top: 0; }
+  .papers { padding-top: clamp(2.75rem, 6vw, 4.5rem); }
   .papers__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem 2rem; margin-bottom: 2rem; }
   .papers__head .h2 { margin: .75rem 0 0; }
   .papers__sub { margin: 1rem 0 0; max-width: 34rem; color: var(--ink-2); }
   .lead { display: grid; gap: 1.5rem; padding: 1.75rem 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
-  @media (min-width: 860px) { .lead { grid-template-columns: 15rem minmax(0, 1fr); gap: 3rem; align-items: center; padding: 2.5rem 0; } }
-  .lead__num { margin: 0; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(4.5rem, 11vw, 8.5rem); line-height: .85; letter-spacing: -.03em; color: var(--accent); }
-  @media (max-width: 859px) { .lead__num { display: none; } }
+  @media (min-width: 860px) { .lead { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 3rem; align-items: center; padding: 2rem 0; } }
+  .lead__img { aspect-ratio: 16 / 10; overflow: hidden; border-radius: 2px; background: var(--paper-2); }
+  .lead__img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%; display: block; transition: transform .5s ease; }
+  .lead:hover .lead__img img { transform: scale(1.02); }
   .meta { display: flex; gap: .9rem; align-items: baseline; margin: 0 0 .75rem; }
   .no { font: 600 .75rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
   .lead__t { font-family: var(--serif); font-weight: 400; font-size: clamp(1.75rem, 3.6vw, 2.875rem); line-height: 1.12; margin: 0 0 .9rem; transition: color .2s ease; }
