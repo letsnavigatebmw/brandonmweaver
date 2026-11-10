@@ -54,12 +54,6 @@ export const testimonials = [
     name: 'Michael Silver',
     title: 'President, Foto Comercio',
   },
-  {
-    quote:
-      'Brandon brings a rare blend of luxury brand expertise, commercial leadership, and authentic relationship-building. He never loses sight of revenue and operational performance.',
-    name: 'Andy Borenzweig',
-    title: 'Founder & CEO, Beverly Spirits',
-  },
 ];
 
 export type Role = {
@@ -86,14 +80,13 @@ export const roles: Role[] = [
     summary:
       'Fractional sales and marketing leadership for hospitality, travel and consumer brands. Aperture works with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer on growth, go-to-market and turnaround challenges.',
     bullets: [
-      'Advise super-premium brands Perro Verde (mezcal) and Beverly Spirits (North American whisky) on sales and marketing strategy, distributor and importer selection, placement, negotiation and fundraising.',
-      'For the Beverly Spirits RTD, own pack architecture, can design and pricing, and build route-to-market in California and New York with Southern Glazer’s and LibDib.',
+      'Advise super-premium mezcal brand Perro Verde on sales and marketing strategy, distributor and importer selection, placement, negotiation and fundraising.',
       'Swarm (2026): built the demand model and phased go-to-market plan for an AI compute marketplace and supported a $3M seed raise.',
       'Build financial models, valuations, business cases and investor materials for growth-stage clients including Wilbur Labs, Boatsetter and Voyage Real Estate.',
       'Engagements span commercial strategy and go-to-market, brand and marketing leadership, revenue turnarounds, partnerships and distribution, and investor readiness.',
     ],
     partnersLabel: 'Clients',
-    partners: 'Perro Verde Mezcal, WES Brands, Voyage Real Estate (Compass), Beverly Spirits, Swarm, All World Communications Group, Wilbur Labs, Boatsetter',
+    partners: 'Perro Verde Mezcal, WES Brands, Voyage Real Estate (Compass), Swarm, All World Communications Group, Wilbur Labs, Boatsetter',
   },
   {
     company: 'Navigate',
@@ -240,7 +233,6 @@ export const launches = [
   'BEYOND by Bonotel',
   'Bonotel Sports',
   'Lacure Reserve Collection',
-  'Beverly Spirits RTD',
   'Navigate',
 ];
 
@@ -267,7 +259,6 @@ export const brands: Brand[] = [
   { name: 'Aman', src: '/logos/brands/aman.png', h: 30 },
   { name: 'Cipriani', src: '/logos/brands/cipriani.png', h: 54 },
   { name: 'Captain Morgan', src: '/logos/brands/captainmorgan.png', h: 39 },
-  { name: 'The Beverly High Rye', src: '/logos/brands/beverly.png', h: 54 },
   { name: 'Southern Glazer’s Wine & Spirits', src: '/logos/brands/southernglazers.png', h: 66 },
   { name: 'NFL', src: '/logos/brands/nfl.png', h: 60 },
   { name: 'MLB', src: '/logos/brands/mlb.png', h: 46 },
